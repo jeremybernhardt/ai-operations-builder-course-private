@@ -1,0 +1,19 @@
+{
+  "schema_version": "2.0.0",
+  "source": "data/project_task_reviews.csv",
+  "generated_at": "2026-08-19T01:20:12.587501+00:00",
+  "synthetic_data": true,
+  "total_review_rows": 16,
+  "distinct_tasks": 13,
+  "duplicate_logical_review_groups": 1,
+  "missing_outcome_rows": 1,
+  "reworked_submission_rows": 2,
+  "tasks_requiring_policy_choice": 4,
+  "status_counts_raw_rows": {
+    "accepted": 10,
+    "missing": 1,
+    "rejected": 2,
+    "revise": 3
+  },
+  "operator_note": "Resolve metric policy and data-quality treatment before treating the rate as decision-ready."
+}

@@ -1,0 +1,147 @@
+{
+  "schema_version": "2.0.0",
+  "release_version": "2.0.3",
+  "state_version": 8,
+  "updated_at": "2026-08-14T17:51:51-07:00",
+  "authoritative_source": {
+    "type": "durable_course_bundle",
+    "bundle_name": "AI_Operations_Builder_Course_Prototype_v2.0.3.zip",
+    "git_repository_established": false
+  },
+  "current_phase_id": "M0",
+  "current_module_id": "M0",
+  "current_lesson_id": "M0-L3",
+  "current_checkpoint_id": "M0-C3",
+  "checkpoint_status": "m0_l3_passed_m0_l4_ready",
+  "last_verified_build_checkpoint": {
+    "checkpoint_id": "ARCH-RG1-v2.0.3",
+    "status": "passed",
+    "evidence": [
+      "evidence/RELEASE_CHECKS_v2.0.3.md",
+      "evidence/RECONSTRUCTION_CHECK_v2.0.3.md"
+    ]
+  },
+  "preserved_architecture_build_checkpoint": {
+    "checkpoint_id": "ARCH-RG1-v2.0.0",
+    "status": "passed",
+    "evidence": [
+      "evidence/RELEASE_CHECKS_v2.0.0.md",
+      "evidence/RECONSTRUCTION_CHECK_v2.0.0.md"
+    ]
+  },
+  "preserved_prototype_build_checkpoint": {
+    "checkpoint_id": "P0-RG1-v1.2.0",
+    "status": "passed",
+    "evidence": [
+      "evidence/RELEASE_CHECKS.md",
+      "evidence/RECONSTRUCTION_CHECK.md"
+    ]
+  },
+  "last_verified_learner_checkpoint": {
+    "checkpoint_id": "M0-C3",
+    "status": "completed_with_substantial_assistance",
+    "evidence": [
+      "evidence/LEARNER_CHECKPOINT_M0-C3.md"
+    ],
+    "independent_mastery_claimed": false
+  },
+  "preserved_m0_l2_learner_checkpoint": {
+    "checkpoint_id": "M0-C2",
+    "status": "completed_with_substantial_assistance",
+    "evidence": [
+      "evidence/LEARNER_CHECKPOINT_M0-C2.md"
+    ],
+    "independent_mastery_claimed": false
+  },
+  "preserved_m0_l1_learner_checkpoint": {
+    "checkpoint_id": "M0-C1",
+    "status": "completed_with_limited_assistance",
+    "evidence": [
+      "evidence/LEARNER_CHECKPOINT_M0-C1.md"
+    ],
+    "independent_mastery_claimed": false
+  },
+  "preserved_prototype_learner_checkpoint": {
+    "checkpoint_id": "P0-C1",
+    "status": "completed_with_substantial_assistance",
+    "evidence": [
+      "evidence/LEARNER_CHECKPOINT_P0-C1.md"
+    ],
+    "independent_mastery_claimed": false
+  },
+  "active_blockers": [],
+  "prototype_approval": {
+    "status": "approved",
+    "approved_design_version": "1.1.0",
+    "durable_prototype_version": "1.2.0",
+    "approved_at": "2026-07-18"
+  },
+  "course_architecture_approval": {
+    "status": "approved",
+    "version": "2.0.0",
+    "approved_at": "2026-08-08",
+    "primary_context": "strategic_finance_fp_and_a_finance_operations",
+    "primary_subject": "ai_data_dashboard_automation_and_agent_tool_building",
+    "human_data_specialization": "optional",
+    "operator_builder_clarification": {
+      "release_version": "2.0.1",
+      "decision_id": "DEC-C2-008",
+      "approved_at": "2026-08-12",
+      "target": "ai_assisted_operator_builder_for_strategic_finance_and_operations"
+    },
+    "ai_execution_clarification": {
+      "release_version": "2.0.2",
+      "decision_id": "DEC-C2-009",
+      "approved_at": "2026-08-14",
+      "default": "ai_executes_routine_local_steps_when_safe_jeremy_specifies_inspects_and_verifies"
+    },
+    "teaching_strategy_clarification": {
+      "release_version": "2.0.3",
+      "decision_id": "DEC-C2-010",
+      "approved_at": "2026-08-14",
+      "default": "ask_before_explaining_and_assess_transfer_not_immediate_repetition"
+    }
+  },
+  "git_identity_readiness": {
+    "status": "verified_for_future_commits",
+    "decision_id": "DEC-M0-001",
+    "scope": "global_personal_default_with_repository_local_overrides_when_needed",
+    "user_name": "Jeremy Bernhardt",
+    "user_email": "306348304+jeremybernhardt@users.noreply.github.com",
+    "use_config_only": true,
+    "existing_practice_commits_changed": false,
+    "practice_repository_remote_ready": false,
+    "practice_repository_decision": "remain_local_only"
+  },
+  "environment_readiness": {
+    "node": "24.18.0",
+    "npm": "11.16.0",
+    "python": "3.13.14",
+    "git": "2.50.1 (Apple Git-155)",
+    "command_line_tools_path": "/Library/Developer/CommandLineTools",
+    "verified_on_learner_mac": true
+  },
+  "lesson_chat_policy": "one_lesson_per_new_chat",
+  "next_action": "Jeremy starts a fresh chat with the v2.0.3 continuity packet. That chat prepares and teaches only M0-L4 — Private GitHub Course Repository and First Verified Push. It must verify the current local bundle, Git identity, GitHub account access, destination ownership and private visibility, outgoing history, and secret boundary before any external action, and it must obtain separate explicit approval before creating or connecting the private repository or pushing anything.",
+  "scope_guard": {
+    "authorized_now": [
+      "bounded_course_blueprint_v2.0.3",
+      "preserved_prototype_P0-L1_v1.2.0",
+      "verified_Module_0_lesson_M0-L1",
+      "verified_Module_0_lesson_M0-L2",
+      "verified_Module_0_lesson_M0-L3",
+      "next_Module_0_lesson_M0-L4_only"
+    ],
+    "not_authorized": [
+      "later_Module_0_lessons_beyond_M0-L4_without_checkpoint_authorization",
+      "remote_practice_repository",
+      "private_course_repository_without_separate_explicit_approval",
+      "external_account",
+      "later_modules",
+      "remaining_course_build",
+      "optional_human_data_module_build",
+      "public_deployment",
+      "standalone_product"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+-- Checkpoint P0-C2 scaffold (currently locked)
+--
+-- Do not implement this query until checkpoint P0-C1 freezes the metric
+-- definition. When unlocked, replace the TODO with one SELECT statement that
+-- returns exactly these columns:
+--
+--   accepted_first_pass_count
+--   eligible_first_pass_count
+--   first_pass_acceptance_rate
+--
+-- Source table: review_events
+-- Field definitions: DATA_DICTIONARY.md
+-- Frozen business rule: will be recorded in METRIC_DICTIONARY.md after P0-C1
+
+-- TODO: implement only after the definition checkpoint is verified.

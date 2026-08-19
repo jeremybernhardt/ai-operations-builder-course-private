@@ -1,0 +1,16 @@
+node_modules/
+.sites-runtime/
+.wrangler/
+.next/
+dist/
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+database/*.sqlite-journal
+database/*.sqlite-wal
+database/*.sqlite-shm
+AI_Operations_Builder_Course_Prototype_v*.zip

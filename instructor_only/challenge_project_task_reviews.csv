@@ -1,0 +1,9 @@
+review_id,task_id,expert_id,task_type,submission_attempt,submitted_at,reviewed_at,review_status,review_sequence,guideline_version
+C001,U001,X001,margin_analysis,1,2026-08-01T09:00:00Z,2026-08-01T11:00:00Z,accepted,1,G3
+C002,U002,X002,revenue_bridge,1,2026-08-01T09:20:00Z,2026-08-01T11:30:00Z,revise,1,G3
+C003,U002,X002,revenue_bridge,2,2026-08-02T09:00:00Z,2026-08-02T11:00:00Z,accepted,1,G3
+C004,U003,X003,margin_analysis,1,2026-08-01T10:00:00Z,,,1,G3
+C005,U004,X004,forecast,1,2026-08-01T10:20:00Z,2026-08-01T12:10:00Z,rejected,1,G3
+C006,U005,X005,revenue_bridge,1,2026-08-01T10:40:00Z,2026-08-01T12:20:00Z,accepted,1,G3
+C007,U005,X005,revenue_bridge,1,2026-08-01T10:40:00Z,2026-08-01T12:21:00Z,accepted,1,G3
+C008,U006,X006,forecast,1,2026-08-01T11:00:00Z,2026-08-01T13:00:00Z,accepted,1,G3

@@ -1,0 +1,9 @@
+[project]
+name = "ai-operations-builder-course-prototype"
+version = "1.0.0"
+requires-python = ">=3.11,<3.14"
+dependencies = []
+
+[tool.course]
+database = "SQLite via Python standard library"
+third_party_python_dependencies = false
