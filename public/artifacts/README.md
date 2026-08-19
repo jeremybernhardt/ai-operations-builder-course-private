@@ -1,13 +1,14 @@
-# AI Operations Builder Course Bundle v2.0.3
+# AI Operations Builder Course Repository v2.0.4
 
 Learner entry point: open `START_HERE.html`. This README is the technical setup, verification, continuity, and recovery reference.
 
-This local/private bundle contains:
+This private repository contains:
 
-- the approved v2.0.0 bounded course architecture, v2.0.1 operator-builder standard, v2.0.2 safe AI-execution clarification, and v2.0.3 transfer-not-repetition teaching correction;
+- the approved v2.0.0 bounded course architecture, v2.0.1 operator-builder standard, v2.0.2 safe AI-execution clarification, v2.0.3 transfer-not-repetition teaching correction, and v2.0.4 private-repository authority transition;
 - the preserved v1.2.0 prototype **From Raw Project Data to a Verified Operating Metric**;
 - canonical course state, progress, decisions, capability gates, handoff, and next-chat instructions; and
-- no future full lesson, production portal, public deployment, remote repository, or standalone course product.
+- the verified M0-L4 private-repository checkpoint and repository-level `AGENTS.md`; and
+- no future full lesson, production portal, public deployment, public repository, or standalone course product.
 
 The required course teaches AI-assisted SQL, Python/pandas, data pipelines, work dashboards, automation, document tools, and permissioned agents using finance as the primary application context. It targets AI-assisted operator-builder proficiency, not unaided software development. It is not a broad finance curriculum or a software-engineering curriculum. The Course Portal facilitates lessons and never counts as evidence that Jeremy can build work dashboards.
 
@@ -75,12 +76,14 @@ Passing software tests does not imply learner mastery or satisfy a capability ga
 - `P0-C1` is completed with substantial assistance.
 - Independent metric mastery, SQL implementation, teach-back, and limitation work are not claimed.
 - The prototype is preserved as a pre-course teaching-format artifact and optional human-data transfer case.
-- The v2.0.0 architecture, v2.0.1 operator-builder standard, v2.0.2 safe AI-execution clarification, and v2.0.3 teaching-strategy correction are approved.
+- The v2.0.0 architecture and v2.0.1-v2.0.4 clarifications and continuity decisions are approved.
 - `M0-L1 — Local Git Foundations` is completed with limited assistance; independent mastery and Module 0 completion are not claimed.
 - `M0-L2 — Local Branches, Merges, and Safe Recovery` is completed with substantial assistance; independent mastery and Module 0 completion are not claimed.
-- `M0-L3 — Git Identity, Privacy, and GitHub Readiness` is completed with substantial assistance; an approved privacy-preserving future identity is verified, while independent mastery and Module 0 completion are not claimed.
+- `M0-L3 — Git Identity, Privacy, and GitHub Readiness` is completed with substantial assistance; an approved privacy-preserving future identity is verified.
+- `M0-L4 — Private GitHub Course Repository and First Verified Push` is completed with substantial assistance. The exact private destination, first commit/tree, metadata, exclusions, tracking, and fresh-clone reconstruction were independently verified.
 - Every resume-level capability gate remains `Not started`.
-- The next authorized work is only `M0-L4 — Private GitHub Course Repository and First Verified Push` in a fresh chat. Creation, connection, and push still require separate explicit approval at the relevant boundary.
+- The planned Module 0 lesson sequence is complete with substantial assistance; independent mastery and resume-level proficiency are not claimed.
+- The next authorized work is only the first bounded lesson of `M0.5 — Directing and Supervising an AI Builder`, in a fresh task.
 
 ## Required course direction
 
@@ -88,17 +91,17 @@ The main project is the synthetic **AI-Enabled Finance Planning, Reporting, and 
 
 See `CURRICULUM_MAP.md` for the bounded module sequence and `CAPABILITY_EVIDENCE_LEDGER.md` for the evidence required before any resume-level skill label is defensible.
 
-## Continuing Module 0 in a new chat
+## Continuing in a new task
 
-Until the private GitHub course repository exists, use this three-item continuity packet:
+The authoritative source is private repository `jeremybernhardt/ai-operations-builder-course-private` on `main`. In a fresh task, provide the repository location and ask the instructor to read the canonical files and exact `NEXT_CHAT_PROMPT.md` there. Repeated complete-ZIP attachment is no longer required.
 
-1. `AI_Operations_Builder_Course_Prototype_v2.0.3.zip` — complete authoritative pre-GitHub bundle;
-2. `SESSION_HANDOFF.md` — factual briefing about verified state, boundaries, and next action; and
-3. `NEXT_CHAT_PROMPT.md` — exact instructions for the new conversation.
+For Jeremy's saved lesson archive, the M0-L4 closeout exports are:
 
-Open a new chat, attach all three items, paste the text beneath **Then send this prompt** in `NEXT_CHAT_PROMPT.md`, and send it.
+- `SESSION_HANDOFF_M0-L4_v2.0.4.md`;
+- `NEXT_CHAT_PROMPT_AFTER_M0-L4_v2.0.4.md`; and
+- `AI_Operations_Builder_Course_Prototype_v2.0.4_M0-L4.zip`.
 
-After Module 0 creates and verifies the private course repository with Jeremy's explicit approval, later chats should read canonical files from that repository. Repeated ZIP attachments should end, while periodic versioned bundles remain backups.
+The canonical in-repository filenames remain `SESSION_HANDOFF.md` and `NEXT_CHAT_PROMPT.md` so setup and verification stay stable. The ZIP is a verified backup, not the authoritative live source.
 
 ## Recovery
 
@@ -120,10 +123,10 @@ If port 5173 is busy:
 npm run dev -- --port 4174
 ```
 
-Use a fresh copy of the durable v2.0.3 bundle to restore intentionally incomplete learner files. Do not delete canonical state, progress, capability evidence, or preserved learner evidence.
+Use the verified private repository or the v2.0.4 M0-L4 backup bundle to restore intentionally incomplete learner files. Do not delete canonical state, progress, capability evidence, or preserved learner evidence.
 
 ## Source of truth
 
-Before a private course repository exists, this complete v2.0.3 bundle is authoritative. `COURSE_STATE.json`, `PROGRESS.json`, and `CAPABILITY_EVIDENCE_LEDGER.md` record course position, mastery, and skill evidence. The Course Portal is a generated read-only mirror; browser-local notes, chat history, and saved memory are non-authoritative.
+Private repository `jeremybernhardt/ai-operations-builder-course-private` on `main` is authoritative. `COURSE_STATE.json`, `PROGRESS.json`, and `CAPABILITY_EVIDENCE_LEDGER.md` record course position, mastery, and skill evidence. The Course Portal is a generated read-only mirror; backup ZIPs, browser-local notes, chat history, and saved memory are non-authoritative.
 
 See `MANIFEST.md` for file roles.

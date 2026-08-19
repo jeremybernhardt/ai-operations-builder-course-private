@@ -2,11 +2,11 @@
 
 Project ID: `PROJ-HDOFCC-001`  
 Prototype slice: `P0-L1`  
-Status: Preserved completed prototype inside bundle `v2.0.3` and the approved `v2.0.0` course architecture
+Status: Preserved completed prototype inside repository release `v2.0.4` and the approved `v2.0.0` course architecture
 
 ## Relationship to the required course
 
-This specification governs only the preserved `P0-L1` teaching-format prototype. It is not the required flagship and does not count as work-dashboard, SQL, Python, automation, or agent proficiency. Human-data operations is now an optional later transfer specialization. The required flagship is the synthetic AI-Enabled Finance Planning, Reporting, and Decision-Support System defined in `COURSE_CONTRACT.md` and `CURRICULUM_MAP.md`. Bundle v2.0.1 added the course-wide AI-assisted operator-builder proficiency standard; bundle v2.0.2 recorded the verified M0-L2 checkpoint and safe AI-execution default; bundle v2.0.3 records the verified M0-L3 identity/privacy checkpoint and transfer-not-repetition teaching correction. These changes do not alter this prototype's decisions, implementation, or evidence.
+This specification governs only the preserved `P0-L1` teaching-format prototype. It is not the required flagship and does not count as work-dashboard, SQL, Python, automation, or agent proficiency. Human-data operations is now an optional later transfer specialization. The required flagship is the synthetic AI-Enabled Finance Planning, Reporting, and Decision-Support System defined in `COURSE_CONTRACT.md` and `CURRICULUM_MAP.md`. Release v2.0.1 added the course-wide AI-assisted operator-builder proficiency standard; v2.0.2 recorded the verified M0-L2 checkpoint and safe AI-execution default; v2.0.3 recorded the verified M0-L3 identity/privacy checkpoint and transfer-not-repetition teaching correction; and v2.0.4 records the verified private-repository authority transition and M0-L4 checkpoint. These changes do not alter this prototype's decisions, implementation, or evidence.
 
 ## Scenario
 

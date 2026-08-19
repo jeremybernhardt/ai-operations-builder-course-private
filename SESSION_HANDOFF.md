@@ -1,134 +1,128 @@
 # Session Handoff
 
-Handoff version: `2.0.3`  
-Session date: `2026-08-14`  
-Authoritative location: `AI_Operations_Builder_Course_Prototype_v2.0.3.zip` until a private course repository is created and verified
+Handoff version: `M0-L4 / v2.0.4`
+Session closeout date: `2026-08-19`
+Authoritative location: private repository `jeremybernhardt/ai-operations-builder-course-private`, branch `main`
+Versioned export name: `SESSION_HANDOFF_M0-L4_v2.0.4.md`
 
-## What this file does
+## Purpose
 
-This is the factual briefing for the next conversation. It records what happened, what was verified, what remains unfinished, and the next authorized action. It is not additional lesson reading. `NEXT_CHAT_PROMPT.md` contains the exact instructions that tell the new conversation how to resume.
+This is the factual briefing for the next fresh task. It records what was completed, verified, assisted, postponed, and authorized. It is not additional lesson work. `NEXT_CHAT_PROMPT.md` contains the exact resume instructions.
 
 ## Current position
 
-- Phase and module: `M0 — Mac, Git, and GitHub Foundations`
-- Completed lesson: `M0-L3 — Git Identity, Privacy, and GitHub Readiness`
-- Current learner checkpoint: `M0-C3` completed with substantial assistance
-- Current checkpoint ID: `M0-C3`
-- Independent mastery: not claimed
-- Module 0: not complete
-- Approved course architecture: v2.0.0, refined by the v2.0.1 operator-builder standard, v2.0.2 AI-execution clarification, and v2.0.3 teaching-strategy correction
-- Lesson-chat rule: one fresh chat per lesson
-- Private course repository: not established
-- Next authorized lesson: only `M0-L4 — Private GitHub Course Repository and First Verified Push`
+- Completed lesson: `M0-L4 — Private GitHub Course Repository and First Verified Push`.
+- Current checkpoint: `M0-C4`, **Completed with substantial assistance**.
+- Independent mastery: not claimed.
+- Module 0: planned lesson sequence complete with substantial assistance; independent Module 0 proficiency is not claimed.
+- Every v2 resume-level capability gate: `Not started`.
+- Next authorized work: only `M0.5-L1 — Defining Outcomes, Constraints, and Done Criteria`, prepared and taught in a fresh task.
+- Active blocker: none.
 
-## Preserved earlier checkpoints
+## Authoritative-source transition
 
-- `P0-C1` remains completed with substantial assistance; independent mastery was not claimed.
-- `M0-L1 — Local Git Foundations` / `M0-C1` remains completed with limited assistance; independent mastery was not claimed.
-- `M0-L2 — Local Branches, Merges, and Safe Recovery` / `M0-C2` remains completed with substantial assistance; independent mastery and Module 0 completion were not claimed.
-- Every v2 capability gate remains `Not started`.
+Before M0-L4, `AI_Operations_Builder_Course_Prototype_v2.0.3.zip` was authoritative. The authoritative source is now the private GitHub repository:
 
-## What Jeremy completed in M0-L3
+- owner/name: `jeremybernhardt/ai-operations-builder-course-private`;
+- visibility: private;
+- default branch: `main`;
+- local working folder: `/Users/Jeremy/Documents/Codex/AI_Operations_Builder_Course`;
+- origin: `https://github.com/jeremybernhardt/ai-operations-builder-course-private.git`;
+- independently verified first-push commit: `07170d06922211c5e4379fa4c534ea93da08dd0b`;
+- independently verified first-push tree: `5386ba81e934717323a1256237cc380106ef0a78`; and
+- first-push baseline contents: 118 intended files, one root commit, no practice history.
+
+The current verified `main` contains the v2.0.4 canonical closeout. `AI_Operations_Builder_Course_Prototype_v2.0.4_M0-L4.zip` is a recovery backup, not a competing authority. New tasks no longer require the complete ZIP to be attached.
+
+## What Jeremy completed in M0-L4
 
 Jeremy:
 
-- confirmed an existing GitHub account with username `jeremybernhardt` and access to its email settings;
-- verified the exact disposable-repository path, clean state, seven-commit history, current branch, branch positions, ignored/untracked `.env`, restored file comparisons, and absence of remotes through direct instructor checks;
-- learned the beginner distinction among commit metadata, Git configuration defaults, GitHub username, authentication, local repositories, remotes, push, fetch, and pull;
-- inspected the identity configuration sources and learned that global `user.name=lord0fham` was set while the prior email was machine-derived;
-- verified that all seven existing practice commits stored `lord0fham <Jeremy@MacBook-Pro.local>`;
-- reviewed current official GitHub guidance for commit identity, email attribution/privacy, `noreply` addresses, email-exposure push blocking, and remote actions;
-- chose `Jeremy Bernhardt` as the future commit-author name and his exact GitHub-provided ID-based `noreply` address as the Mac-wide personal default;
-- confirmed GitHub's **Keep my email addresses private** and **Block command line pushes that expose my email** settings are enabled;
-- separately approved the exact global configuration after scope, privacy, and non-retroactive effects were explained;
-- approved `user.useConfigOnly=true` so Git does not invent a missing identity;
-- correctly chose repository-local overrides for a future employer identity rather than replacing the global personal default; and
-- verified the new effective future identity while proving the practice repository, its existing commits, branches, ignored secret, and no-remote state were unchanged.
+- specified or approved the exact owner, repository name, local destination, private visibility, contents, exclusions, and done criteria;
+- stated before the detailed explanation that the course must remain private, the completed practice history must stay separate, and a push would not prove content accuracy;
+- separately approved creation of the empty private repository;
+- separately approved connecting the local repository as `origin`;
+- separately approved the first push of local `main` at `07170d0` to `origin/main`;
+- approved installing the verified official GitHub CLI and using browser-device authentication;
+- approved the displayed GitHub CLI permissions and completed the one-time GitHub authorization boundary; and
+- understood that Codex can perform routine local and GitHub work after authentication, while consequential external actions may still require explicit approval.
 
-No account, remote, repository, deployment, public artifact, credential, push, pull, fetch, clone, or history rewrite was created or performed.
+The instructor/AI prepared and inspected the separate local repository, installed and authenticated GitHub CLI, migrated credential storage into macOS Keychain, configured the repository-only credential helper, performed the approved Git actions, and ran the complete verification workflow.
 
-## Assistance and mastery boundary
+## Independent verification completed
 
-The instructor supplied a full beginner walkthrough for identity, metadata, privacy, local/global scope, remotes, and failure/limitation analysis, plus guided help for the `noreply`, global-scope, and no-guessing decisions. Jeremy made and approved the consequential identity, privacy, scope, and external-action decisions. He applied local scope correctly to a new employer-repository scenario and understood that new configuration does not conceal old metadata.
+The following were independently verified rather than inferred from a successful push:
 
-Jeremy's initial wording incorrectly implied any push makes metadata public rather than distinguishing private authorized access from public visibility. He did not independently identify the complete outgoing-history/recovery evidence or another privacy limitation; the instructor supplied that analysis. `M0-C3` is therefore **Completed with substantial assistance**, not independent mastery. Evidence is in `evidence/LEARNER_CHECKPOINT_M0-C3.md`.
+- exact GitHub owner and repository name;
+- private visibility and default `main` branch;
+- first-push commit and tree IDs;
+- approved GitHub-provided `noreply` author and committer metadata;
+- exact equality between all 118 local and remote baseline blobs;
+- expected canonical, lesson, evidence, `instructor_only/`, hidden/setup, source, and test files;
+- absence of actual `.env`, credentials, personal email, archives, dependencies, runtime/cache/log files, unexpected files, and disposable-practice history;
+- exact origin URL and local `main` tracking `origin/main`;
+- one-root-commit history; and
+- successful fresh authenticated clone followed by 55 reconstruction checks, locked dependency installation, full tests/build, two rendered-output tests, lint, and artifact validation.
 
-## Teaching-strategy correction
+The v2.0.4 closeout was then checked through JSON validation, deterministic release/reconstruction checks, build, tests, lint, artifact validation, secret scanning, complete commit inspection, and a second independent remote/fresh-clone verification before delivery.
 
-Jeremy correctly objected when the instructor supplied a failure-analysis answer and then asked him to repeat it. `DEC-C2-010` now requires:
-
-- ask for reasoning before giving the substantive answer;
-- after an explanation supplies the answer, record the assistance and do not request immediate repetition or paraphrase; and
-- use a genuinely new later decision, scenario, diagnosis, or application only when more evidence is materially needed.
-
-Teach-back remains useful when it demonstrates transfer. It must not become an echo test.
-
-## Current identity and local repository
+## Authentication and privacy state
 
 - GitHub username: `jeremybernhardt`.
-- Verified effective future Git author/committer identity: `Jeremy Bernhardt <306348304+jeremybernhardt@users.noreply.github.com>`.
-- Configuration source and scope: global `/Users/Jeremy/.gitconfig`.
-- `user.useConfigOnly`: `true`.
-- Existing practice commits changed: no.
-- Practice repository decision: remain local-only; do not push its old machine-email history.
-- Practice repository: `/Users/Jeremy/Desktop/ai-ops-git-practice-m0l1`.
-- Current observed `main`: clean at `b1bf13d` with seven commits.
-- Current observed history: `b1bf13d`, `ffdad15`, `2bf6eae`, `79d4537`, `5c178e8`, `0f2e55c`, `449f723`.
-- Current observed branches: `main` and `lesson/m0-l2-challenge` at `b1bf13d`; `lesson/m0-l2-guided` at `79d4537`.
-- Current observed state: `.env` exists, is ignored and untracked, has no history, and no remote is configured.
-- Node.js `24.18.0`, npm `11.16.0`, Python `3.13.14`, and Git `2.50.1 (Apple Git-155)` remain installed. Do not reinstall them.
+- Verified future Git author/committer identity: `Jeremy Bernhardt <306348304+jeremybernhardt@users.noreply.github.com>`.
+- Global source: `/Users/Jeremy/.gitconfig`; `user.useConfigOnly=true`.
+- GitHub **Keep my email addresses private** and **Block command line pushes that expose my email** are enabled.
+- Official GitHub CLI version: `2.97.0`, verified by published checksum and macOS signature.
+- Authentication completed for the approved GitHub account and stored in macOS Keychain.
+- A repository-only Git credential helper is configured for the private course repository.
+- No password, token, credential, or personal email was requested, displayed, or committed.
+- Existing authentication is capability, not blanket authorization for every future external action.
 
-## Course direction and evidence boundaries
+## Disposable practice repository remains separate
 
-- `DEC-C2-009` makes safe AI execution the default: AI may perform routine local implementation, testing, and Git commands while Jeremy defines or approves intended behavior, understands relevant state and risk, inspects targeted logic, reconciles evidence, and verifies completion.
-- Syntax and command recall are not assessment goals. Manual action remains appropriate for authentication, permissions, consequential external state, recovery, or lack of agent access.
-- The target remains AI-assisted operator-builder proficiency for strategic finance and operations, not unaided software development.
-- Output-based testing is a starting point; plausible outputs still require inspection where joins, filters, grain, nulls, mappings, time rules, permissions, or comparable risks could hide defects.
-- SQL receives somewhat more direct practice; Python/pandas emphasizes tracing, troubleshooting, modifying, and reusing scripts.
-- The Course Portal does not count as work-dashboard evidence. `OH1` remains optional.
+Path: `/Users/Jeremy/Desktop/ai-ops-git-practice-m0l1`.
 
-## Next authorized lesson
+- clean `main` at `b1bf13d` with seven commits;
+- `main` and `lesson/m0-l2-challenge` at `b1bf13d`;
+- `lesson/m0-l2-guided` at `79d4537`;
+- deliberate mistake `2bf6eae` and revert `ffdad15` preserved;
+- `.env` ignored, untracked, and absent from history;
+- no remote configured; and
+- all seven commits retain `lord0fham <Jeremy@MacBook-Pro.local>`.
 
-Prepare and teach only `M0-L4 — Private GitHub Course Repository and First Verified Push` in a fresh chat. The lesson deliverable may be a verified private course repository that becomes authoritative, but external creation, connection, and push each require Jeremy's informed approval at the relevant boundary.
+It must remain local-only. It was not copied into, connected to, or pushed with the course repository.
 
-Before any external action, the next lesson must:
+## Assistance and evidence boundary
 
-- reconstruct state from the complete v2.0.3 packet and verify all required files;
-- recheck the effective identity source and exact `noreply` value;
-- confirm GitHub account access without requesting a password, token, or personal email;
-- keep the disposable practice repository local-only;
-- define the intended owner, repository name, private visibility, authoritative contents, exclusions, and success criteria;
-- inspect the complete outgoing course bundle/history for secrets, personal information, instructor/private boundaries, unexpected files, and correct commit metadata;
-- explain authentication and permission effects before acting;
-- obtain separate explicit approval before creating the private repository, connecting any remote, or pushing; and
-- verify destination ownership, private visibility, remote URL, branch, commit, file contents, and access after any approved action.
+Jeremy owned the intended outcome, privacy/external-action decisions, repository specification, and each consequential approval. He independently identified one important limitation: a push does not prove content accuracy. The instructor supplied most of the beginner repository/authentication model, detailed risk explanation, complete outgoing-history checklist, credential handling, implementation, and verification interpretation. No immediate repetition of supplied answers was requested under `DEC-C2-010`.
 
-Do not create a public repository, remote practice repository, deployment, public artifact, paid resource, or later-module implementation. Do not begin another lesson in the same chat.
+`M0-C4` is therefore **Completed with substantial assistance**. A working repository, successful push, passing build, or Module 0 sequence completion does not establish independent mastery or any resume-level capability.
 
-## Unfinished
+## Preserved course facts
 
-- Remote authentication, repository creation, remote connection, first push/pull, GitHub access verification by the instructor, and the private course repository remain unfinished.
-- Merge conflicts, divergent-history handling, and branch cleanup conventions remain unfinished.
-- No required finance flagship data, SQL/Python lesson, work dashboard, automation, AI document tool, or agent has been built.
-- Optional `OH1` has not been built.
-- Later Module 0 lessons beyond M0-L4 and all later modules remain unauthorized until their preceding checkpoints pass.
+- `P0-C1`: completed with substantial assistance; no independent mastery.
+- `M0-C1`: completed with limited assistance; no independent mastery.
+- `M0-C2`: completed with substantial assistance; no independent mastery.
+- `M0-C3`: completed with substantial assistance; no independent mastery.
+- `M0-C4`: completed with substantial assistance; no independent mastery.
+- Every v2 capability gate remains `Not started`.
+- Installed versions remain Git `2.50.1 (Apple Git-155)`, Node.js `24.18.0`, npm `11.16.0`, and Python `3.13.14`; do not reinstall them.
+- `DEC-C2-009`: AI executes routine safe implementation while Jeremy owns intent, risk, targeted inspection, reconciliation, and final verification.
+- `DEC-C2-010`: ask for reasoning before explaining; record supplied help and assess later genuine transfer rather than immediate repetition.
+- Syntax and command memorization are not assessment goals.
+- The target is AI-assisted operator-builder proficiency for strategic finance and operations, not unaided software development.
+- Output checks are a starting point and must be supplemented where hidden logic or permission risk matters.
+- The Course Portal remains a companion for navigation and the preserved prototype, but it is not authoritative and never counts as learner-built work-dashboard evidence.
+- `OH1` remains optional.
 
-## Active blockers
+## What remains unfinished
 
-None. Consequential external GitHub actions require separate informed approval at the point of use.
+- Independent Module 0 mastery and all resume-level capability gates.
+- Merge-conflict and divergent-history handling; teach these just in time if a real repository situation requires them.
+- `M0.5` builder-supervision work and all later modules.
+- The required synthetic finance flagship, SQL, Python/pandas, work dashboards, automation, document AI, permissioned agent, strategic decision project, and portfolio defense.
+- Any public portfolio repository or deployment; none is authorized.
 
-## Verification
+## Next-task startup
 
-The preserved v1.2.0 prototype evidence remains in `evidence/RELEASE_CHECKS.md` and `evidence/RECONSTRUCTION_CHECK.md`. Architecture and earlier clarification evidence remains in the versioned v2.0.0-v2.0.2 release and reconstruction files. The v2.0.3 M0-L3 closeout, identity/privacy decision, and teaching correction are recorded in `evidence/RELEASE_CHECKS_v2.0.3.md`, `evidence/RECONSTRUCTION_CHECK_v2.0.3.md`, and `evidence/LEARNER_CHECKPOINT_M0-C3.md`.
-
-No remote repository, GitHub repository, account, deployment, public artifact, or paid service was created or connected. The only external account change was Jeremy's learner-confirmed GitHub email-privacy settings. The only local configuration change was the separately approved global Git identity.
-
-## Continuity packet
-
-Until the private course repository is verified, attach exactly:
-
-1. `AI_Operations_Builder_Course_Prototype_v2.0.3.zip`;
-2. `SESSION_HANDOFF.md`; and
-3. `NEXT_CHAT_PROMPT.md`.
-
-After M0-L4 creates and verifies the private course repository with explicit approval, new chats should read canonical files there. Repeated ZIP attachments should end; periodic bundles remain backups.
+Open the authoritative private repository in Codex, start a fresh task, and paste the versioned `NEXT_CHAT_PROMPT_AFTER_M0-L4_v2.0.4.md` (or its identical canonical `NEXT_CHAT_PROMPT.md`). Do not attach the complete ZIP unless GitHub access is unavailable and the backup is needed for recovery. Do not begin more than the one authorized M0.5 lesson.

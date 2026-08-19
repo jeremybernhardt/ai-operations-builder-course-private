@@ -1,24 +1,39 @@
 {
   "schema_version": "2.0.0",
-  "release_version": "2.0.3",
-  "state_version": 8,
-  "updated_at": "2026-08-14T17:51:51-07:00",
+  "release_version": "2.0.4",
+  "state_version": 9,
+  "updated_at": "2026-08-19T14:17:43-07:00",
   "authoritative_source": {
-    "type": "durable_course_bundle",
-    "bundle_name": "AI_Operations_Builder_Course_Prototype_v2.0.3.zip",
-    "git_repository_established": false
+    "type": "private_git_repository",
+    "repository_full_name": "jeremybernhardt/ai-operations-builder-course-private",
+    "repository_url": "https://github.com/jeremybernhardt/ai-operations-builder-course-private",
+    "visibility": "private",
+    "default_branch": "main",
+    "local_working_folder": "/Users/Jeremy/Documents/Codex/AI_Operations_Builder_Course",
+    "git_repository_established": true,
+    "first_verified_push_commit": "07170d06922211c5e4379fa4c534ea93da08dd0b",
+    "first_verified_push_tree": "5386ba81e934717323a1256237cc380106ef0a78",
+    "backup_bundle": "AI_Operations_Builder_Course_Prototype_v2.0.4_M0-L4.zip",
+    "backup_role": "verified_backup_not_primary_authority"
   },
   "current_phase_id": "M0",
   "current_module_id": "M0",
-  "current_lesson_id": "M0-L3",
-  "current_checkpoint_id": "M0-C3",
-  "checkpoint_status": "m0_l3_passed_m0_l4_ready",
+  "current_lesson_id": "M0-L4",
+  "current_checkpoint_id": "M0-C4",
+  "checkpoint_status": "m0_l4_passed_module_0_sequence_complete_m0_5_ready",
+  "module_status": {
+    "module_id": "M0",
+    "planned_lesson_sequence_complete": true,
+    "completed_with": "substantial_assistance",
+    "independent_mastery_claimed": false,
+    "resume_level_gate_earned": false
+  },
   "last_verified_build_checkpoint": {
-    "checkpoint_id": "ARCH-RG1-v2.0.3",
+    "checkpoint_id": "ARCH-RG1-v2.0.4",
     "status": "passed",
     "evidence": [
-      "evidence/RELEASE_CHECKS_v2.0.3.md",
-      "evidence/RECONSTRUCTION_CHECK_v2.0.3.md"
+      "evidence/RELEASE_CHECKS_v2.0.4.md",
+      "evidence/RECONSTRUCTION_CHECK_v2.0.4.md"
     ]
   },
   "preserved_architecture_build_checkpoint": {
@@ -38,35 +53,33 @@
     ]
   },
   "last_verified_learner_checkpoint": {
+    "checkpoint_id": "M0-C4",
+    "status": "completed_with_substantial_assistance",
+    "evidence": ["evidence/LEARNER_CHECKPOINT_M0-C4.md"],
+    "independent_mastery_claimed": false
+  },
+  "preserved_m0_l3_learner_checkpoint": {
     "checkpoint_id": "M0-C3",
     "status": "completed_with_substantial_assistance",
-    "evidence": [
-      "evidence/LEARNER_CHECKPOINT_M0-C3.md"
-    ],
+    "evidence": ["evidence/LEARNER_CHECKPOINT_M0-C3.md"],
     "independent_mastery_claimed": false
   },
   "preserved_m0_l2_learner_checkpoint": {
     "checkpoint_id": "M0-C2",
     "status": "completed_with_substantial_assistance",
-    "evidence": [
-      "evidence/LEARNER_CHECKPOINT_M0-C2.md"
-    ],
+    "evidence": ["evidence/LEARNER_CHECKPOINT_M0-C2.md"],
     "independent_mastery_claimed": false
   },
   "preserved_m0_l1_learner_checkpoint": {
     "checkpoint_id": "M0-C1",
     "status": "completed_with_limited_assistance",
-    "evidence": [
-      "evidence/LEARNER_CHECKPOINT_M0-C1.md"
-    ],
+    "evidence": ["evidence/LEARNER_CHECKPOINT_M0-C1.md"],
     "independent_mastery_claimed": false
   },
   "preserved_prototype_learner_checkpoint": {
     "checkpoint_id": "P0-C1",
     "status": "completed_with_substantial_assistance",
-    "evidence": [
-      "evidence/LEARNER_CHECKPOINT_P0-C1.md"
-    ],
+    "evidence": ["evidence/LEARNER_CHECKPOINT_P0-C1.md"],
     "independent_mastery_claimed": false
   },
   "active_blockers": [],
@@ -100,6 +113,12 @@
       "decision_id": "DEC-C2-010",
       "approved_at": "2026-08-14",
       "default": "ask_before_explaining_and_assess_transfer_not_immediate_repetition"
+    },
+    "repository_continuity_clarification": {
+      "release_version": "2.0.4",
+      "decision_ids": ["DEC-M0-002", "DEC-C2-011"],
+      "approved_at": "2026-08-19",
+      "default": "private_github_main_is_authoritative_with_lesson_versioned_backup_exports"
     }
   },
   "git_identity_readiness": {
@@ -113,34 +132,49 @@
     "practice_repository_remote_ready": false,
     "practice_repository_decision": "remain_local_only"
   },
+  "private_repository_readiness": {
+    "status": "verified",
+    "decision_id": "DEC-M0-002",
+    "owner": "jeremybernhardt",
+    "name": "ai-operations-builder-course-private",
+    "visibility": "private",
+    "default_branch": "main",
+    "origin_url": "https://github.com/jeremybernhardt/ai-operations-builder-course-private.git",
+    "first_verified_push_commit": "07170d06922211c5e4379fa4c534ea93da08dd0b",
+    "first_verified_push_file_count": 118,
+    "local_tracking_verified": true,
+    "fresh_clone_reconstruction_verified": true,
+    "credential_storage": "macos_keychain",
+    "practice_history_included": false
+  },
   "environment_readiness": {
     "node": "24.18.0",
     "npm": "11.16.0",
     "python": "3.13.14",
     "git": "2.50.1 (Apple Git-155)",
+    "github_cli": "2.97.0",
     "command_line_tools_path": "/Library/Developer/CommandLineTools",
     "verified_on_learner_mac": true
   },
   "lesson_chat_policy": "one_lesson_per_new_chat",
-  "next_action": "Jeremy starts a fresh chat with the v2.0.3 continuity packet. That chat prepares and teaches only M0-L4 — Private GitHub Course Repository and First Verified Push. It must verify the current local bundle, Git identity, GitHub account access, destination ownership and private visibility, outgoing history, and secret boundary before any external action, and it must obtain separate explicit approval before creating or connecting the private repository or pushing anything.",
+  "next_action": "Start a fresh Codex task from the authoritative private repository. Read canonical state and evidence there, then prepare and teach only the first bounded lesson of M0.5 — Directing and Supervising an AI Builder. Do not begin that lesson in the M0-L4 task.",
   "scope_guard": {
     "authorized_now": [
-      "bounded_course_blueprint_v2.0.3",
+      "bounded_course_blueprint_v2.0.4",
       "preserved_prototype_P0-L1_v1.2.0",
-      "verified_Module_0_lesson_M0-L1",
-      "verified_Module_0_lesson_M0-L2",
-      "verified_Module_0_lesson_M0-L3",
-      "next_Module_0_lesson_M0-L4_only"
+      "verified_Module_0_lessons_M0-L1_through_M0-L4",
+      "prepare_and_teach_first_bounded_M0.5_lesson_only_in_a_fresh_task"
     ],
     "not_authorized": [
-      "later_Module_0_lessons_beyond_M0-L4_without_checkpoint_authorization",
       "remote_practice_repository",
-      "private_course_repository_without_separate_explicit_approval",
-      "external_account",
-      "later_modules",
+      "public_course_repository",
+      "public_portfolio_repository",
+      "public_deployment",
+      "external_account_or_paid_resource_without_explicit_approval",
+      "later_M0.5_lessons_without_checkpoint_authorization",
+      "M1_or_later_module_implementation",
       "remaining_course_build",
       "optional_human_data_module_build",
-      "public_deployment",
       "standalone_product"
     ]
   }

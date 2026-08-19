@@ -1,20 +1,20 @@
 {
   "schema_version": "2.0.0",
-  "generated_at": "2026-08-19T01:20:12.587838+00:00",
+  "generated_at": "2026-08-19T21:17:58.262299+00:00",
   "source": "PROGRESS.json",
-  "source_progress_version": 8,
+  "source_progress_version": 9,
   "non_authoritative": true,
   "label": "Read-only mirror \u2014 canonical progress lives in PROGRESS.json",
   "lesson": {
-    "lesson_id": "M0-L3",
-    "title": "Git Identity, Privacy, and GitHub Readiness",
+    "lesson_id": "M0-L4",
+    "title": "Private GitHub Course Repository and First Verified Push",
     "mastery_status": "Completed with substantial assistance",
-    "assistance_level": "Full walkthrough for the beginner identity/privacy model and failure analysis; guided help for the consequential identity and scope decisions",
-    "current_checkpoint_id": "M0-C3",
+    "assistance_level": "Full walkthrough for repository, authentication, permission, credential, implementation, and verification models; Jeremy supplied specifications and approvals",
+    "current_checkpoint_id": "M0-C4",
     "learner_attempt_received": true,
     "verification_evidence": [
-      "evidence/LEARNER_CHECKPOINT_M0-C3.md"
+      "evidence/LEARNER_CHECKPOINT_M0-C4.md"
     ],
-    "note": "Jeremy verified the exact clean seven-commit practice repository and current identity sources; chose Jeremy Bernhardt plus his GitHub-provided noreply address as the global personal default; confirmed GitHub email-privacy settings; separately approved configuration; chose local overrides for a future employer identity; and verified the prospective identity without changing existing commits or adding a remote. His initial privacy/push explanation needed correction, and full-history failure and limitation analysis was supplied. The instructor withdrew an inappropriate immediate-repeat follow-up and recorded DEC-C2-010. Independent mastery and Module 0 completion are not claimed."
+    "note": "Jeremy defined or approved the exact private repository specification, kept the disposable history separate, identified that a push would not prove content accuracy, and gave separate informed approval before creation, connection, and first push. AI installed and authenticated the verified official GitHub CLI, prepared and inspected the separate repository, performed the approved actions, and independently verified owner, privacy, branch, commit, tree, tracking, exclusions, and fresh-clone reconstruction. The planned Module 0 lesson sequence is complete with substantial assistance; independent mastery and resume-level proficiency are not claimed."
   }
 }

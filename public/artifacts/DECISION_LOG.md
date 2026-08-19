@@ -238,3 +238,22 @@ Append-only. Later decisions must identify any entry they supersede.
 - Rationale: Jeremy correctly identified that repeating an answer immediately after the instructor provides it measures short-term paraphrasing rather than useful understanding. The prior M0-L3 follow-up unnecessarily re-asked the supplied failure-analysis content.
 - Extends: `DEC-P0-006`, `DEC-P0-007`, `DEC-C2-008`, and `DEC-C2-009`; it does not eliminate teach-back, independent modification, or limitation evidence when those can be collected authentically.
 - Affected artifacts: `COURSE_CONTRACT.md`, `LESSON_TEMPLATE.md`, `PROGRESS.json`, M0-L3 evidence, continuity, verification, and future lesson design.
+
+## DEC-M0-002 — Make the verified private GitHub repository authoritative
+
+- Date: 2026-08-19
+- Status: Current
+- Decision: Use `jeremybernhardt/ai-operations-builder-course-private` on private `main` as the authoritative course source after its baseline and v2.0.4 closeout are independently verified. The separate local working folder is `/Users/Jeremy/Documents/Codex/AI_Operations_Builder_Course`. Keep the disposable practice repository local-only and preserve periodic versioned ZIP exports as backups, not competing sources of truth.
+- Approval and external boundary: Jeremy approved the owner, name, destination, private visibility, included private curriculum and instructor material, exclusions, and done criteria. He separately approved creating the empty repository, connecting `origin`, and the first push. No public repository, deployment, remote practice repository, or portfolio publication was authorized.
+- Verification: The independently verified first-push baseline is root commit `07170d06922211c5e4379fa4c534ea93da08dd0b`, tree `5386ba81e934717323a1256237cc380106ef0a78`, containing 118 intended files with the approved GitHub `noreply` author/committer identity and no practice history. GitHub confirmed the exact owner, private visibility, default branch, and commit. A fresh authenticated clone passed reconstruction, full tests/build, lint, and artifact validation.
+- Rationale: The private repository now provides durable, inspectable, versioned continuity without repeated dependence on a complete ZIP or chat memory. Independent destination and reconstruction checks address risks that a successful push alone cannot.
+- Limitations: Private GitHub is external cloud state and retains account, access, credential, metadata, deletion, and provider risks. Passing software checks does not prove all course content logically correct. No resume-level capability or independent mastery follows from repository operation.
+- Affected artifacts: canonical authority/state, M0-L4 lesson and evidence, `AGENTS.md`, continuity, portal mirror, verification, release packaging, and future lesson startup.
+
+## DEC-C2-011 — Use lesson-versioned continuity exports
+
+- Date: 2026-08-19
+- Status: Current
+- Decision: Keep the canonical in-repository filenames `SESSION_HANDOFF.md` and `NEXT_CHAT_PROMPT.md`, while exported closeout copies include both the completed lesson and release version. For this closeout use `SESSION_HANDOFF_M0-L4_v2.0.4.md`, `NEXT_CHAT_PROMPT_AFTER_M0-L4_v2.0.4.md`, and `AI_Operations_Builder_Course_Prototype_v2.0.4_M0-L4.zip`.
+- Rationale: Stable internal names preserve automation and authority references; versioned exports let Jeremy save successive lesson packets without duplicate filenames or ambiguity.
+- Affected artifacts: `SESSION_HANDOFF.md`, `NEXT_CHAT_PROMPT.md`, release packaging, `README.md`, and lesson-closeout instructions.

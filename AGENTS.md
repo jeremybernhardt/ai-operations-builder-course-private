@@ -9,15 +9,15 @@
 
 ## Authority and privacy
 
-- The authoritative source is the location recorded in `COURSE_STATE.json`. Until its GitHub transition is recorded and verified, the complete versioned bundle remains authoritative.
+- The authoritative source is private GitHub repository `jeremybernhardt/ai-operations-builder-course-private` on `main`, as recorded in `COURSE_STATE.json`. Versioned ZIP exports are recovery backups, not competing sources of truth.
 - This repository contains private curriculum, instructor-only material, learner evidence, and assistance history. It must remain private and must never be converted into the public portfolio repository.
 - Treat chat history, saved memory, portal state, browser-local notes, and generated snapshots as non-authoritative.
 - Never request, display, commit, or publish passwords, tokens, credentials, personal email addresses, or actual `.env` files.
-- Obtain Jeremy's explicit informed approval before consequential external actions, including repository creation, remote connection, push, publication, deployment, account creation, or paid services.
+- Obtain Jeremy's explicit informed approval before consequential external actions, including push, publication, deployment, repository or account creation, visibility or collaborator changes, destructive remote operations, or paid services. Existing authentication is capability, not continuing authorization.
 
 ## Environment and startup
 
-- Verified environment: Git `2.50.1 (Apple Git-155)`, Node.js `24.18.0`, npm `11.16.0`, and Python `3.13.14`. Verify rather than reinstall.
+- Verified environment: Git `2.50.1 (Apple Git-155)`, GitHub CLI `2.97.0`, Node.js `24.18.0`, npm `11.16.0`, and Python `3.13.14`. Verify rather than reinstall.
 - Learner entry point: `START_HERE.html`.
 - Start the local Course Portal with `npm run course`.
 - Use `.env.example` only as a placeholder template; keep actual secrets in an ignored local `.env`.

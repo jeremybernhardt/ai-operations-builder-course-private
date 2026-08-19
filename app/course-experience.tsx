@@ -65,9 +65,9 @@ const VERIFIED_DECISIONS: DecisionState = {
 const STORAGE_KEY = "ai-operations-course:p0-c1-review:v1.2.0";
 
 const objectives = [
-  "Distinguish future Git configuration from metadata already stored in commits.",
-  "Choose a privacy-preserving identity and appropriate global-versus-local scope.",
-  "Explain the external-action boundary before a remote, push, or pull.",
+  "Distinguish authentication capability from approval for an external action.",
+  "Specify and verify the intended private owner, repository, branch, contents, and exclusions.",
+  "Explain why a successful push requires independent destination and reconstruction checks.",
 ];
 
 const artifacts = [
@@ -102,16 +102,16 @@ function Portal({ progressSnapshot, openCloseout }: { progressSnapshot: Progress
     <div className="view-stack" data-area="course-portal">
       <section className="dashboard-hero">
         <div className="hero-copy">
-          <p className="eyebrow">Course Portal · Bundle v2.0.3</p>
+          <p className="eyebrow">Course Portal · Repository v2.0.4</p>
           <h1>Your course, one <em>verified</em> step at a time.</h1>
           <p className="hero-deck">
-            Git identity, email privacy, and GitHub readiness are verified. Continue Module 0 with the private course repository and first verified push in a fresh chat.
+            The private course repository and first verified push are complete. Continue with the first AI-builder supervision lesson in a fresh task.
           </p>
           <div className="hero-actions">
             <button className="primary-action" type="button" onClick={openCloseout}>
               Open preserved KPI Lab <span aria-hidden="true">→</span>
             </button>
-            <span className="time-note">One lesson per chat · Next: M0-L4</span>
+            <span className="time-note">One lesson per task · Next: M0.5-L1</span>
           </div>
         </div>
 
@@ -121,9 +121,9 @@ function Portal({ progressSnapshot, openCloseout }: { progressSnapshot: Progress
             <span className="status-chip is-approved">Approved</span>
           </div>
           <p className="brief-number">M0</p>
-          <h2>Git identity and privacy readiness complete</h2>
-          <p>M0-C3 passed with substantial assistance. Independent mastery, Module 0 completion, and resume-level capability are not claimed.</p>
-          <div className="brief-footer"><span>Next action</span><strong>M0-L4 in a fresh chat</strong></div>
+          <h2>Private course repository verified</h2>
+          <p>M0-C4 passed with substantial assistance. The Module 0 sequence is complete; independent mastery and resume-level capability are not claimed.</p>
+          <div className="brief-footer"><span>Next action</span><strong>M0.5-L1 in a fresh task</strong></div>
         </aside>
       </section>
 
@@ -136,7 +136,7 @@ function Portal({ progressSnapshot, openCloseout }: { progressSnapshot: Progress
           <p className="source-label">{progressSnapshot.label}</p>
           <div className="progress-summary">
             <div className="progress-orbit"><span>M0</span></div>
-            <div><p className="progress-title">Git identity and privacy checkpoint verified</p><p>{progressSnapshot.lesson.note}</p></div>
+            <div><p className="progress-title">Private repository checkpoint verified</p><p>{progressSnapshot.lesson.note}</p></div>
           </div>
           <div className="timeline" aria-label="Course progress">
             <div className="timeline-item is-complete"><span>✓</span><div><strong>Minimum Mac setup</strong><small>Node.js and Python verified</small></div></div>
@@ -145,7 +145,8 @@ function Portal({ progressSnapshot, openCloseout }: { progressSnapshot: Progress
             <div className="timeline-item is-complete"><span>✓</span><div><strong>M0-L1 local Git foundations</strong><small>Completed with limited assistance</small></div></div>
             <div className="timeline-item is-complete"><span>✓</span><div><strong>M0-L2 branches and recovery</strong><small>Completed with substantial assistance</small></div></div>
             <div className="timeline-item is-complete"><span>✓</span><div><strong>M0-L3 identity and GitHub readiness</strong><small>Completed with substantial assistance</small></div></div>
-            <div className="timeline-item is-current"><span>●</span><div><strong>M0-L4 private course repository</strong><small>Next lesson; external actions require separate approval</small></div></div>
+            <div className="timeline-item is-complete"><span>✓</span><div><strong>M0-L4 private course repository</strong><small>Completed with substantial assistance</small></div></div>
+            <div className="timeline-item is-current"><span>●</span><div><strong>M0.5-L1 define the build</strong><small>Next lesson in a fresh task</small></div></div>
           </div>
           <details className="roadmap-details">
             <summary>View the complete course roadmap</summary>
@@ -158,7 +159,7 @@ function Portal({ progressSnapshot, openCloseout }: { progressSnapshot: Progress
         </article>
 
         <article className="panel objectives-panel">
-          <div className="section-heading"><div><p className="section-kicker">Learning objectives</p><h2>What M0-L3 developed</h2></div></div>
+          <div className="section-heading"><div><p className="section-kicker">Learning objectives</p><h2>What M0-L4 developed</h2></div></div>
           <ol className="objective-list">
             {objectives.map((objective, index) => <li key={objective}><span>{String(index + 1).padStart(2, "0")}</span><p>{objective}</p></li>)}
           </ol>
@@ -175,8 +176,8 @@ function Portal({ progressSnapshot, openCloseout }: { progressSnapshot: Progress
           <div className="section-heading"><div><p className="section-kicker">Verification status</p><h2>What the evidence currently supports</h2></div></div>
           <div className="verification-list">
             <div><span className="check-mark">✓</span><p><strong>Environment ready</strong><br />Git, Node.js, npm, and Python were verified on Jeremy&apos;s Mac.</p></div>
-            <div><span className="check-mark">✓</span><p><strong>Identity and privacy verified</strong><br />The GitHub-provided noreply identity is the future global default; existing practice commits remain unchanged and local-only.</p></div>
-            <div><span className="pause-mark">·</span><p><strong>Module 0 remains open</strong><br />The private course repository, remote verification, first push/pull, and merge-conflict work are unfinished.</p></div>
+            <div><span className="check-mark">✓</span><p><strong>Repository and privacy verified</strong><br />Private GitHub main is authoritative; the disposable practice history remains unchanged and local-only.</p></div>
+            <div><span className="check-mark">✓</span><p><strong>Module 0 sequence complete</strong><br />Completed with substantial assistance; independent mastery and every resume-level gate remain unearned.</p></div>
           </div>
         </article>
 
@@ -397,21 +398,21 @@ function Lab({ dataPreview, qualitySummary, initialStep }: { dataPreview: DataRo
             <div className="completion-grid">
               <article className="completion-card is-complete"><span>Completed</span><h2>What you finished</h2><p>You defined first-pass acceptance, handled duplicates, missing outcomes, and rework, and connected the metric to an operational investigation.</p></article>
               <article className="completion-card"><span>Mastery boundary</span><h2>What the evidence supports</h2><p>Completed with substantial assistance. Independent mastery, SQL, a comparable challenge, teach-back, and limitation work are not claimed.</p></article>
-              <article className="completion-card"><span>Next current lesson</span><h2>M0-L4: Private course repository and first verified push</h2><p>The new chat will verify the complete outgoing contents and require separate approval before repository creation, connection, or push.</p></article>
+              <article className="completion-card"><span>Next current lesson</span><h2>M0.5-L1: Defining outcomes, constraints, and done criteria</h2><p>The fresh task will teach Jeremy to specify a bounded build before AI implements it.</p></article>
             </div>
 
             <div className="continuity-panel">
-              <div className="continuity-heading"><p className="section-kicker">Continue in a new conversation</p><h2>Use one small continuity packet.</h2><p>Until the private GitHub repository is established, attach these three items to the new chat. Then paste the text beneath “Then send this prompt” in the next-chat file.</p></div>
+              <div className="continuity-heading"><p className="section-kicker">Continue in a new conversation</p><h2>Start from the private repository.</h2><p>Open the authoritative private repository in a fresh Codex task, then paste the text beneath “Then send this prompt” in the next-task file.</p></div>
               <ol className="continuity-files">
-                <li><span>1</span><div><strong>Complete v2.0.3 ZIP</strong><p>The authoritative course architecture, preserved prototype, and verified checkpoint evidence.</p></div></li>
+                <li><span>1</span><div><strong>Private GitHub repository</strong><p>The authoritative course architecture, evidence, and current state on private main.</p></div></li>
                 <li><span>2</span><div><a href="/artifacts/SESSION_HANDOFF.md" target="_blank" rel="noreferrer">SESSION_HANDOFF.md</a><p>The factual briefing: what happened, what was verified, and what comes next.</p></div></li>
-                <li><span>3</span><div><a href="/artifacts/NEXT_CHAT_PROMPT.md" target="_blank" rel="noreferrer">NEXT_CHAT_PROMPT.md</a><p>The exact instructions telling the new conversation how to resume.</p></div></li>
+                <li><span>3</span><div><a href="/artifacts/NEXT_CHAT_PROMPT.md" target="_blank" rel="noreferrer">NEXT_CHAT_PROMPT.md</a><p>The exact instructions telling the new task how to resume.</p></div></li>
               </ol>
-              <div className="continuity-steps"><strong>What you do</strong><p>Open a new chat → attach all three items → paste the designated prompt → send.</p></div>
+              <div className="continuity-steps"><strong>What you do</strong><p>Open the private repository in a new task → paste the designated prompt → send. Keep the versioned ZIP only as a backup.</p></div>
             </div>
 
-            <div className="github-future"><span>After the GitHub lesson</span><p>The new chat will read these canonical files from the private repository, so repeated full-folder attachments should no longer be necessary. The repository will not expose private browser clicks or local notes, and no backend is being added.</p></div>
-            <div className="screen-actions"><button className="secondary-action" type="button" onClick={() => setStep("review")}>Back to result</button><span>Preserved prototype view · Course bundle v2.0.3.</span></div>
+            <div className="github-future"><span>GitHub continuity is active</span><p>New tasks read canonical files from the private repository, so repeated full-folder attachments are no longer necessary. Private browser clicks and local notes remain outside the repository, and no backend was added.</p></div>
+            <div className="screen-actions"><button className="secondary-action" type="button" onClick={() => setStep("review")}>Back to result</button><span>Preserved prototype view · Course repository v2.0.4.</span></div>
           </section>
         )}
       </div>
@@ -431,7 +432,7 @@ export default function CourseExperience({ dataPreview, progressSnapshot, qualit
       <header className="app-header">
         <button className="brand" type="button" onClick={() => setArea("portal")} aria-label="Open Course Portal"><span className="brand-mark">AO</span><span><strong>AI Operations Builder</strong><small>Private course workspace</small></span></button>
         <nav aria-label="Application areas"><AreaButton active={area === "portal"} label="Course Portal" onClick={() => setArea("portal")} /><AreaButton active={area === "lab"} label="KPI Lab" onClick={() => openLab("intro")} /></nav>
-        <div className="learner-chip" aria-label="Learner Jeremy Bernhardt"><span>JB</span><div><strong>Jeremy Bernhardt</strong><small>Course v2.0.3 · M0 active</small></div></div>
+        <div className="learner-chip" aria-label="Learner Jeremy Bernhardt"><span>JB</span><div><strong>Jeremy Bernhardt</strong><small>Course v2.0.4 · M0.5 next</small></div></div>
       </header>
       {area === "portal" ? <Portal progressSnapshot={progressSnapshot} openCloseout={() => openLab("intro")} /> : <Lab key={labStartStep} dataPreview={dataPreview} qualitySummary={qualitySummary} initialStep={labStartStep} />}
       <footer className="app-footer"><span>Local/private prototype · Synthetic data only</span><span>Canonical state lives in the course files, not this interface.</span></footer>

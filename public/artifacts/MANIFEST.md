@@ -1,8 +1,8 @@
 # Course Bundle Manifest
 
-Bundle: `AI_Operations_Builder_Course_Prototype_v2.0.3.zip`
+Backup bundle: `AI_Operations_Builder_Course_Prototype_v2.0.4_M0-L4.zip`
 
-The bundle name retains `Prototype` for continuity with the verified v1.2.0 folder. The required v2.0.0 course architecture is broader; v2.0.1 added the operator-builder standard and M0-L1 evidence; v2.0.2 added M0-L2 and safe AI execution; v2.0.3 adds the verified M0-L3 identity/privacy checkpoint and transfer-not-repetition teaching correction. Future lessons remain unbuilt.
+The backup name retains `Prototype` for continuity with the verified v1.2.0 folder. The required v2.0.0 course architecture is broader; v2.0.1-v2.0.3 added the operator-builder, safe-execution, identity/privacy, and teaching-strategy records. v2.0.4 adds the verified M0-L4 private-repository checkpoint and makes private GitHub `main` authoritative. Future lessons remain unbuilt.
 
 ## Learner entry point
 
@@ -15,7 +15,8 @@ The bundle name retains `Prototype` for continuity with the verified v1.2.0 fold
 
 | File | Role |
 |---|---|
-| `COURSE_CONTRACT.md` | v2.0.3 purpose, constraints, operator-builder and AI-execution standards, technical/finance boundaries, teaching rules, privacy, and authority. |
+| `AGENTS.md` | Repository startup, authority, environment, privacy, and verification instructions. |
+| `COURSE_CONTRACT.md` | v2.0.4 purpose, constraints, operator-builder and AI-execution standards, technical/finance boundaries, teaching rules, privacy, and authority. |
 | `CURRICULUM_MAP.md` | Bounded required modules `M0`-`M12`, preserved `P0`, and optional `OH1`. |
 | `COURSE_STATE.json` | Current checkpoint, approvals, blockers, next action, and authorization boundary. |
 | `PROGRESS.json` | Learner mastery and assistance evidence; authoritative over portal progress. |
@@ -26,7 +27,7 @@ The bundle name retains `Prototype` for continuity with the verified v1.2.0 fold
 | `DATA_DICTIONARY.md` | Preserved synthetic prototype dataset fields and controls. |
 | `DECISION_LOG.md` | Append-only decisions, including the retarget, operator-builder standard, safe AI execution, identity/privacy choice, and transfer-not-repetition correction. |
 | `SESSION_HANDOFF.md` | Factual briefing for the next conversation. |
-| `NEXT_CHAT_PROMPT.md` | Exact instructions for the fresh chat that teaches only `M0-L4`. |
+| `NEXT_CHAT_PROMPT.md` | Exact instructions for the fresh task that teaches only `M0.5-L1`. |
 
 ## Module 0 materials
 
@@ -38,6 +39,8 @@ The bundle name retains `Prototype` for continuity with the verified v1.2.0 fold
 | `evidence/LEARNER_CHECKPOINT_M0-C2.md` | Verified learner evidence for branches, merges, recovery, and verification. |
 | `lesson/M0-L3_GIT_IDENTITY_PRIVACY_GITHUB_READINESS.md` | Completed third Module 0 lesson specification and mastery boundary. |
 | `evidence/LEARNER_CHECKPOINT_M0-C3.md` | Verified learner evidence for Git identity, privacy, scope, and readiness. |
+| `lesson/M0-L4_PRIVATE_GITHUB_COURSE_REPOSITORY_FIRST_VERIFIED_PUSH.md` | Completed fourth Module 0 lesson specification and mastery boundary. |
+| `evidence/LEARNER_CHECKPOINT_M0-C4.md` | Verified learner evidence for private repository specification, approval, push, and reconstruction. |
 
 ## Preserved prototype materials
 
@@ -69,10 +72,10 @@ The bundle name retains `Prototype` for continuity with the verified v1.2.0 fold
 |---|---|
 | `scripts/setup.py` | Validates CSV, rebuilds SQLite, and generates snapshots/artifact copies. |
 | `scripts/start-course.sh` | Checks prerequisites, installs locked components when absent, prepares data, and starts the local site. |
-| `scripts/verify.py` | Deterministic prototype plus v2.0.3 course-state, M0 evidence, identity/privacy, and teaching-strategy checks. |
-| `scripts/reconstruction_check.py` | Confirms a fresh chat can recover v2.0.3 authority, boundaries, and next action. |
-| `scripts/package_bundle.py` | Creates the clean v2.0.3 ZIP without dependencies, runtime files, Git history, or macOS metadata. |
-| `tests/rendered-html.test.mjs` | Verifies rendered Course Portal, preserved KPI Lab, and v2.0.3 continuity labels. |
+| `scripts/verify.py` | Deterministic prototype plus v2.0.4 course-state, M0 evidence, repository authority, and capability-gate checks. |
+| `scripts/reconstruction_check.py` | Confirms a fresh task can recover v2.0.4 private-repository authority, boundaries, and next action. |
+| `scripts/package_bundle.py` | Creates the clean v2.0.4 M0-L4 backup ZIP without dependencies, runtime files, Git history, or macOS metadata. |
+| `tests/rendered-html.test.mjs` | Verifies rendered Course Portal, preserved KPI Lab, and v2.0.4 continuity labels. |
 | `package.json` / `package-lock.json` | Reproducible Node application dependencies and commands. |
 | `pyproject.toml` / `.python-version` | Prototype Python compatibility declaration. |
 | `.env.example` / `.gitignore` | Secret boundary and transient-file exclusions. |
@@ -84,6 +87,8 @@ The bundle name retains `Prototype` for continuity with the verified v1.2.0 fold
 | `evidence/RECONSTRUCTION_CHECK_v2.0.2.md` | v2.0.2 continuity results. |
 | `evidence/RELEASE_CHECKS_v2.0.3.md` | v2.0.3 release results. |
 | `evidence/RECONSTRUCTION_CHECK_v2.0.3.md` | v2.0.3 continuity results. |
+| `evidence/RELEASE_CHECKS_v2.0.4.md` | v2.0.4 release results. |
+| `evidence/RECONSTRUCTION_CHECK_v2.0.4.md` | v2.0.4 continuity results. |
 
 ## Intentionally absent
 
@@ -91,6 +96,6 @@ The bundle name retains `Prototype` for continuity with the verified v1.2.0 fold
 - The finance flagship implementation or learner-built work dashboard
 - External database, API, automation, runtime AI, or agent implementation
 - Optional `OH1` implementation
-- Private GitHub course repository
+- Public GitHub course repository
 - Public deployment or public portfolio repository
 - Standalone multi-user course product

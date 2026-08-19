@@ -1,6 +1,6 @@
 # AI Operations Builder Course — Bounded Curriculum Map
 
-Blueprint version: `2.0.3`  
+Blueprint version: `2.0.4`
 Scope: module-level blueprint only. Future lesson prose, completed exercises, production datasets, solution code, answer keys, and full future portal pages remain unbuilt.
 
 Primary learning objective: AI-assisted operator-builder proficiency through practical AI, SQL, Python/pandas, data pipelines, work dashboards, automation, document tools, and agents. Finance is the required project's application context, not a separate academic curriculum. Software-engineering depth is limited to what Jeremy needs to define, trace, verify, debug, and modify AI-assisted tools.
@@ -34,7 +34,7 @@ Delivery rule: one fresh chat per lesson. Each lesson closes with verified progr
 - **Dependencies:** Mac, existing Node/Python, Git availability, GitHub account/access verification, explicit approval before remote creation.
 - **Mastery criteria:** Jeremy explains local versus remote, performs the core cycle, interprets status/diff, recovers a reversible change, and identifies secret-handling risks.
 - **Verification approach:** Observed outputs, diff/history inspection, recovery exercise, secret scan, and local/remote access check.
-- **Current lesson position:** `M0-L1` passed on 2026-08-12 with limited assistance. `M0-L2`, local branches, merges, and safe recovery, passed on 2026-08-14 with substantial assistance. `M0-L3`, Git identity, privacy, and GitHub readiness, passed on 2026-08-14 with substantial assistance after verified state inspection, an informed identity/privacy decision, approved global configuration, prospective-versus-historical verification, a work-identity scope application, and assisted failure analysis. Independent mastery and Module 0 completion are not claimed. The disposable practice repository remains local-only; merge conflicts, remote authentication, repository creation, push/pull, and the private course repository remain unfinished. The next authorized lesson is `M0-L4 — Private GitHub Course Repository and First Verified Push`; it requires separate explicit approval before any repository creation, remote connection, or push.
+- **Current lesson position:** `M0-L1` passed on 2026-08-12 with limited assistance. `M0-L2` and `M0-L3` passed on 2026-08-14 with substantial assistance. `M0-L4 — Private GitHub Course Repository and First Verified Push` passed on 2026-08-19 with substantial assistance after Jeremy specified the private/external boundary and separately approved repository creation, remote connection, and first push. The exact private repository, complete baseline tree, metadata, exclusions, tracking, and fresh-clone reconstruction were independently verified. The disposable practice repository remains local-only and unchanged. The planned Module 0 lesson sequence is complete, but independent mastery and resume-level proficiency are not claimed; merge-conflict and divergent-history work remain just-in-time follow-up topics. The next fresh task may prepare and teach only the first bounded lesson of `M0.5 — Directing and Supervising an AI Builder`.
 
 ## M0.5 — Directing and Supervising an AI Builder
 

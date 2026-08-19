@@ -1,6 +1,6 @@
 # Capability Evidence Ledger
 
-Ledger version: `2.0.3`  
+Ledger version: `2.0.4`
 Learner: Jeremy Bernhardt  
 Current status: no v2 resume-level gate has been earned
 
@@ -73,6 +73,15 @@ Maximum help was a full walkthrough for the guided branch and recovery cycles an
 - He recognized that a private repository retains metadata and that push crosses an external boundary, although his initial public-visibility wording required correction.
 
 Maximum help was a full walkthrough for the identity/privacy model and failure/limitation analysis plus guided help for the identity and scope decisions. Jeremy did not independently identify the full outgoing-history checks or an additional limitation after the explanation; no immediate repetition was counted as evidence. Checkpoint status is **Completed with substantial assistance**, not independent mastery and not completion of Module 0. Evidence: `evidence/LEARNER_CHECKPOINT_M0-C3.md`.
+
+`M0-C4` supports these additional non-resume-level statements:
+
+- Jeremy defined or approved the exact owner, repository, local destination, private visibility, contents, exclusions, and done criteria for the course repository.
+- Before receiving the detailed explanation, he correctly identified that the private course must remain private, the disposable practice history must stay separate, and a successful push would not prove content accuracy.
+- He gave separate informed approval immediately before private-repository creation, remote connection, and the first push, and approved the official GitHub CLI authentication boundary.
+- Independent checks verified the exact private GitHub destination, default branch, root commit, 118-file tree, approved `noreply` metadata, exclusions, local tracking, absence of practice history, and clean reconstruction from a fresh authenticated clone.
+
+Maximum help was a full walkthrough for the repository, authentication, credential, permission, history-inspection, implementation, and verification models. Jeremy owned the intended outcome and consequential approvals; AI performed routine implementation and checks. Checkpoint status is **Completed with substantial assistance**, not independent mastery or a resume-level gate. The planned Module 0 lesson sequence is complete, but no independent Module 0 proficiency is claimed. Evidence: `evidence/LEARNER_CHECKPOINT_M0-C4.md`.
 
 ## Claim rule
 

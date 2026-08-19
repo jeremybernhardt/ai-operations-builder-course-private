@@ -1,26 +1,21 @@
 {
   "schema_version": "2.0.0",
-  "release_version": "2.0.3",
-  "progress_version": 8,
-  "updated_at": "2026-08-14T17:51:51-07:00",
+  "release_version": "2.0.4",
+  "progress_version": 9,
+  "updated_at": "2026-08-19T14:17:43-07:00",
   "learner": "Jeremy Bernhardt",
-  "allowed_mastery_statuses": [
-    "Not started",
-    "Introduced",
-    "Completed with substantial assistance",
-    "Completed with limited assistance",
-    "Demonstrated independently"
-  ],
+  "allowed_mastery_statuses": ["Not started", "Introduced", "Completed with substantial assistance", "Completed with limited assistance", "Demonstrated independently"],
   "course_architecture": {
     "version": "2.0.0",
-    "release_version": "2.0.3",
+    "release_version": "2.0.4",
     "status": "Approved",
-    "required_next_module": "M0",
+    "required_next_module": "M0.5",
     "required_course_built_beyond_prototype": true,
     "optional_human_data_specialization_built": false,
     "operator_builder_standard": "AI-assisted operator-builder proficiency for strategic finance and operations",
     "ai_execution_standard": "AI executes routine local implementation and commands when safe; Jeremy specifies, inspects relevant logic, evaluates risk, and verifies",
-    "teaching_strategy_standard": "Ask for reasoning before supplying the answer; after an explanation supplies it, record help and assess only genuinely new transfer rather than immediate repetition"
+    "teaching_strategy_standard": "Ask for reasoning before supplying the answer; after an explanation supplies it, record help and assess only genuinely new transfer rather than immediate repetition",
+    "authoritative_source": "private GitHub repository jeremybernhardt/ai-operations-builder-course-private on main"
   },
   "lessons": [
     {
@@ -30,9 +25,7 @@
       "assistance_level": "Guided help",
       "current_checkpoint_id": "P0-CLOSEOUT",
       "learner_attempt_received": true,
-      "verification_evidence": [
-        "evidence/LEARNER_CHECKPOINT_P0-C1.md"
-      ],
+      "verification_evidence": ["evidence/LEARNER_CHECKPOINT_P0-C1.md"],
       "note": "Jeremy made the required metric-policy decisions after a missing lesson introduction was supplied in chat. The definition checkpoint is complete with substantial assistance; independent mastery, SQL, challenge, teach-back, limitation work, and work-dashboard development are not claimed. P0 is preserved as a completed pre-course prototype and optional human-data transfer case."
     },
     {
@@ -42,10 +35,8 @@
       "assistance_level": "Full walkthrough for the guided cycle; limited assistance on the comparable challenge",
       "current_checkpoint_id": "M0-C1",
       "learner_attempt_received": true,
-      "verification_evidence": [
-        "evidence/LEARNER_CHECKPOINT_M0-C1.md"
-      ],
-      "note": "Jeremy verified Git and the existing Node, npm, and Python tools; created a disposable local-only repository; inspected working, staged, and committed states; made three commits; restored an unwanted change; and completed a comparable NOTES.md Git cycle. He correctly explained staging, commits, local versus GitHub, M/AM status, .env versus .env.example, and a plain-text secret risk. Help on the challenge was limited to printf file-creation syntax. Branches, merges, broader recovery, identity configuration, remotes, push/pull, and the private course repository remain unfinished. Independent mastery and completion of Module 0 are not claimed."
+      "verification_evidence": ["evidence/LEARNER_CHECKPOINT_M0-C1.md"],
+      "note": "Jeremy verified Git and the existing Node, npm, and Python tools; created a disposable local-only repository; inspected working, staged, and committed states; made three commits; restored an unwanted change; and completed a comparable NOTES.md Git cycle. He correctly explained staging, commits, local versus GitHub, M/AM status, .env versus .env.example, and a plain-text secret risk. Help on the challenge was limited to printf file-creation syntax. Independent mastery was not claimed."
     },
     {
       "lesson_id": "M0-L2",
@@ -54,10 +45,8 @@
       "assistance_level": "Full walkthrough for guided branch, merge, and recovery; substantial guided help on the comparable challenge",
       "current_checkpoint_id": "M0-C2",
       "learner_attempt_received": true,
-      "verification_evidence": [
-        "evidence/LEARNER_CHECKPOINT_M0-C2.md"
-      ],
-      "note": "Jeremy verified the prior clean three-commit local repository; created and compared guided and comparable branches; completed two fast-forward-only merges; preserved and reversed a deliberate bad commit with revert; corrected a README formatting defect found through diff inspection; and finished on clean main at b1bf13d with seven commits, no remote, and an ignored/untracked .env. He ultimately explained commits, branches, fast-forward, revert, clean state, equal snapshots, and the logical-correctness limitation. Exact commands and verification scaffolding were supplied, and core concepts required repeated correction, so substantial assistance is recorded. Independent mastery and Module 0 completion are not claimed."
+      "verification_evidence": ["evidence/LEARNER_CHECKPOINT_M0-C2.md"],
+      "note": "Jeremy verified the prior clean three-commit local repository; created and compared guided and comparable branches; completed two fast-forward-only merges; preserved and reversed a deliberate bad commit with revert; corrected a README formatting defect found through diff inspection; and finished on clean main at b1bf13d with seven commits, no remote, and an ignored/untracked .env. Exact commands and verification scaffolding were supplied, and core concepts required repeated correction, so substantial assistance is recorded. Independent mastery was not claimed."
     },
     {
       "lesson_id": "M0-L3",
@@ -66,143 +55,63 @@
       "assistance_level": "Full walkthrough for the beginner identity/privacy model and failure analysis; guided help for the consequential identity and scope decisions",
       "current_checkpoint_id": "M0-C3",
       "learner_attempt_received": true,
-      "verification_evidence": [
-        "evidence/LEARNER_CHECKPOINT_M0-C3.md"
-      ],
-      "note": "Jeremy verified the exact clean seven-commit practice repository and current identity sources; chose Jeremy Bernhardt plus his GitHub-provided noreply address as the global personal default; confirmed GitHub email-privacy settings; separately approved configuration; chose local overrides for a future employer identity; and verified the prospective identity without changing existing commits or adding a remote. His initial privacy/push explanation needed correction, and full-history failure and limitation analysis was supplied. The instructor withdrew an inappropriate immediate-repeat follow-up and recorded DEC-C2-010. Independent mastery and Module 0 completion are not claimed."
+      "verification_evidence": ["evidence/LEARNER_CHECKPOINT_M0-C3.md"],
+      "note": "Jeremy verified the exact clean seven-commit practice repository and current identity sources; chose Jeremy Bernhardt plus his GitHub-provided noreply address as the global personal default; confirmed GitHub email-privacy settings; separately approved configuration; chose local overrides for a future employer identity; and verified the prospective identity without changing existing commits or adding a remote. His initial privacy/push explanation needed correction, and full-history failure and limitation analysis was supplied. Independent mastery was not claimed."
+    },
+    {
+      "lesson_id": "M0-L4",
+      "title": "Private GitHub Course Repository and First Verified Push",
+      "mastery_status": "Completed with substantial assistance",
+      "assistance_level": "Full walkthrough for repository, authentication, permission, credential, implementation, and verification models; Jeremy supplied specifications and approvals",
+      "current_checkpoint_id": "M0-C4",
+      "learner_attempt_received": true,
+      "verification_evidence": ["evidence/LEARNER_CHECKPOINT_M0-C4.md"],
+      "note": "Jeremy defined or approved the exact private repository specification, kept the disposable history separate, identified that a push would not prove content accuracy, and gave separate informed approval before creation, connection, and first push. AI installed and authenticated the verified official GitHub CLI, prepared and inspected the separate repository, performed the approved actions, and independently verified owner, privacy, branch, commit, tree, tracking, exclusions, and fresh-clone reconstruction. The planned Module 0 lesson sequence is complete with substantial assistance; independent mastery and resume-level proficiency are not claimed."
     }
   ],
   "skills": [
-    {
-      "skill_id": "SK-METRIC-DEFINE-001",
-      "name": "Define an operational metric precisely",
-      "mastery_status": "Completed with substantial assistance",
-      "assistance_level": "Guided help",
-      "evidence": [
-        "evidence/LEARNER_CHECKPOINT_P0-C1.md"
-      ]
-    },
-    {
-      "skill_id": "SK-EDGE-CASE-001",
-      "name": "Identify denominator and data-quality edge cases",
-      "mastery_status": "Completed with substantial assistance",
-      "assistance_level": "Guided help",
-      "evidence": [
-        "evidence/LEARNER_CHECKPOINT_P0-C1.md"
-      ]
-    },
-    {
-      "skill_id": "SK-MAC-TERMINAL-BASIC-001",
-      "name": "Navigate a bounded Mac project folder safely in Terminal",
-      "mastery_status": "Completed with limited assistance",
-      "assistance_level": "Guided help",
-      "evidence": [
-        "evidence/LEARNER_CHECKPOINT_M0-C1.md"
-      ]
-    },
-    {
-      "skill_id": "SK-GIT-LOCAL-BASIC-001",
-      "name": "Use and verify a basic local Git change cycle",
-      "mastery_status": "Completed with limited assistance",
-      "assistance_level": "Full walkthrough for the guided cycle; limited assistance on the comparable challenge",
-      "evidence": [
-        "evidence/LEARNER_CHECKPOINT_M0-C1.md"
-      ]
-    },
-    {
-      "skill_id": "SK-SECRET-BOUNDARY-BASIC-001",
-      "name": "Distinguish ignored local secrets from safe templates",
-      "mastery_status": "Completed with limited assistance",
-      "assistance_level": "Guided help",
-      "evidence": [
-        "evidence/LEARNER_CHECKPOINT_M0-C1.md"
-      ]
-    },
-    {
-      "skill_id": "SK-GIT-BRANCH-RECOVERY-BASIC-001",
-      "name": "Use and verify local branches, fast-forward merges, and auditable recovery",
-      "mastery_status": "Completed with substantial assistance",
-      "assistance_level": "Full walkthrough and substantial guided help",
-      "evidence": [
-        "evidence/LEARNER_CHECKPOINT_M0-C2.md"
-      ]
-    },
-    {
-      "skill_id": "SK-GIT-IDENTITY-PRIVACY-BASIC-001",
-      "name": "Choose and verify a privacy-preserving Git identity and external-action boundary",
-      "mastery_status": "Completed with substantial assistance",
-      "assistance_level": "Full walkthrough and guided decision support",
-      "evidence": [
-        "evidence/LEARNER_CHECKPOINT_M0-C3.md"
-      ]
-    },
-    {
-      "skill_id": "SK-SQL-READ-001",
-      "name": "Read and modify basic SQL",
-      "mastery_status": "Not started",
-      "assistance_level": "None",
-      "evidence": []
-    },
-    {
-      "skill_id": "SK-VERIFY-001",
-      "name": "Verify a metric independently",
-      "mastery_status": "Not started",
-      "assistance_level": "None",
-      "evidence": []
-    },
-    {
-      "skill_id": "SK-WORK-DASHBOARD-001",
-      "name": "Build and modify a decision-oriented work dashboard",
-      "mastery_status": "Not started",
-      "assistance_level": "None",
-      "evidence": []
-    },
-    {
-      "skill_id": "SK-WORKFLOW-AUTOMATION-001",
-      "name": "Build and validate a repeatable workflow automation",
-      "mastery_status": "Not started",
-      "assistance_level": "None",
-      "evidence": []
-    },
-    {
-      "skill_id": "SK-AGENT-001",
-      "name": "Build and evaluate a permissioned tool-using agent",
-      "mastery_status": "Not started",
-      "assistance_level": "None",
-      "evidence": []
-    }
+    {"skill_id":"SK-METRIC-DEFINE-001","name":"Define an operational metric precisely","mastery_status":"Completed with substantial assistance","assistance_level":"Guided help","evidence":["evidence/LEARNER_CHECKPOINT_P0-C1.md"]},
+    {"skill_id":"SK-EDGE-CASE-001","name":"Identify denominator and data-quality edge cases","mastery_status":"Completed with substantial assistance","assistance_level":"Guided help","evidence":["evidence/LEARNER_CHECKPOINT_P0-C1.md"]},
+    {"skill_id":"SK-MAC-TERMINAL-BASIC-001","name":"Navigate a bounded Mac project folder safely in Terminal","mastery_status":"Completed with limited assistance","assistance_level":"Guided help","evidence":["evidence/LEARNER_CHECKPOINT_M0-C1.md"]},
+    {"skill_id":"SK-GIT-LOCAL-BASIC-001","name":"Use and verify a basic local Git change cycle","mastery_status":"Completed with limited assistance","assistance_level":"Full walkthrough for the guided cycle; limited assistance on the comparable challenge","evidence":["evidence/LEARNER_CHECKPOINT_M0-C1.md"]},
+    {"skill_id":"SK-SECRET-BOUNDARY-BASIC-001","name":"Distinguish ignored local secrets from safe templates","mastery_status":"Completed with limited assistance","assistance_level":"Guided help","evidence":["evidence/LEARNER_CHECKPOINT_M0-C1.md"]},
+    {"skill_id":"SK-GIT-BRANCH-RECOVERY-BASIC-001","name":"Use and verify local branches, fast-forward merges, and auditable recovery","mastery_status":"Completed with substantial assistance","assistance_level":"Full walkthrough and substantial guided help","evidence":["evidence/LEARNER_CHECKPOINT_M0-C2.md"]},
+    {"skill_id":"SK-GIT-IDENTITY-PRIVACY-BASIC-001","name":"Choose and verify a privacy-preserving Git identity and external-action boundary","mastery_status":"Completed with substantial assistance","assistance_level":"Full walkthrough and guided decision support","evidence":["evidence/LEARNER_CHECKPOINT_M0-C3.md"]},
+    {"skill_id":"SK-GITHUB-PRIVATE-REPO-BASIC-001","name":"Specify, approve, and verify a private GitHub repository and recoverable remote source","mastery_status":"Completed with substantial assistance","assistance_level":"Full walkthrough with learner-owned specifications and external approvals","evidence":["evidence/LEARNER_CHECKPOINT_M0-C4.md"]},
+    {"skill_id":"SK-SQL-READ-001","name":"Read and modify basic SQL","mastery_status":"Not started","assistance_level":"None","evidence":[]},
+    {"skill_id":"SK-VERIFY-001","name":"Verify a metric independently","mastery_status":"Not started","assistance_level":"None","evidence":[]},
+    {"skill_id":"SK-WORK-DASHBOARD-001","name":"Build and modify a decision-oriented work dashboard","mastery_status":"Not started","assistance_level":"None","evidence":[]},
+    {"skill_id":"SK-WORKFLOW-AUTOMATION-001","name":"Build and validate a repeatable workflow automation","mastery_status":"Not started","assistance_level":"None","evidence":[]},
+    {"skill_id":"SK-AGENT-001","name":"Build and evaluate a permissioned tool-using agent","mastery_status":"Not started","assistance_level":"None","evidence":[]}
   ],
   "capability_gates": [
-    {"gate_id": "GATE-SQL-BASIC", "status": "Not started"},
-    {"gate_id": "GATE-PYTHON-PANDAS-BASIC", "status": "Not started"},
-    {"gate_id": "GATE-SQL", "status": "Not started"},
-    {"gate_id": "GATE-PYTHON-PANDAS", "status": "Not started"},
-    {"gate_id": "GATE-WORK-DASHBOARD", "status": "Not started"},
-    {"gate_id": "GATE-WORKFLOW-AUTOMATION", "status": "Not started"},
-    {"gate_id": "GATE-APPLIED-AI", "status": "Not started"},
-    {"gate_id": "GATE-AI-TOOL-DEVELOPMENT", "status": "Not started"},
-    {"gate_id": "GATE-APPLIED-AI-WORKFLOW-AUTOMATION", "status": "Not started"}
+    {"gate_id":"GATE-SQL-BASIC","status":"Not started"},
+    {"gate_id":"GATE-PYTHON-PANDAS-BASIC","status":"Not started"},
+    {"gate_id":"GATE-SQL","status":"Not started"},
+    {"gate_id":"GATE-PYTHON-PANDAS","status":"Not started"},
+    {"gate_id":"GATE-WORK-DASHBOARD","status":"Not started"},
+    {"gate_id":"GATE-WORKFLOW-AUTOMATION","status":"Not started"},
+    {"gate_id":"GATE-APPLIED-AI","status":"Not started"},
+    {"gate_id":"GATE-AI-TOOL-DEVELOPMENT","status":"Not started"},
+    {"gate_id":"GATE-APPLIED-AI-WORKFLOW-AUTOMATION","status":"Not started"}
   ],
   "environment_readiness": {
     "status": "passed_on_learner_mac",
     "does_not_count_as_learner_mastery": true,
-    "observed_versions": {
-      "node": "24.18.0",
-      "npm": "11.16.0",
-      "python": "3.13.14",
-      "git": "2.50.1 (Apple Git-155)"
-    },
+    "observed_versions": {"node":"24.18.0","npm":"11.16.0","python":"3.13.14","git":"2.50.1 (Apple Git-155)","github_cli":"2.97.0"},
     "command_line_tools_path": "/Library/Developer/CommandLineTools",
     "evidence": [
       "Learner-reported Terminal outputs during guided setup on 2026-07-17",
       "Learner-reported Terminal outputs during M0-L1 on 2026-08-12",
       "Learner-reported Terminal outputs during M0-L2 on 2026-08-14",
       "Direct instructor read-only repository and Git-configuration inspection during M0-L3 on 2026-08-14",
+      "Direct local, GitHub, authentication, and fresh-clone verification during M0-L4 on 2026-08-19",
       "evidence/LEARNER_CHECKPOINT_M0-C1.md",
       "evidence/LEARNER_CHECKPOINT_M0-C2.md",
       "evidence/LEARNER_CHECKPOINT_M0-C3.md",
-      "evidence/RELEASE_CHECKS.md",
-      "evidence/RECONSTRUCTION_CHECK.md"
+      "evidence/LEARNER_CHECKPOINT_M0-C4.md",
+      "evidence/RELEASE_CHECKS_v2.0.4.md",
+      "evidence/RECONSTRUCTION_CHECK_v2.0.4.md"
     ]
   }
 }

@@ -1,79 +1,46 @@
-# Exact Next-Chat Prompt — M0-L4 Private GitHub Course Repository and First Verified Push
+# Exact Next-Task Prompt — After M0-L4 / v2.0.4
 
-This file contains the exact instructions for a new conversation. It is not additional lesson reading.
-
-Attach or reference exactly these three durable files:
-
-1. `AI_Operations_Builder_Course_Prototype_v2.0.3.zip`
-2. `SESSION_HANDOFF.md`
-3. `NEXT_CHAT_PROMPT.md`
+Canonical filename: `NEXT_CHAT_PROMPT.md`
+Versioned export filename: `NEXT_CHAT_PROMPT_AFTER_M0-L4_v2.0.4.md`
 
 ## Then send this prompt
 
----
+Continue Jeremy Bernhardt's AI Operations Builder Course from the authoritative private GitHub repository `jeremybernhardt/ai-operations-builder-course-private`, branch `main`. This is a fresh Codex task for one lesson. Treat the repository's current canonical files as authoritative and do not rely on conversational memory or unrelated personalization. The versioned M0-L4 ZIP is a recovery backup, not the primary source, and should not be required if the repository is accessible.
 
-Continue Jeremy Bernhardt's AI Operations Builder Course from the attached v2.0.3 bundle and continuity files. This is a fresh chat for one lesson. Treat the attached canonical files as authoritative and do not rely on conversational memory or unrelated personalization.
-
-Before acting, confirm that you successfully accessed and read the complete ZIP, `SESSION_HANDOFF.md`, and `NEXT_CHAT_PROMPT.md`. Inside the bundle, read these authoritative files in full: `COURSE_CONTRACT.md`, `COURSE_STATE.json`, `PROGRESS.json`, `CAPABILITY_EVIDENCE_LEDGER.md`, `SESSION_HANDOFF.md`, `NEXT_CHAT_PROMPT.md`, `CURRICULUM_MAP.md`, `PROJECT_SPEC.md`, `LESSON_TEMPLATE.md`, and `DECISION_LOG.md`. Also read `lesson/M0-L1_LOCAL_GIT_FOUNDATIONS.md`, `evidence/LEARNER_CHECKPOINT_M0-C1.md`, `lesson/M0-L2_LOCAL_BRANCHES_MERGES_SAFE_RECOVERY.md`, `evidence/LEARNER_CHECKPOINT_M0-C2.md`, `lesson/M0-L3_GIT_IDENTITY_PRIVACY_GITHUB_READINESS.md`, and `evidence/LEARNER_CHECKPOINT_M0-C3.md` in full. If anything is missing or unreadable, stop and identify it exactly. Apply the authority hierarchy in `COURSE_CONTRACT.md` and later current decisions in `DECISION_LOG.md`.
+Before acting, confirm that you successfully accessed the exact authoritative private repository, verified private visibility and current `main`, and read these authoritative files in full: `AGENTS.md`, `COURSE_CONTRACT.md`, `COURSE_STATE.json`, `PROGRESS.json`, `CAPABILITY_EVIDENCE_LEDGER.md`, `SESSION_HANDOFF.md`, `NEXT_CHAT_PROMPT.md`, `CURRICULUM_MAP.md`, `PROJECT_SPEC.md`, `LESSON_TEMPLATE.md`, `METRIC_DICTIONARY.md`, `DATA_DICTIONARY.md`, and `DECISION_LOG.md`. Also read all four Module 0 lesson/evidence pairs in full: `lesson/M0-L1_LOCAL_GIT_FOUNDATIONS.md`, `evidence/LEARNER_CHECKPOINT_M0-C1.md`, `lesson/M0-L2_LOCAL_BRANCHES_MERGES_SAFE_RECOVERY.md`, `evidence/LEARNER_CHECKPOINT_M0-C2.md`, `lesson/M0-L3_GIT_IDENTITY_PRIVACY_GITHUB_READINESS.md`, `evidence/LEARNER_CHECKPOINT_M0-C3.md`, `lesson/M0-L4_PRIVATE_GITHUB_COURSE_REPOSITORY_FIRST_VERIFIED_PUSH.md`, and `evidence/LEARNER_CHECKPOINT_M0-C4.md`. Apply the authority hierarchy in `COURSE_CONTRACT.md` and later current decisions in `DECISION_LOG.md`. If the exact repository, private visibility, current branch, or any required file cannot be verified, stop and identify the problem exactly; use the v2.0.4 M0-L4 backup only as an explicit recovery path.
 
 Recover and briefly confirm these facts:
 
-- the authoritative pre-GitHub bundle is `AI_Operations_Builder_Course_Prototype_v2.0.3.zip`;
-- `P0-C1` remains completed with substantial assistance and independent mastery was not claimed;
-- `M0-C1` remains completed with limited assistance, with no independent mastery claim;
-- `M0-C2` remains completed with substantial assistance, with no independent mastery or Module 0 completion claim;
-- `M0-L3 — Git Identity, Privacy, and GitHub Readiness` / `M0-C3` was completed with substantial assistance; independent mastery and completion of Module 0 were not claimed;
-- every v2 capability gate remains `Not started`;
-- the disposable repository is `/Users/Jeremy/Desktop/ai-ops-git-practice-m0l1` and must remain local-only;
-- its current observed `main` was clean at `b1bf13d` with seven commits; `main` and `lesson/m0-l2-challenge` pointed to `b1bf13d`, while `lesson/m0-l2-guided` pointed to `79d4537`;
-- the practice history preserved mistake `2bf6eae` and revert `ffdad15`; `.env` existed, remained ignored and untracked with no history, and no remote was configured;
-- all seven existing practice commits retain `lord0fham <Jeremy@MacBook-Pro.local>` and must not be pushed merely because the future identity is now correct;
-- Jeremy's GitHub username is `jeremybernhardt`;
-- the verified future Git author/committer identity is globally configured as `Jeremy Bernhardt <306348304+jeremybernhardt@users.noreply.github.com>` with `user.useConfigOnly=true`;
-- Jeremy confirmed GitHub's **Keep my email addresses private** and **Block command line pushes that expose my email** settings are enabled;
-- a future employer identity should override both name and email locally in that repository rather than replace the personal global default;
+- the authoritative source is private repository `jeremybernhardt/ai-operations-builder-course-private` on `main`;
+- the pre-GitHub v2.0.3 bundle is superseded as authority, while `AI_Operations_Builder_Course_Prototype_v2.0.4_M0-L4.zip` is a verified backup;
+- `P0-C1` remains completed with substantial assistance; `M0-C1` with limited assistance; and `M0-C2`, `M0-C3`, and `M0-C4` with substantial assistance;
+- independent mastery was not claimed for those checkpoints;
+- the planned Module 0 lesson sequence is complete with substantial assistance, but independent Module 0 proficiency and every v2 resume-level capability gate remain unearned; every gate remains `Not started`;
+- the independently verified first-push baseline is root commit `07170d06922211c5e4379fa4c534ea93da08dd0b`, tree `5386ba81e934717323a1256237cc380106ef0a78`, with 118 intended files and the approved `noreply` metadata;
+- the GitHub repository is private, uses default branch `main`, has correct local tracking, excludes credentials/runtime files/practice history, and was successfully reconstructed from a fresh authenticated clone;
+- the disposable practice repository `/Users/Jeremy/Desktop/ai-ops-git-practice-m0l1` remains unchanged and remote-free and must remain local-only; its seven commits retain the historical machine-derived identity;
+- Jeremy's future Git identity remains globally configured as `Jeremy Bernhardt <306348304+jeremybernhardt@users.noreply.github.com>` with `user.useConfigOnly=true`; a future employer repository should override both name and email locally;
+- GitHub CLI authentication is stored in macOS Keychain; existing authentication allows the agent to act but does not constitute blanket authorization for consequential external changes;
 - Git `2.50.1 (Apple Git-155)`, Node.js `24.18.0`, npm `11.16.0`, and Python `3.13.14` remain installed and must not be reinstalled;
-- `DEC-C2-009` makes safe AI execution the default while Jeremy owns intended behavior, relevant state/risk, targeted inspection, reconciliation, and final verification;
-- `DEC-C2-010` requires asking for reasoning before supplying the answer; after an explanation supplies it, record assistance and do not ask Jeremy to repeat it immediately; use a genuinely new application only when more evidence is needed;
-- syntax and command recall are not assessment goals; manual action remains appropriate for authentication, permissions, consequential external state, recovery, or lack of agent access;
+- `DEC-C2-009` makes safe AI execution the default while Jeremy owns intended behavior, material state/risk, targeted inspection, reconciliation, and final verification;
+- `DEC-C2-010` requires asking for reasoning before supplying an answer; after an explanation supplies it, record assistance and do not request immediate repetition; use a genuinely new application only when more evidence is needed;
+- syntax and command recall are not assessment goals;
 - the target remains AI-assisted operator-builder proficiency for strategic finance and operations, not unaided software development;
-- output-based testing is the starting point but is insufficient where hidden logic or permission risks could conceal defects;
-- the Course Portal does not count as work-dashboard evidence, and `OH1` remains optional; and
-- current authorization covers only `M0-L4 — Private GitHub Course Repository and First Verified Push`.
+- output-based testing is a starting point but insufficient where hidden logic or permission risks could conceal defects;
+- the Course Portal remains an optional companion for navigation and the preserved prototype, does not store authoritative progress, and does not count as work-dashboard evidence;
+- `OH1` remains optional; and
+- current authorization covers only `M0.5-L1 — Defining Outcomes, Constraints, and Done Criteria` in this fresh task.
 
-Begin with a concise pre-lesson summary stating the objective, learner deliverable, verification method, what will be postponed, and any genuine blocker. If none exists, build and teach only M0-L4. Assume genuine beginner knowledge. Use coherent work blocks and exact references; do not test syntax or command memorization. AI may perform authorized routine checks and local implementation, but explain consequential external effects and risks before acting.
+Begin with a concise pre-lesson summary stating the objective, learner deliverable, verification method, what will be postponed, and any genuine blocker. If none exists, prepare and teach only `M0.5-L1 — Defining Outcomes, Constraints, and Done Criteria`. Assume genuine beginner knowledge. Use coherent work blocks and exact references; do not test syntax, command, or prompt-form memorization.
 
-The learner deliverable may be a verified private GitHub course repository that becomes authoritative, plus a concise `AGENTS.md` containing startup, authority, environment, and verification instructions. This authorization does not itself approve external creation, connection, or push. Ask Jeremy to define or approve the intended owner, repository name, local destination, private visibility, contents, exclusions, and done criteria. Push back on any public-visibility choice or any plan that mixes the disposable practice history with the course repository.
+The lesson should introduce the builder-supervision operating model using a small, bounded course-adjacent task rather than starting the finance flagship or building later modules. Jeremy's learner deliverable should be a concise build brief that defines the user, desired outcome, relevant context, constraints, non-goals, acceptance criteria, verification plan, and explicit done criteria. AI may draft structure and perform authorized routine local work, but Jeremy must make or approve the material choices and remain responsible for the intended result.
 
-Before changing local or external state:
+Ask Jeremy for reasoning before explaining the substantive answer. Assess a genuinely new application: his ability to distinguish an outcome from an implementation instruction, define a testable done condition, set a material constraint or non-goal, and identify one way a plausible result could still be wrong. Do not require him to memorize a template or write code. If you supply an answer, record the assistance and do not ask for immediate repetition; use a different scenario only if more evidence is materially necessary.
 
-- test the complete ZIP and verify the required canonical and evidence inventory;
-- recheck the effective Git identity, configuration source, and exact `noreply` address;
-- confirm GitHub account access without requesting or exposing a password, token, personal email, or credential;
-- verify that the disposable practice repository remains unchanged and remote-free, then leave it alone;
-- establish a separate bounded local course-repository folder from the verified v2.0.3 bundle;
-- inspect all files to be committed, including hidden files and `instructor_only/` content, and confirm that private course material is appropriate only for a private repository;
-- run deterministic JSON, reconstruction, release, build, test, and secret checks appropriate to the bundle before publication;
-- inspect the complete intended initial commit contents and author metadata rather than checking only the tip or working-tree status; and
-- explain repository ownership, visibility, authentication, remote URL, push destination, and recovery limitations.
+Before changing canonical state, explain the intended local effect and run relevant deterministic checks. Before any consequential GitHub push or other external action, explain the exact effect, destination, and recovery boundary and obtain Jeremy's explicit informed approval at that boundary. Do not treat existing authentication as approval. Do not make the private repository public, add collaborators, create a public or portfolio repository, deploy anything, create another account, purchase anything, modify the disposable practice repository, or begin M1 or a later M0.5 lesson.
 
-Obtain Jeremy's separate explicit informed approval immediately before each consequential boundary: creating the private GitHub repository, connecting the local repository to it, and performing the first push. Use an authenticated GitHub interface or available connector for external verification when possible. Do not assume that a successful command proves the correct owner, visibility, files, branch, or commit reached GitHub.
+The Course Portal may be used as a companion only where it materially helps navigation, artifact inspection, or progress review. Do not make portal use mandatory, do not duplicate answers between site and chat, and do not count portal work as dashboard-building evidence.
 
-After any approved push, verify independently:
+At the end of this one lesson, verify the learner checkpoint honestly and update every affected canonical file, including `CAPABILITY_EVIDENCE_LEDGER.md`. Run deterministic JSON, reconstruction, release, build, test, lint, artifact, and secret checks appropriate to the change. Inspect the complete outgoing commit and metadata. Obtain separate explicit informed approval before pushing the lesson closeout, then independently verify the private GitHub destination, current commit/tree, expected files, exclusions, tracking, and fresh reconstruction rather than assuming a successful push proves completion.
 
-- exact repository owner and name;
-- private visibility through GitHub's interface;
-- expected default branch and commit ID;
-- remote URL and local tracking relationship;
-- expected canonical, lesson, evidence, instructor-only, and setup files;
-- absence of excluded runtime files, credentials, personal email, unexpected files, and disposable-practice history;
-- current authoritative-source transition in canonical state; and
-- access/reconstruction from the repository without relying on chat memory.
-
-Follow the AI-assisted operator-builder standard. Assess Jeremy's intended outcome, privacy/external-action boundary, interpretation of the evidence, and ability to identify a materially relevant limitation. Ask for reasoning before explaining. If you supply an answer, record the help and do not ask for immediate repetition; use a new scenario only if additional evidence is necessary. Include deterministic verification and honest assistance evidence. Do not award proficiency because repository creation or push appears to work.
-
-Do not create a remote practice repository, public repository, public artifact, deployment, account, paid resource, portfolio repository, or later-module implementation. Do not make the private course repository public. Do not begin another lesson in this chat.
-
-At the end of this one lesson, verify the learner checkpoint honestly and update every affected canonical file, including `CAPABILITY_EVIDENCE_LEDGER.md`. If and only if the private course repository is created, pushed, and independently verified, make it authoritative and stop requiring the complete ZIP in every new lesson; still provide a verified backup bundle. Otherwise, continue providing the complete updated bundle, factual `SESSION_HANDOFF.md`, and exact `NEXT_CHAT_PROMPT.md`. Explain what Jeremy completed and what remains, present the **Continue in a New Conversation** packet, and end before another lesson.
-
----
+Keep canonical internal filenames stable, and also export lesson-versioned closeout files so Jeremy can save them without duplicates: a handoff named for the completed lesson and release, a next-task prompt named `AFTER_<lesson>` and release, and a versioned backup ZIP. Explain what Jeremy completed, assistance/mastery boundaries, what remains, and the next authorized lesson; present a **Continue in a New Conversation** packet; then end before another lesson begins.

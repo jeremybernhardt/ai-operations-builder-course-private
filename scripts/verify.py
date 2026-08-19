@@ -110,7 +110,8 @@ def verify_known_answer() -> None:
 def verify_progress_snapshot() -> None:
     progress = json.loads((ROOT / "PROGRESS.json").read_text(encoding="utf-8"))
     snapshot = course_setup.build_progress_snapshot()
-    lesson = next(item for item in progress["lessons"] if item["lesson_id"] == "M0-L3")
+    lesson = next(item for item in progress["lessons"] if item["lesson_id"] == "M0-L4")
+    m0_l3 = next(item for item in progress["lessons"] if item["lesson_id"] == "M0-L3")
     m0_l2 = next(item for item in progress["lessons"] if item["lesson_id"] == "M0-L2")
     m0_l1 = next(item for item in progress["lessons"] if item["lesson_id"] == "M0-L1")
     prototype = next(item for item in progress["lessons"] if item["lesson_id"] == "P0-L1")
@@ -118,10 +119,11 @@ def verify_progress_snapshot() -> None:
     check(snapshot["non_authoritative"] is True, "portal progress is not labeled non-authoritative")
     check(
         lesson["mastery_status"] == "Completed with substantial assistance",
-        "canonical learner status does not match the recorded M0-C3 evidence",
+        "canonical learner status does not match the recorded M0-C4 evidence",
     )
     check(lesson["learner_attempt_received"] is True, "learner attempt evidence is missing")
-    check("Full walkthrough" in lesson["assistance_level"], "maximum M0-C3 assistance is not recorded honestly")
+    check("Full walkthrough" in lesson["assistance_level"], "maximum M0-C4 assistance is not recorded honestly")
+    check(m0_l3["mastery_status"] == "Completed with substantial assistance", "M0-C3 evidence was changed")
     check(m0_l2["mastery_status"] == "Completed with substantial assistance", "M0-C2 evidence was changed")
     check(m0_l1["mastery_status"] == "Completed with limited assistance", "M0-C1 evidence was changed")
     check(prototype["mastery_status"] == "Completed with substantial assistance", "P0-C1 evidence was changed")
@@ -132,6 +134,7 @@ def verify_progress_snapshot() -> None:
     check((ROOT / "evidence" / "LEARNER_CHECKPOINT_M0-C1.md").is_file(), "M0-C1 evidence file is missing")
     check((ROOT / "evidence" / "LEARNER_CHECKPOINT_M0-C2.md").is_file(), "M0-C2 evidence file is missing")
     check((ROOT / "evidence" / "LEARNER_CHECKPOINT_M0-C3.md").is_file(), "M0-C3 evidence file is missing")
+    check((ROOT / "evidence" / "LEARNER_CHECKPOINT_M0-C4.md").is_file(), "M0-C4 evidence file is missing")
 
 
 def verify_student_gate() -> None:
@@ -188,8 +191,10 @@ def verify_v2_architecture() -> None:
     check(state["schema_version"] == "2.0.0", "course state schema was not upgraded")
     check(progress["schema_version"] == "2.0.0", "progress schema was not upgraded")
     check(state["course_architecture_approval"]["status"] == "approved", "v2 architecture approval missing")
-    check(state["release_version"] == "2.0.3", "v2.0.3 release state missing")
-    check(state["current_checkpoint_id"] == "M0-C3", "M0-C3 checkpoint is not current")
+    check(state["release_version"] == "2.0.4", "v2.0.4 release state missing")
+    check(state["current_checkpoint_id"] == "M0-C4", "M0-C4 checkpoint is not current")
+    check(state["authoritative_source"]["repository_full_name"] == "jeremybernhardt/ai-operations-builder-course-private", "private repository authority missing")
+    check(state["authoritative_source"]["visibility"] == "private", "private visibility state missing")
     check("Finance is the primary application context" in contract, "technical-subject boundary missing")
     check("AI-assisted operator-builder proficiency" in contract, "operator-builder target missing")
     check("Do not require Jeremy to memorize syntax" in contract, "syntax-memorization guard missing")
@@ -206,10 +211,13 @@ def verify_v2_architecture() -> None:
     check("GATE-WORK-DASHBOARD" in ledger, "work-dashboard evidence gate missing")
     check("M0-C2" in ledger, "M0-C2 evidence ledger entry missing")
     check("M0-C3" in ledger, "M0-C3 evidence ledger entry missing")
-    check("M0-L4" in prompt and "Private GitHub Course Repository and First Verified Push" in prompt, "next bounded lesson missing")
+    check("M0-C4" in ledger, "M0-C4 evidence ledger entry missing")
+    check("M0.5-L1" in prompt and "Defining Outcomes, Constraints, and Done Criteria" in prompt, "next bounded lesson missing")
     check("DEC-C2-009" in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"), "AI-execution decision missing")
     check("DEC-C2-010" in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"), "teaching-strategy decision missing")
     check("DEC-M0-001" in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"), "identity/privacy decision missing")
+    check("DEC-M0-002" in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"), "repository-authority decision missing")
+    check("DEC-C2-011" in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"), "continuity-versioning decision missing")
     check("do not ask Jeremy to immediately repeat" in contract, "transfer-not-repetition teaching guard missing")
     check(state["git_identity_readiness"]["use_config_only"] is True, "Git identity no-guessing safeguard missing")
     check(state["git_identity_readiness"]["practice_repository_decision"] == "remain_local_only", "practice repository privacy decision missing")

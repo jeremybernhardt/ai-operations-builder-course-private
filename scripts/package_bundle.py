@@ -9,9 +9,9 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BUNDLE_NAME = "AI_Operations_Builder_Course_Prototype_v2.0.3.zip"
+BUNDLE_NAME = "AI_Operations_Builder_Course_Prototype_v2.0.4_M0-L4.zip"
 OUTPUT = ROOT / BUNDLE_NAME
-ARCHIVE_ROOT = "AI_Operations_Builder_Course_Prototype_v2.0.3"
+ARCHIVE_ROOT = "AI_Operations_Builder_Course_Prototype_v2.0.4_M0-L4"
 EXCLUDED_PARTS = {
     ".git",
     ".sites-runtime",
@@ -61,6 +61,11 @@ def main() -> None:
             f"{ARCHIVE_ROOT}/evidence/LEARNER_CHECKPOINT_M0-C2.md",
             f"{ARCHIVE_ROOT}/lesson/M0-L3_GIT_IDENTITY_PRIVACY_GITHUB_READINESS.md",
             f"{ARCHIVE_ROOT}/evidence/LEARNER_CHECKPOINT_M0-C3.md",
+            f"{ARCHIVE_ROOT}/lesson/M0-L4_PRIVATE_GITHUB_COURSE_REPOSITORY_FIRST_VERIFIED_PUSH.md",
+            f"{ARCHIVE_ROOT}/evidence/LEARNER_CHECKPOINT_M0-C4.md",
+            f"{ARCHIVE_ROOT}/evidence/RELEASE_CHECKS_v2.0.4.md",
+            f"{ARCHIVE_ROOT}/evidence/RECONSTRUCTION_CHECK_v2.0.4.md",
+            f"{ARCHIVE_ROOT}/AGENTS.md",
             f"{ARCHIVE_ROOT}/database/prototype.sqlite",
             f"{ARCHIVE_ROOT}/student/first_pass_acceptance.sql",
             f"{ARCHIVE_ROOT}/package-lock.json",
