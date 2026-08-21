@@ -1,20 +1,21 @@
 {
   "schema_version": "2.0.0",
-  "generated_at": "2026-08-19T21:17:58.262299+00:00",
+  "generated_at": "2026-08-21T00:26:18.255002+00:00",
   "source": "PROGRESS.json",
-  "source_progress_version": 9,
+  "source_progress_version": 10,
   "non_authoritative": true,
   "label": "Read-only mirror \u2014 canonical progress lives in PROGRESS.json",
   "lesson": {
-    "lesson_id": "M0-L4",
-    "title": "Private GitHub Course Repository and First Verified Push",
-    "mastery_status": "Completed with substantial assistance",
-    "assistance_level": "Full walkthrough for repository, authentication, permission, credential, implementation, and verification models; Jeremy supplied specifications and approvals",
-    "current_checkpoint_id": "M0-C4",
+    "lesson_id": "M0.5-L1",
+    "title": "Defining Outcomes, Constraints, and Done Criteria",
+    "mastery_status": "Completed with limited assistance",
+    "assistance_level": "Full structured walkthrough for the guided work brief; limited targeted help on the different variance-report transfer",
+    "current_checkpoint_id": "M0.5-C1",
     "learner_attempt_received": true,
     "verification_evidence": [
-      "evidence/LEARNER_CHECKPOINT_M0-C4.md"
+      "student/M0.5-L1_EXPENSE_FILE_READINESS_BUILD_BRIEF.md",
+      "evidence/LEARNER_CHECKPOINT_M0.5-C1.md"
     ],
-    "note": "Jeremy defined or approved the exact private repository specification, kept the disposable history separate, identified that a push would not prove content accuracy, and gave separate informed approval before creation, connection, and first push. AI installed and authenticated the verified official GitHub CLI, prepared and inspected the separate repository, performed the approved actions, and independently verified owner, privacy, branch, commit, tree, tracking, exclusions, and fresh-clone reconstruction. The planned Module 0 lesson sequence is complete with substantial assistance; independent mastery and resume-level proficiency are not claimed."
+    "note": "Jeremy corrected an internally focused course-maintenance exercise, made or approved material rules for a synthetic expense-file readiness build brief, distinguished blocking validation errors from nonblocking anomaly warnings, and approved a temporary median-based warning. In a different variance-report scenario he independently identified materiality and an actual-versus-actual failure; one targeted revision was needed to recenter the outcome and provide an exact known-answer test. Independent mastery and every resume-level capability gate remain unclaimed."
   }
 }

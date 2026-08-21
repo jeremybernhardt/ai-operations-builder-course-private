@@ -1,6 +1,6 @@
 # Capability Evidence Ledger
 
-Ledger version: `2.0.4`
+Ledger version: `2.0.5`
 Learner: Jeremy Bernhardt  
 Current status: no v2 resume-level gate has been earned
 
@@ -82,6 +82,17 @@ Maximum help was a full walkthrough for the identity/privacy model and failure/l
 - Independent checks verified the exact private GitHub destination, default branch, root commit, 118-file tree, approved `noreply` metadata, exclusions, local tracking, absence of practice history, and clean reconstruction from a fresh authenticated clone.
 
 Maximum help was a full walkthrough for the repository, authentication, credential, permission, history-inspection, implementation, and verification models. Jeremy owned the intended outcome and consequential approvals; AI performed routine implementation and checks. Checkpoint status is **Completed with substantial assistance**, not independent mastery or a resume-level gate. The planned Module 0 lesson sequence is complete, but no independent Module 0 proficiency is claimed. Evidence: `evidence/LEARNER_CHECKPOINT_M0-C4.md`.
+
+## Module 0.5 builder-supervision evidence
+
+`M0.5-C1` supports these additional non-resume-level statements:
+
+- Jeremy challenged and corrected an internally focused course-maintenance exercise, requiring the lesson to use a bounded work-practical scenario.
+- For a synthetic expense-file readiness brief, he identified duplicate and field-level risks, distinguished blocking validation failures from nonblocking anomaly warnings, chose a nonblocking high-amount warning until an authoritative limit exists, and approved a temporary median-based rule.
+- In a different actual-versus-budget transfer, he independently identified a materiality constraint and an actual-versus-actual comparison failure that could make a polished report wrong.
+- After one targeted revision, he stated the director's account-level investigation outcome and supplied an exact known-answer case: `$100,000` budget, `$150,000` actual, `$50,000` and `50%` variance, flagged.
+
+The instructor supplied the corrected workplace scenario, stakeholder validation rules, distinction between blockers and warnings, median recommendation, and complete guided-brief structure. The different transfer required limited targeted help to recenter the outcome and make the test exact. Checkpoint status is **Completed with limited assistance**, not demonstrated independently and not a resume-level gate. Evidence: `student/M0.5-L1_EXPENSE_FILE_READINESS_BUILD_BRIEF.md` and `evidence/LEARNER_CHECKPOINT_M0.5-C1.md`.
 
 ## Claim rule
 

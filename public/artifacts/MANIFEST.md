@@ -1,8 +1,8 @@
 # Course Bundle Manifest
 
-Backup bundle: `AI_Operations_Builder_Course_Prototype_v2.0.4_M0-L4.zip`
+Backup bundle: `AI_Operations_Builder_Course_Prototype_v2.0.5_M0.5-L1.zip`
 
-The backup name retains `Prototype` for continuity with the verified v1.2.0 folder. The required v2.0.0 course architecture is broader; v2.0.1-v2.0.3 added the operator-builder, safe-execution, identity/privacy, and teaching-strategy records. v2.0.4 adds the verified M0-L4 private-repository checkpoint and makes private GitHub `main` authoritative. Future lessons remain unbuilt.
+The backup name retains `Prototype` for continuity with the verified v1.2.0 folder. The required v2.0.0 course architecture is broader; v2.0.1-v2.0.4 added operator-builder, safe-execution, identity/privacy, teaching, and private-repository authority records. v2.0.5 adds the verified work-practical M0.5-L1 builder-specification checkpoint. Future lessons remain unbuilt beyond their bounded blueprint.
 
 ## Learner entry point
 
@@ -16,7 +16,7 @@ The backup name retains `Prototype` for continuity with the verified v1.2.0 fold
 | File | Role |
 |---|---|
 | `AGENTS.md` | Repository startup, authority, environment, privacy, and verification instructions. |
-| `COURSE_CONTRACT.md` | v2.0.4 purpose, constraints, operator-builder and AI-execution standards, technical/finance boundaries, teaching rules, privacy, and authority. |
+| `COURSE_CONTRACT.md` | v2.0.5 purpose, constraints, operator-builder and AI-execution standards, technical/finance boundaries, teaching rules, privacy, and authority. |
 | `CURRICULUM_MAP.md` | Bounded required modules `M0`-`M12`, preserved `P0`, and optional `OH1`. |
 | `COURSE_STATE.json` | Current checkpoint, approvals, blockers, next action, and authorization boundary. |
 | `PROGRESS.json` | Learner mastery and assistance evidence; authoritative over portal progress. |
@@ -27,7 +27,7 @@ The backup name retains `Prototype` for continuity with the verified v1.2.0 fold
 | `DATA_DICTIONARY.md` | Preserved synthetic prototype dataset fields and controls. |
 | `DECISION_LOG.md` | Append-only decisions, including the retarget, operator-builder standard, safe AI execution, identity/privacy choice, and transfer-not-repetition correction. |
 | `SESSION_HANDOFF.md` | Factual briefing for the next conversation. |
-| `NEXT_CHAT_PROMPT.md` | Exact instructions for the fresh task that teaches only `M0.5-L1`. |
+| `NEXT_CHAT_PROMPT.md` | Exact instructions for the fresh task that teaches only `M0.5-L2`. |
 
 ## Module 0 materials
 
@@ -41,6 +41,14 @@ The backup name retains `Prototype` for continuity with the verified v1.2.0 fold
 | `evidence/LEARNER_CHECKPOINT_M0-C3.md` | Verified learner evidence for Git identity, privacy, scope, and readiness. |
 | `lesson/M0-L4_PRIVATE_GITHUB_COURSE_REPOSITORY_FIRST_VERIFIED_PUSH.md` | Completed fourth Module 0 lesson specification and mastery boundary. |
 | `evidence/LEARNER_CHECKPOINT_M0-C4.md` | Verified learner evidence for private repository specification, approval, push, and reconstruction. |
+
+## Module 0.5 materials
+
+| Path | Role |
+|---|---|
+| `lesson/M0.5-L1_DEFINING_OUTCOMES_CONSTRAINTS_DONE_CRITERIA.md` | Completed first builder-supervision lesson specification and mastery boundary. |
+| `student/M0.5-L1_EXPENSE_FILE_READINESS_BUILD_BRIEF.md` | Guided work-practical learner build brief. |
+| `evidence/LEARNER_CHECKPOINT_M0.5-C1.md` | Verified learner decisions, transfer result, assistance, limitations, and advancement boundary. |
 
 ## Preserved prototype materials
 
@@ -72,10 +80,10 @@ The backup name retains `Prototype` for continuity with the verified v1.2.0 fold
 |---|---|
 | `scripts/setup.py` | Validates CSV, rebuilds SQLite, and generates snapshots/artifact copies. |
 | `scripts/start-course.sh` | Checks prerequisites, installs locked components when absent, prepares data, and starts the local site. |
-| `scripts/verify.py` | Deterministic prototype plus v2.0.4 course-state, M0 evidence, repository authority, and capability-gate checks. |
-| `scripts/reconstruction_check.py` | Confirms a fresh task can recover v2.0.4 private-repository authority, boundaries, and next action. |
-| `scripts/package_bundle.py` | Creates the clean v2.0.4 M0-L4 backup ZIP without dependencies, runtime files, Git history, or macOS metadata. |
-| `tests/rendered-html.test.mjs` | Verifies rendered Course Portal, preserved KPI Lab, and v2.0.4 continuity labels. |
+| `scripts/verify.py` | Deterministic prototype plus v2.0.5 course-state, M0/M0.5 evidence, repository authority, and capability-gate checks. |
+| `scripts/reconstruction_check.py` | Confirms a fresh task can recover v2.0.5 private-repository authority, boundaries, evidence, and next action. |
+| `scripts/package_bundle.py` | Creates the clean v2.0.5 M0.5-L1 backup ZIP without dependencies, runtime files, Git history, or macOS metadata. |
+| `tests/rendered-html.test.mjs` | Verifies rendered Course Portal, preserved KPI Lab, and v2.0.5 continuity labels. |
 | `package.json` / `package-lock.json` | Reproducible Node application dependencies and commands. |
 | `pyproject.toml` / `.python-version` | Prototype Python compatibility declaration. |
 | `.env.example` / `.gitignore` | Secret boundary and transient-file exclusions. |
@@ -89,6 +97,8 @@ The backup name retains `Prototype` for continuity with the verified v1.2.0 fold
 | `evidence/RECONSTRUCTION_CHECK_v2.0.3.md` | v2.0.3 continuity results. |
 | `evidence/RELEASE_CHECKS_v2.0.4.md` | v2.0.4 release results. |
 | `evidence/RECONSTRUCTION_CHECK_v2.0.4.md` | v2.0.4 continuity results. |
+| `evidence/RELEASE_CHECKS_v2.0.5.md` | v2.0.5 release results. |
+| `evidence/RECONSTRUCTION_CHECK_v2.0.5.md` | v2.0.5 continuity results. |
 
 ## Intentionally absent
 

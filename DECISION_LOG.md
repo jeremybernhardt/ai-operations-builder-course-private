@@ -257,3 +257,12 @@ Append-only. Later decisions must identify any entry they supersede.
 - Decision: Keep the canonical in-repository filenames `SESSION_HANDOFF.md` and `NEXT_CHAT_PROMPT.md`, while exported closeout copies include both the completed lesson and release version. For this closeout use `SESSION_HANDOFF_M0-L4_v2.0.4.md`, `NEXT_CHAT_PROMPT_AFTER_M0-L4_v2.0.4.md`, and `AI_Operations_Builder_Course_Prototype_v2.0.4_M0-L4.zip`.
 - Rationale: Stable internal names preserve automation and authority references; versioned exports let Jeremy save successive lesson packets without duplicate filenames or ambiguity.
 - Affected artifacts: `SESSION_HANDOFF.md`, `NEXT_CHAT_PROMPT.md`, release packaging, `README.md`, and lesson-closeout instructions.
+
+## DEC-M0.5-001 — Use a work-practical scenario for builder-supervision lessons
+
+- Date: 2026-08-20
+- Status: Current
+- Decision: Teach `M0.5-L1` through a bounded synthetic finance-operations task: specifying an Expense File Readiness Checker before implementation. Do not make Jeremy supervise or manually verify the course's own continuity machinery as the learner exercise. Keep course-state management an instructor/agent responsibility.
+- Rationale: Jeremy identified that the initially prepared Lesson Readiness Checker was confusing, internally focused, and not representative of the practical work capabilities the course promises. The builder-supervision skill remains relevant, but its scenario must resemble useful analyst or operations work.
+- Supersedes: The initially prepared `M0.5-L1` Lesson Readiness Checker scenario and the course-adjacent-task wording in the after-`M0-L4` next-task prompt for this lesson. It does not change the one-lesson authorization boundary or authorize the flagship, `M1`, or later `M0.5` lessons.
+- Affected artifacts: `lesson/M0.5-L1_DEFINING_OUTCOMES_CONSTRAINTS_DONE_CRITERIA.md`, the eventual `M0.5-C1` evidence and closeout, continuity files, and future builder-supervision lesson design.

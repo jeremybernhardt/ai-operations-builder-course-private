@@ -1,8 +1,8 @@
 # AI Operations Builder Course Contract
 
 Contract ID: `COURSE-CONTRACT-001`  
-Version: `2.0.4`
-Effective date: `2026-08-19`
+Version: `2.0.5`
+Effective date: `2026-08-20`
 Learner: Jeremy Bernhardt
 
 ## 1. Purpose and target capability
@@ -79,8 +79,9 @@ Current authorization covers only:
 3. the verified `M0-L1` local Git foundations checkpoint;
 4. the verified `M0-L2` local branches, merges, and safe recovery checkpoint;
 5. the verified `M0-L3` Git identity, privacy, and GitHub-readiness checkpoint;
-6. the verified `M0-L4` private GitHub course repository and first-push checkpoint; and
-7. preparation and teaching of only the first bounded lesson of `M0.5 — Directing and Supervising an AI Builder`, in a fresh task.
+6. the verified `M0-L4` private GitHub course repository and first-push checkpoint;
+7. the verified `M0.5-L1` outcomes, constraints, acceptance, verification, and done-criteria checkpoint; and
+8. preparation and teaching of only `M0.5-L2 — Reviewing an AI Builder Plan, Assumptions, and Scope`, in a fresh task.
 
 Prototype or architecture approval does not authorize construction of later modules. Completing one module authorizes preparation of only the next agreed module. Do not build the remaining course or future standalone product automatically.
 

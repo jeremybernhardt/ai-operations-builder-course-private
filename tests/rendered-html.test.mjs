@@ -29,8 +29,8 @@ test("renders the required course areas and first checkpoint", async () => {
   assert.equal(response.status, 200);
   assert.match(html, /Course Portal/);
   assert.match(html, /KPI Lab/);
-  assert.match(html, /M0-C4/);
-  assert.match(html, /Private course repository verified/);
+  assert.match(html, /M0\.5-C1/);
+  assert.match(html, /Builder brief checkpoint verified/);
   assert.match(html, /Read-only mirror/);
   assert.match(html, /Course progress/);
   assert.match(html, /Learning objectives/);
@@ -60,7 +60,7 @@ test("renders the required course areas and first checkpoint", async () => {
   assert.match(clientCode, /NEXT_CHAT_PROMPT\.md/);
   assert.match(clientCode, /GitHub continuity is active/);
   assert.match(clientCode, /Private GitHub repository/);
-  assert.match(clientCode, /M0\.5-L1: Defining outcomes, constraints, and done criteria/);
+  assert.match(clientCode, /M0\.5-L2: Reviewing an AI builder plan, assumptions, and scope/);
   assert.match(clientCode, /Optional specialization/);
   assert.doesNotMatch(clientCode, /AfterQuery/);
   assert.doesNotMatch(clientCode, /Copy draft for chat/);

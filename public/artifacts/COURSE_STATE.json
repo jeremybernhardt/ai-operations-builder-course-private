@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0.0",
-  "release_version": "2.0.4",
-  "state_version": 9,
-  "updated_at": "2026-08-19T14:17:43-07:00",
+  "release_version": "2.0.5",
+  "state_version": 10,
+  "updated_at": "2026-08-20T17:15:13-07:00",
   "authoritative_source": {
     "type": "private_git_repository",
     "repository_full_name": "jeremybernhardt/ai-operations-builder-course-private",
@@ -13,15 +13,23 @@
     "git_repository_established": true,
     "first_verified_push_commit": "07170d06922211c5e4379fa4c534ea93da08dd0b",
     "first_verified_push_tree": "5386ba81e934717323a1256237cc380106ef0a78",
-    "backup_bundle": "AI_Operations_Builder_Course_Prototype_v2.0.4_M0-L4.zip",
+    "backup_bundle": "AI_Operations_Builder_Course_Prototype_v2.0.5_M0.5-L1.zip",
     "backup_role": "verified_backup_not_primary_authority"
   },
-  "current_phase_id": "M0",
-  "current_module_id": "M0",
-  "current_lesson_id": "M0-L4",
-  "current_checkpoint_id": "M0-C4",
-  "checkpoint_status": "m0_l4_passed_module_0_sequence_complete_m0_5_ready",
+  "current_phase_id": "M0.5",
+  "current_module_id": "M0.5",
+  "current_lesson_id": "M0.5-L1",
+  "current_checkpoint_id": "M0.5-C1",
+  "checkpoint_status": "m0_5_l1_passed_m0_5_l2_ready",
   "module_status": {
+    "module_id": "M0.5",
+    "planned_lesson_sequence_complete": false,
+    "completed_lesson_ids": ["M0.5-L1"],
+    "latest_lesson_completed_with": "limited_assistance",
+    "independent_mastery_claimed": false,
+    "resume_level_gate_earned": false
+  },
+  "preserved_m0_module_status": {
     "module_id": "M0",
     "planned_lesson_sequence_complete": true,
     "completed_with": "substantial_assistance",
@@ -29,11 +37,11 @@
     "resume_level_gate_earned": false
   },
   "last_verified_build_checkpoint": {
-    "checkpoint_id": "ARCH-RG1-v2.0.4",
+    "checkpoint_id": "ARCH-RG1-v2.0.5",
     "status": "passed",
     "evidence": [
-      "evidence/RELEASE_CHECKS_v2.0.4.md",
-      "evidence/RECONSTRUCTION_CHECK_v2.0.4.md"
+      "evidence/RELEASE_CHECKS_v2.0.5.md",
+      "evidence/RECONSTRUCTION_CHECK_v2.0.5.md"
     ]
   },
   "preserved_architecture_build_checkpoint": {
@@ -53,6 +61,12 @@
     ]
   },
   "last_verified_learner_checkpoint": {
+    "checkpoint_id": "M0.5-C1",
+    "status": "completed_with_limited_assistance",
+    "evidence": ["evidence/LEARNER_CHECKPOINT_M0.5-C1.md"],
+    "independent_mastery_claimed": false
+  },
+  "preserved_m0_l4_learner_checkpoint": {
     "checkpoint_id": "M0-C4",
     "status": "completed_with_substantial_assistance",
     "evidence": ["evidence/LEARNER_CHECKPOINT_M0-C4.md"],
@@ -119,6 +133,12 @@
       "decision_ids": ["DEC-M0-002", "DEC-C2-011"],
       "approved_at": "2026-08-19",
       "default": "private_github_main_is_authoritative_with_lesson_versioned_backup_exports"
+    },
+    "work_practical_builder_supervision_clarification": {
+      "release_version": "2.0.5",
+      "decision_id": "DEC-M0.5-001",
+      "approved_at": "2026-08-20",
+      "default": "builder_supervision_exercises_use_bounded_work_practical_scenarios_not_course_maintenance"
     }
   },
   "git_identity_readiness": {
@@ -157,13 +177,14 @@
     "verified_on_learner_mac": true
   },
   "lesson_chat_policy": "one_lesson_per_new_chat",
-  "next_action": "Start a fresh Codex task from the authoritative private repository. Read canonical state and evidence there, then prepare and teach only the first bounded lesson of M0.5 — Directing and Supervising an AI Builder. Do not begin that lesson in the M0-L4 task.",
+  "next_action": "Start a fresh Codex task from the authoritative private repository. Read canonical state, the completed M0.5-L1 lesson and evidence, and the approved learner build brief, then prepare and teach only M0.5-L2 — Reviewing an AI Builder Plan, Assumptions, and Scope. Do not begin implementation or a later lesson.",
   "scope_guard": {
     "authorized_now": [
-      "bounded_course_blueprint_v2.0.4",
+      "bounded_course_blueprint_v2.0.5",
       "preserved_prototype_P0-L1_v1.2.0",
       "verified_Module_0_lessons_M0-L1_through_M0-L4",
-      "prepare_and_teach_first_bounded_M0.5_lesson_only_in_a_fresh_task"
+      "verified_M0.5-L1_builder_specification_checkpoint",
+      "prepare_and_teach_M0.5-L2_plan_assumptions_scope_only_in_a_fresh_task"
     ],
     "not_authorized": [
       "remote_practice_repository",
@@ -171,7 +192,8 @@
       "public_portfolio_repository",
       "public_deployment",
       "external_account_or_paid_resource_without_explicit_approval",
-      "later_M0.5_lessons_without_checkpoint_authorization",
+      "M0.5-L3_or_later_without_checkpoint_authorization",
+      "expense_file_readiness_checker_implementation_before_authorized_lesson",
       "M1_or_later_module_implementation",
       "remaining_course_build",
       "optional_human_data_module_build",

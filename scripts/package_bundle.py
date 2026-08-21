@@ -9,9 +9,9 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BUNDLE_NAME = "AI_Operations_Builder_Course_Prototype_v2.0.4_M0-L4.zip"
+BUNDLE_NAME = "AI_Operations_Builder_Course_Prototype_v2.0.5_M0.5-L1.zip"
 OUTPUT = ROOT / BUNDLE_NAME
-ARCHIVE_ROOT = "AI_Operations_Builder_Course_Prototype_v2.0.4_M0-L4"
+ARCHIVE_ROOT = "AI_Operations_Builder_Course_Prototype_v2.0.5_M0.5-L1"
 EXCLUDED_PARTS = {
     ".git",
     ".sites-runtime",
@@ -63,8 +63,11 @@ def main() -> None:
             f"{ARCHIVE_ROOT}/evidence/LEARNER_CHECKPOINT_M0-C3.md",
             f"{ARCHIVE_ROOT}/lesson/M0-L4_PRIVATE_GITHUB_COURSE_REPOSITORY_FIRST_VERIFIED_PUSH.md",
             f"{ARCHIVE_ROOT}/evidence/LEARNER_CHECKPOINT_M0-C4.md",
-            f"{ARCHIVE_ROOT}/evidence/RELEASE_CHECKS_v2.0.4.md",
-            f"{ARCHIVE_ROOT}/evidence/RECONSTRUCTION_CHECK_v2.0.4.md",
+            f"{ARCHIVE_ROOT}/lesson/M0.5-L1_DEFINING_OUTCOMES_CONSTRAINTS_DONE_CRITERIA.md",
+            f"{ARCHIVE_ROOT}/student/M0.5-L1_EXPENSE_FILE_READINESS_BUILD_BRIEF.md",
+            f"{ARCHIVE_ROOT}/evidence/LEARNER_CHECKPOINT_M0.5-C1.md",
+            f"{ARCHIVE_ROOT}/evidence/RELEASE_CHECKS_v2.0.5.md",
+            f"{ARCHIVE_ROOT}/evidence/RECONSTRUCTION_CHECK_v2.0.5.md",
             f"{ARCHIVE_ROOT}/AGENTS.md",
             f"{ARCHIVE_ROOT}/database/prototype.sqlite",
             f"{ARCHIVE_ROOT}/student/first_pass_acceptance.sql",

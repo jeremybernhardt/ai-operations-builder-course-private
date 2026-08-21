@@ -1,6 +1,6 @@
 # AI Operations Builder Course — Bounded Curriculum Map
 
-Blueprint version: `2.0.4`
+Blueprint version: `2.0.5`
 Scope: module-level blueprint only. Future lesson prose, completed exercises, production datasets, solution code, answer keys, and full future portal pages remain unbuilt.
 
 Primary learning objective: AI-assisted operator-builder proficiency through practical AI, SQL, Python/pandas, data pipelines, work dashboards, automation, document tools, and agents. Finance is the required project's application context, not a separate academic curriculum. Software-engineering depth is limited to what Jeremy needs to define, trace, verify, debug, and modify AI-assisted tools.
@@ -34,7 +34,7 @@ Delivery rule: one fresh chat per lesson. Each lesson closes with verified progr
 - **Dependencies:** Mac, existing Node/Python, Git availability, GitHub account/access verification, explicit approval before remote creation.
 - **Mastery criteria:** Jeremy explains local versus remote, performs the core cycle, interprets status/diff, recovers a reversible change, and identifies secret-handling risks.
 - **Verification approach:** Observed outputs, diff/history inspection, recovery exercise, secret scan, and local/remote access check.
-- **Current lesson position:** `M0-L1` passed on 2026-08-12 with limited assistance. `M0-L2` and `M0-L3` passed on 2026-08-14 with substantial assistance. `M0-L4 — Private GitHub Course Repository and First Verified Push` passed on 2026-08-19 with substantial assistance after Jeremy specified the private/external boundary and separately approved repository creation, remote connection, and first push. The exact private repository, complete baseline tree, metadata, exclusions, tracking, and fresh-clone reconstruction were independently verified. The disposable practice repository remains local-only and unchanged. The planned Module 0 lesson sequence is complete, but independent mastery and resume-level proficiency are not claimed; merge-conflict and divergent-history work remain just-in-time follow-up topics. The next fresh task may prepare and teach only the first bounded lesson of `M0.5 — Directing and Supervising an AI Builder`.
+- **Current lesson position:** `M0-L1` passed on 2026-08-12 with limited assistance. `M0-L2` and `M0-L3` passed on 2026-08-14 with substantial assistance. `M0-L4 — Private GitHub Course Repository and First Verified Push` passed on 2026-08-19 with substantial assistance after Jeremy specified the private/external boundary and separately approved repository creation, remote connection, and first push. The exact private repository, complete baseline tree, metadata, exclusions, tracking, and fresh-clone reconstruction were independently verified. The disposable practice repository remains local-only and unchanged. The planned Module 0 lesson sequence is complete, but independent mastery and resume-level proficiency are not claimed; merge-conflict and divergent-history work remain just-in-time follow-up topics. Builder-supervision progress and the next bounded lesson are recorded under `M0.5` below.
 
 ## M0.5 — Directing and Supervising an AI Builder
 
@@ -46,6 +46,7 @@ Delivery rule: one fresh chat per lesson. Each lesson closes with verified progr
 - **Dependencies:** Private course repository and safe practice code.
 - **Mastery criteria:** Jeremy rejects an unjustified choice, identifies an assumption, verifies a change, and explains responsibility without inflation.
 - **Verification approach:** Brief/plan rubric, diff questions, observed debugging, independent modification, evidence check, and teach-back.
+- **Current lesson position:** `M0.5-L1 — Defining Outcomes, Constraints, and Done Criteria` passed on 2026-08-20 with limited assistance after Jeremy corrected an internally focused course-maintenance scenario, made material rules for a synthetic expense-file readiness brief, and completed a different variance-report transfer with one targeted revision. The guided artifact used substantial AI/instructor structure, so independent mastery is not claimed. The next fresh task may prepare and teach only `M0.5-L2 — Reviewing an AI Builder Plan, Assumptions, and Scope`; implementation and later lessons remain unauthorized.
 
 ## M1 — Business System, Metric, and Control Design
 
