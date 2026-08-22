@@ -1,6 +1,6 @@
 # Capability Evidence Ledger
 
-Ledger version: `2.0.5`
+Ledger version: `2.0.6`
 Learner: Jeremy Bernhardt  
 Current status: no v2 resume-level gate has been earned
 
@@ -93,6 +93,17 @@ Maximum help was a full walkthrough for the repository, authentication, credenti
 - After one targeted revision, he stated the director's account-level investigation outcome and supplied an exact known-answer case: `$100,000` budget, `$150,000` actual, `$50,000` and `50%` variance, flagged.
 
 The instructor supplied the corrected workplace scenario, stakeholder validation rules, distinction between blockers and warnings, median recommendation, and complete guided-brief structure. The different transfer required limited targeted help to recenter the outcome and make the test exact. Checkpoint status is **Completed with limited assistance**, not demonstrated independently and not a resume-level gate. Evidence: `student/M0.5-L1_EXPENSE_FILE_READINESS_BUILD_BRIEF.md` and `evidence/LEARNER_CHECKPOINT_M0.5-C1.md`.
+
+`M0.5-C2` supports these additional non-resume-level statements:
+
+- Jeremy reviewed an AI-drafted plan against an approved build brief and required every retained step to serve an approved requirement or verification condition.
+- He rejected the assumption that the first duplicate occurrence is authoritative, required every duplicated-ID row to be flagged, and kept resolution with a human reviewer.
+- He rejected a cleaned valid-row export that could omit material expenses and bypass the readiness gate, and he deferred SQLite history and dashboarding as optional later work.
+- He excluded blocked rows from the warning-median population and designed a four-row duplicate known-answer check with direct source inspection.
+- In a different accounts-payable plan, he independently identified an unapproved matching rule, source mutation, unauthorized vendor contact, unnecessary architecture, and weak acceptance evidence.
+- He corrected the lesson method to separate Teach, Practice, and Demonstrate and correctly distinguished conceptual verification design from exact evidence required for a real file or implementation.
+
+The instructor supplied the direct concept lesson, complete worked example, reviewed-artifact organization, and SHA-256 source-integrity explanation. The material guided decisions were Jeremy's, and the different transfer plan review was completed without answer-specific help. Checkpoint status is **Completed with limited assistance**, not demonstrated independently and not a resume-level gate. Evidence: `student/M0.5-L2_EXPENSE_FILE_READINESS_AI_PLAN.md`, `student/M0.5-L2_EXPENSE_FILE_READINESS_REVIEWED_PLAN.md`, and `evidence/LEARNER_CHECKPOINT_M0.5-C2.md`.
 
 ## Claim rule
 

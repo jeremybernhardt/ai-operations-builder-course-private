@@ -1,7 +1,7 @@
 # Staged Lesson Template
 
 Template ID: `LESSON-TEMPLATE-001`  
-Version: `2.0.5`
+Version: `2.0.6`
 
 ## Required lesson metadata
 
@@ -34,6 +34,18 @@ The target is AI-assisted operator-builder proficiency, not unaided software dev
 When available and authorized, AI should execute routine local commands and implementation steps. Teach the intended effect, material risk, and verification boundary before consequential actions, but do not turn repeated command entry into the learning objective. Jeremy may use exact command references. Assess his specification, plan approval, targeted inspection, interpretation of evidence, diagnosis, bounded correction, and final verification. Use manual execution when it exposes a useful operational boundary or AI cannot safely act.
 
 The introduction is part of the lesson, not optional instructor commentary. A learner should not have to infer the scenario from a dashboard or ask chat to supply missing context.
+
+## Visible teaching modes
+
+Every lesson must clearly distinguish these modes:
+
+1. **Teach** — show where the capability fits in the curriculum, explain the concepts directly, and provide a complete worked example with instructor reasoning.
+2. **Practice** — apply the taught concepts to one coherent workplace scenario with enough context and scaffolding to make each decision meaningful.
+3. **Demonstrate** — use a genuinely different scenario with reduced scaffolding to assess transfer, then complete verification, teach-back, and limitation work.
+
+Questions should help Jeremy apply or examine a concept after it has been taught. Do not make a chain of questions, line-picking exercise, or comparison between unexplained files carry the instructional burden. Files, plans, diffs, dashboards, and other artifacts are evidence and practice surfaces; they are not substitutes for the direct teaching section. Explain the connection to prior and later modules at the beginning and reinforce it at closeout.
+
+Calibrate specificity to what the lesson actually verifies. Conceptual transfer may be established by a correct decision, material-risk explanation, and appropriate verification design without forcing Jeremy to invent arbitrary numbers. Require exact inputs, outputs, totals, hashes, or other deterministic evidence when a real file, calculation, implementation, or ambiguous business rule is under test. If Jeremy already demonstrates the conceptual distinction, do not add artificial precision merely to prolong the exercise.
 
 ## Site and chat roles
 

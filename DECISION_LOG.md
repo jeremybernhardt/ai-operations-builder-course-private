@@ -266,3 +266,21 @@ Append-only. Later decisions must identify any entry they supersede.
 - Rationale: Jeremy identified that the initially prepared Lesson Readiness Checker was confusing, internally focused, and not representative of the practical work capabilities the course promises. The builder-supervision skill remains relevant, but its scenario must resemble useful analyst or operations work.
 - Supersedes: The initially prepared `M0.5-L1` Lesson Readiness Checker scenario and the course-adjacent-task wording in the after-`M0-L4` next-task prompt for this lesson. It does not change the one-lesson authorization boundary or authorize the flagship, `M1`, or later `M0.5` lessons.
 - Affected artifacts: `lesson/M0.5-L1_DEFINING_OUTCOMES_CONSTRAINTS_DONE_CRITERIA.md`, the eventual `M0.5-C1` evidence and closeout, continuity files, and future builder-supervision lesson design.
+
+## DEC-M0.5-002 — Separate direct teaching, guided practice, and transfer demonstration
+
+- Date: 2026-08-20
+- Status: Current
+- Decision: Use three visible modes throughout the remaining course: **Teach**, **Practice**, and **Demonstrate**. Teach the curriculum connection and concepts directly and model the reasoning with a complete worked example before asking Jeremy to apply them. Practice through one coherent, context-rich workplace scenario. Demonstrate transfer later with a genuinely different scenario and reduced scaffolding. Do not use a chain of questions, file comparison, or line-picking exercise as a substitute for the teaching section.
+- Rationale: During `M0.5-L2`, Jeremy correctly observed that the initial delivery asked many potentially useful questions without enough context or an explicit connection to the curriculum. The questions prompted thought but made the lesson feel like comparing two files rather than learning a reusable builder-supervision method. Instruction, guided application, and assessment need distinct roles.
+- Extends: `DEC-P0-006`, `DEC-P0-007`, `DEC-C2-010`, and `DEC-M0.5-001`. It preserves reasoning-before-answer and genuinely new transfer while requiring the underlying concepts to be taught before guided questioning.
+- Affected artifacts: `COURSE_CONTRACT.md`, `LESSON_TEMPLATE.md`, `lesson/M0.5-L2_REVIEWING_AI_BUILDER_PLAN_ASSUMPTIONS_SCOPE.md`, future lesson specifications and delivery, closeout continuity, and release evidence.
+
+## DEC-M0.5-003 — Match evidence precision to the task stage
+
+- Date: 2026-08-21
+- Status: Current
+- Decision: In conceptual or theoretical work, require enough specificity to demonstrate the intended judgment and verification design, but do not force Jeremy to invent arbitrary numeric fixtures after the concept is already clear. Require exact known-answer values, deterministic reconciliation, and file-integrity evidence when the course is testing a real file, calculation, implementation, or material ambiguity.
+- Rationale: During the `M0.5-L2` transfer, Jeremy had already identified the plan's material assumptions, scope violations, permission errors, human-review boundary, and the need for a small known-answer comparison. Requiring invented invoice identifiers and amounts added ceremony without testing another capability. Jeremy correctly distinguished that situation from later work with a real file, where exact values and source-integrity checks would be necessary.
+- Extends: `DEC-C2-008`, `DEC-C2-010`, and `DEC-M0.5-002`. It does not relax deterministic verification for implemented artifacts or real calculations.
+- Affected artifacts: `COURSE_CONTRACT.md`, `LESSON_TEMPLATE.md`, `lesson/M0.5-L2_REVIEWING_AI_BUILDER_PLAN_ASSUMPTIONS_SCOPE.md`, `evidence/LEARNER_CHECKPOINT_M0.5-C2.md`, future lesson design, and release continuity.

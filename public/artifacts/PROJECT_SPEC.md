@@ -2,11 +2,11 @@
 
 Project ID: `PROJ-HDOFCC-001`  
 Prototype slice: `P0-L1`  
-Status: Preserved completed prototype inside repository release `v2.0.5` and the approved `v2.0.0` course architecture
+Status: Preserved completed prototype inside repository release `v2.0.6` and the approved `v2.0.0` course architecture
 
 ## Relationship to the required course
 
-This specification governs only the preserved `P0-L1` teaching-format prototype. It is not the required flagship and does not count as work-dashboard, SQL, Python, automation, or agent proficiency. Human-data operations is now an optional later transfer specialization. The required flagship is the synthetic AI-Enabled Finance Planning, Reporting, and Decision-Support System defined in `COURSE_CONTRACT.md` and `CURRICULUM_MAP.md`. Release v2.0.1 added the course-wide AI-assisted operator-builder proficiency standard; v2.0.2 recorded the verified M0-L2 checkpoint and safe AI-execution default; v2.0.3 recorded the M0-L3 identity/privacy checkpoint and transfer-not-repetition correction; v2.0.4 recorded private-repository authority and M0-L4; and v2.0.5 records the work-practical M0.5-L1 builder-specification checkpoint. These changes do not alter this prototype's decisions, implementation, or evidence.
+This specification governs only the preserved `P0-L1` teaching-format prototype. It is not the required flagship and does not count as work-dashboard, SQL, Python, automation, or agent proficiency. Human-data operations is now an optional later transfer specialization. The required flagship is the synthetic AI-Enabled Finance Planning, Reporting, and Decision-Support System defined in `COURSE_CONTRACT.md` and `CURRICULUM_MAP.md`. Release v2.0.1 added the course-wide AI-assisted operator-builder proficiency standard; v2.0.2 recorded the verified M0-L2 checkpoint and safe AI-execution default; v2.0.3 recorded the M0-L3 identity/privacy checkpoint and transfer-not-repetition correction; v2.0.4 recorded private-repository authority and M0-L4; v2.0.5 recorded the work-practical M0.5-L1 builder-specification checkpoint; and v2.0.6 records M0.5-L2 plan-review evidence plus the Teach, Practice, and Demonstrate method and task-stage evidence precision. These changes do not alter this prototype's decisions, implementation, or evidence.
 
 ## Scenario
 

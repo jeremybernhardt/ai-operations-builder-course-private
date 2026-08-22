@@ -65,9 +65,9 @@ const VERIFIED_DECISIONS: DecisionState = {
 const STORAGE_KEY = "ai-operations-course:p0-c1-review:v1.2.0";
 
 const objectives = [
-  "Distinguish a user outcome from an implementation choice.",
-  "Separate blocking validation failures from nonblocking anomaly warnings.",
-  "Define observable acceptance tests, independent verification, and a done threshold.",
+  "Trace proposed work to approved requirements and expose material assumptions.",
+  "Separate necessary work, optional expansion, and prohibited actions.",
+  "Specify approval evidence without mistaking polished output for proof.",
 ];
 
 const artifacts = [
@@ -102,16 +102,16 @@ function Portal({ progressSnapshot, openCloseout }: { progressSnapshot: Progress
     <div className="view-stack" data-area="course-portal">
       <section className="dashboard-hero">
         <div className="hero-copy">
-          <p className="eyebrow">Course Portal · Repository v2.0.5</p>
+          <p className="eyebrow">Course Portal · Repository v2.0.6</p>
           <h1>Your course, one <em>verified</em> step at a time.</h1>
           <p className="hero-deck">
-            The first work-practical AI-builder specification lesson is complete. Continue by reviewing a proposed builder plan in a fresh task.
+            The AI-builder plan review is complete. Continue by learning how to inspect a proposed diff and its verification evidence in a fresh task.
           </p>
           <div className="hero-actions">
             <button className="primary-action" type="button" onClick={openCloseout}>
               Open preserved KPI Lab <span aria-hidden="true">→</span>
             </button>
-            <span className="time-note">One lesson per task · Next: M0.5-L2</span>
+            <span className="time-note">One lesson per task · Next: M0.5-L3</span>
           </div>
         </div>
 
@@ -121,9 +121,9 @@ function Portal({ progressSnapshot, openCloseout }: { progressSnapshot: Progress
             <span className="status-chip is-approved">Approved</span>
           </div>
           <p className="brief-number">M0.5</p>
-          <h2>Builder brief checkpoint verified</h2>
-          <p>M0.5-C1 passed with limited assistance. The guided brief used substantial structure; independent mastery and resume-level capability are not claimed.</p>
-          <div className="brief-footer"><span>Next action</span><strong>M0.5-L2 in a fresh task</strong></div>
+          <h2>Builder plan review verified</h2>
+          <p>M0.5-C2 passed with limited assistance. Jeremy made material guided plan decisions and reviewed a different accounts-payable plan; independent mastery and resume-level capability are not claimed.</p>
+          <div className="brief-footer"><span>Next action</span><strong>M0.5-L3 in a fresh task</strong></div>
         </aside>
       </section>
 
@@ -136,7 +136,7 @@ function Portal({ progressSnapshot, openCloseout }: { progressSnapshot: Progress
           <p className="source-label">{progressSnapshot.label}</p>
           <div className="progress-summary">
             <div className="progress-orbit"><span>M0.5</span></div>
-            <div><p className="progress-title">Builder specification checkpoint verified</p><p>{progressSnapshot.lesson.note}</p></div>
+            <div><p className="progress-title">Builder plan-review checkpoint verified</p><p>{progressSnapshot.lesson.note}</p></div>
           </div>
           <div className="timeline" aria-label="Course progress">
             <div className="timeline-item is-complete"><span>✓</span><div><strong>Minimum Mac setup</strong><small>Node.js and Python verified</small></div></div>
@@ -147,7 +147,8 @@ function Portal({ progressSnapshot, openCloseout }: { progressSnapshot: Progress
             <div className="timeline-item is-complete"><span>✓</span><div><strong>M0-L3 identity and GitHub readiness</strong><small>Completed with substantial assistance</small></div></div>
             <div className="timeline-item is-complete"><span>✓</span><div><strong>M0-L4 private course repository</strong><small>Completed with substantial assistance</small></div></div>
             <div className="timeline-item is-complete"><span>✓</span><div><strong>M0.5-L1 define the build</strong><small>Completed with limited assistance</small></div></div>
-            <div className="timeline-item is-current"><span>●</span><div><strong>M0.5-L2 review the builder plan</strong><small>Next lesson in a fresh task</small></div></div>
+            <div className="timeline-item is-complete"><span>✓</span><div><strong>M0.5-L2 review the builder plan</strong><small>Completed with limited assistance</small></div></div>
+            <div className="timeline-item is-current"><span>●</span><div><strong>M0.5-L3 review a proposed diff</strong><small>Next lesson in a fresh task</small></div></div>
           </div>
           <details className="roadmap-details">
             <summary>View the complete course roadmap</summary>
@@ -160,7 +161,7 @@ function Portal({ progressSnapshot, openCloseout }: { progressSnapshot: Progress
         </article>
 
         <article className="panel objectives-panel">
-          <div className="section-heading"><div><p className="section-kicker">Learning objectives</p><h2>What M0.5-L1 developed</h2></div></div>
+          <div className="section-heading"><div><p className="section-kicker">Learning objectives</p><h2>What M0.5-L2 developed</h2></div></div>
           <ol className="objective-list">
             {objectives.map((objective, index) => <li key={objective}><span>{String(index + 1).padStart(2, "0")}</span><p>{objective}</p></li>)}
           </ol>
@@ -178,7 +179,7 @@ function Portal({ progressSnapshot, openCloseout }: { progressSnapshot: Progress
           <div className="verification-list">
             <div><span className="check-mark">✓</span><p><strong>Environment ready</strong><br />Git, Node.js, npm, and Python were verified on Jeremy&apos;s Mac.</p></div>
             <div><span className="check-mark">✓</span><p><strong>Repository and privacy verified</strong><br />Private GitHub main is authoritative; the disposable practice history remains unchanged and local-only.</p></div>
-            <div><span className="check-mark">✓</span><p><strong>Work-practical build brief verified</strong><br />M0.5-C1 completed with limited assistance; independent mastery and every resume-level gate remain unearned.</p></div>
+            <div><span className="check-mark">✓</span><p><strong>Work-practical builder plan reviewed</strong><br />M0.5-C2 completed with limited assistance; independent mastery and every resume-level gate remain unearned.</p></div>
           </div>
         </article>
 
@@ -399,7 +400,7 @@ function Lab({ dataPreview, qualitySummary, initialStep }: { dataPreview: DataRo
             <div className="completion-grid">
               <article className="completion-card is-complete"><span>Completed</span><h2>What you finished</h2><p>You defined first-pass acceptance, handled duplicates, missing outcomes, and rework, and connected the metric to an operational investigation.</p></article>
               <article className="completion-card"><span>Mastery boundary</span><h2>What the evidence supports</h2><p>Completed with substantial assistance. Independent mastery, SQL, a comparable challenge, teach-back, and limitation work are not claimed.</p></article>
-              <article className="completion-card"><span>Next current lesson</span><h2>M0.5-L2: Reviewing an AI builder plan, assumptions, and scope</h2><p>The fresh task will review a practical proposed plan against the approved build brief without implementing it.</p></article>
+              <article className="completion-card"><span>Next current lesson</span><h2>M0.5-L3: Reviewing an AI-generated diff and verification evidence</h2><p>The fresh task will inspect a bounded static diff and its evidence without implementing the expense checker.</p></article>
             </div>
 
             <div className="continuity-panel">
@@ -413,7 +414,7 @@ function Lab({ dataPreview, qualitySummary, initialStep }: { dataPreview: DataRo
             </div>
 
             <div className="github-future"><span>GitHub continuity is active</span><p>New tasks read canonical files from the private repository, so repeated full-folder attachments are no longer necessary. Private browser clicks and local notes remain outside the repository, and no backend was added.</p></div>
-            <div className="screen-actions"><button className="secondary-action" type="button" onClick={() => setStep("review")}>Back to result</button><span>Preserved prototype view · Course repository v2.0.5.</span></div>
+            <div className="screen-actions"><button className="secondary-action" type="button" onClick={() => setStep("review")}>Back to result</button><span>Preserved prototype view · Course repository v2.0.6.</span></div>
           </section>
         )}
       </div>
@@ -433,7 +434,7 @@ export default function CourseExperience({ dataPreview, progressSnapshot, qualit
       <header className="app-header">
         <button className="brand" type="button" onClick={() => setArea("portal")} aria-label="Open Course Portal"><span className="brand-mark">AO</span><span><strong>AI Operations Builder</strong><small>Private course workspace</small></span></button>
         <nav aria-label="Application areas"><AreaButton active={area === "portal"} label="Course Portal" onClick={() => setArea("portal")} /><AreaButton active={area === "lab"} label="KPI Lab" onClick={() => openLab("intro")} /></nav>
-        <div className="learner-chip" aria-label="Learner Jeremy Bernhardt"><span>JB</span><div><strong>Jeremy Bernhardt</strong><small>Course v2.0.5 · M0.5-L2 next</small></div></div>
+        <div className="learner-chip" aria-label="Learner Jeremy Bernhardt"><span>JB</span><div><strong>Jeremy Bernhardt</strong><small>Course v2.0.6 · M0.5-L3 next</small></div></div>
       </header>
       {area === "portal" ? <Portal progressSnapshot={progressSnapshot} openCloseout={() => openLab("intro")} /> : <Lab key={labStartStep} dataPreview={dataPreview} qualitySummary={qualitySummary} initialStep={labStartStep} />}
       <footer className="app-footer"><span>Local/private prototype · Synthetic data only</span><span>Canonical state lives in the course files, not this interface.</span></footer>

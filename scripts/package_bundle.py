@@ -9,9 +9,9 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BUNDLE_NAME = "AI_Operations_Builder_Course_Prototype_v2.0.5_M0.5-L1.zip"
+BUNDLE_NAME = "AI_Operations_Builder_Course_Prototype_v2.0.6_M0.5-L2.zip"
 OUTPUT = ROOT / BUNDLE_NAME
-ARCHIVE_ROOT = "AI_Operations_Builder_Course_Prototype_v2.0.5_M0.5-L1"
+ARCHIVE_ROOT = "AI_Operations_Builder_Course_Prototype_v2.0.6_M0.5-L2"
 EXCLUDED_PARTS = {
     ".git",
     ".sites-runtime",
@@ -22,11 +22,14 @@ EXCLUDED_PARTS = {
     "__pycache__",
 }
 EXCLUDED_ROOTS = {"examples"}
+EXCLUDED_EXPORT_PREFIXES = {"SESSION_HANDOFF_", "NEXT_CHAT_PROMPT_AFTER_"}
 
 
 def should_include(path: Path) -> bool:
     relative = path.relative_to(ROOT)
     if path == OUTPUT or relative.parts[0] in EXCLUDED_ROOTS:
+        return False
+    if any(path.name.startswith(prefix) for prefix in EXCLUDED_EXPORT_PREFIXES):
         return False
     if any(part in EXCLUDED_PARTS for part in relative.parts):
         return False
@@ -66,8 +69,12 @@ def main() -> None:
             f"{ARCHIVE_ROOT}/lesson/M0.5-L1_DEFINING_OUTCOMES_CONSTRAINTS_DONE_CRITERIA.md",
             f"{ARCHIVE_ROOT}/student/M0.5-L1_EXPENSE_FILE_READINESS_BUILD_BRIEF.md",
             f"{ARCHIVE_ROOT}/evidence/LEARNER_CHECKPOINT_M0.5-C1.md",
-            f"{ARCHIVE_ROOT}/evidence/RELEASE_CHECKS_v2.0.5.md",
-            f"{ARCHIVE_ROOT}/evidence/RECONSTRUCTION_CHECK_v2.0.5.md",
+            f"{ARCHIVE_ROOT}/lesson/M0.5-L2_REVIEWING_AI_BUILDER_PLAN_ASSUMPTIONS_SCOPE.md",
+            f"{ARCHIVE_ROOT}/student/M0.5-L2_EXPENSE_FILE_READINESS_AI_PLAN.md",
+            f"{ARCHIVE_ROOT}/student/M0.5-L2_EXPENSE_FILE_READINESS_REVIEWED_PLAN.md",
+            f"{ARCHIVE_ROOT}/evidence/LEARNER_CHECKPOINT_M0.5-C2.md",
+            f"{ARCHIVE_ROOT}/evidence/RELEASE_CHECKS_v2.0.6.md",
+            f"{ARCHIVE_ROOT}/evidence/RECONSTRUCTION_CHECK_v2.0.6.md",
             f"{ARCHIVE_ROOT}/AGENTS.md",
             f"{ARCHIVE_ROOT}/database/prototype.sqlite",
             f"{ARCHIVE_ROOT}/student/first_pass_acceptance.sql",

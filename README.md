@@ -1,13 +1,13 @@
-# AI Operations Builder Course Repository v2.0.5
+# AI Operations Builder Course Repository v2.0.6
 
 Learner entry point: open `START_HERE.html`. This README is the technical setup, verification, continuity, and recovery reference.
 
 This private repository contains:
 
-- the approved v2.0.0 bounded course architecture and v2.0.1-v2.0.5 operator-builder, execution, teaching, repository-authority, and work-practical-scenario clarifications;
+- the approved v2.0.0 bounded course architecture and v2.0.1-v2.0.6 operator-builder, execution, teaching, repository-authority, and work-practical-scenario clarifications;
 - the preserved v1.2.0 prototype **From Raw Project Data to a Verified Operating Metric**;
 - canonical course state, progress, decisions, capability gates, handoff, and next-chat instructions; and
-- the verified Module 0 sequence, completed M0.5-L1 builder-specification checkpoint, and repository-level `AGENTS.md`; and
+- the verified Module 0 sequence, completed M0.5-L1 and M0.5-L2 builder-supervision checkpoints, and repository-level `AGENTS.md`; and
 - no future full lesson, production portal, public deployment, public repository, or standalone course product.
 
 The required course teaches AI-assisted SQL, Python/pandas, data pipelines, work dashboards, automation, document tools, and permissioned agents using finance as the primary application context. It targets AI-assisted operator-builder proficiency, not unaided software development. It is not a broad finance curriculum or a software-engineering curriculum. The Course Portal facilitates lessons and never counts as evidence that Jeremy can build work dashboards.
@@ -76,15 +76,16 @@ Passing software tests does not imply learner mastery or satisfy a capability ga
 - `P0-C1` is completed with substantial assistance.
 - Independent metric mastery, SQL implementation, teach-back, and limitation work are not claimed.
 - The prototype is preserved as a pre-course teaching-format artifact and optional human-data transfer case.
-- The v2.0.0 architecture and v2.0.1-v2.0.5 clarifications and continuity decisions are approved.
+- The v2.0.0 architecture and v2.0.1-v2.0.6 clarifications and continuity decisions are approved.
 - `M0-L1 — Local Git Foundations` is completed with limited assistance; independent mastery and Module 0 completion are not claimed.
 - `M0-L2 — Local Branches, Merges, and Safe Recovery` is completed with substantial assistance; independent mastery and Module 0 completion are not claimed.
 - `M0-L3 — Git Identity, Privacy, and GitHub Readiness` is completed with substantial assistance; an approved privacy-preserving future identity is verified.
 - `M0-L4 — Private GitHub Course Repository and First Verified Push` is completed with substantial assistance. The exact private destination, first commit/tree, metadata, exclusions, tracking, and fresh-clone reconstruction were independently verified.
 - `M0.5-L1 — Defining Outcomes, Constraints, and Done Criteria` is completed with limited assistance. The guided expense-file brief used substantial instructor/AI structure; a different variance-report transfer passed after one targeted revision.
+- `M0.5-L2 — Reviewing an AI Builder Plan, Assumptions, and Scope` is completed with limited assistance. Jeremy made material guided plan decisions and independently reviewed a different accounts-payable plan; direct teaching and limited file-integrity help are recorded honestly.
 - Every resume-level capability gate remains `Not started`.
 - The planned Module 0 lesson sequence is complete with substantial assistance; independent mastery and resume-level proficiency are not claimed.
-- The next authorized work is only `M0.5-L2 — Reviewing an AI Builder Plan, Assumptions, and Scope`, in a fresh task. Implementation remains postponed.
+- The next authorized work is only `M0.5-L3 — Reviewing an AI-Generated Diff and Verification Evidence`, in a fresh task. Expense-checker implementation remains postponed.
 
 ## Required course direction
 
@@ -96,11 +97,11 @@ See `CURRICULUM_MAP.md` for the bounded module sequence and `CAPABILITY_EVIDENCE
 
 The authoritative source is private repository `jeremybernhardt/ai-operations-builder-course-private` on `main`. In a fresh task, provide the repository location and ask the instructor to read the canonical files and exact `NEXT_CHAT_PROMPT.md` there. Repeated complete-ZIP attachment is no longer required.
 
-For Jeremy's saved lesson archive, the M0.5-L1 closeout exports are:
+For Jeremy's saved lesson archive, the M0.5-L2 closeout exports are:
 
-- `SESSION_HANDOFF_M0.5-L1_v2.0.5.md`;
-- `NEXT_CHAT_PROMPT_AFTER_M0.5-L1_v2.0.5.md`; and
-- `AI_Operations_Builder_Course_Prototype_v2.0.5_M0.5-L1.zip`.
+- `SESSION_HANDOFF_M0.5-L2_v2.0.6.md`;
+- `NEXT_CHAT_PROMPT_AFTER_M0.5-L2_v2.0.6.md`; and
+- `AI_Operations_Builder_Course_Prototype_v2.0.6_M0.5-L2.zip`.
 
 The canonical in-repository filenames remain `SESSION_HANDOFF.md` and `NEXT_CHAT_PROMPT.md` so setup and verification stay stable. The ZIP is a verified backup, not the authoritative live source.
 
@@ -124,7 +125,7 @@ If port 5173 is busy:
 npm run dev -- --port 4174
 ```
 
-Use the verified private repository or the v2.0.5 M0.5-L1 backup bundle to restore intentionally incomplete learner files. Do not delete canonical state, progress, capability evidence, or preserved learner evidence.
+Use the verified private repository or the v2.0.6 M0.5-L2 backup bundle to restore intentionally incomplete learner files. Do not delete canonical state, progress, capability evidence, or preserved learner evidence.
 
 ## Source of truth
 

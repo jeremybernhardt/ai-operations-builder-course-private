@@ -1,21 +1,21 @@
 {
   "schema_version": "2.0.0",
-  "release_version": "2.0.5",
-  "progress_version": 10,
-  "updated_at": "2026-08-20T17:15:13-07:00",
+  "release_version": "2.0.6",
+  "progress_version": 11,
+  "updated_at": "2026-08-21T21:07:34-07:00",
   "learner": "Jeremy Bernhardt",
   "allowed_mastery_statuses": ["Not started", "Introduced", "Completed with substantial assistance", "Completed with limited assistance", "Demonstrated independently"],
   "course_architecture": {
     "version": "2.0.0",
-    "release_version": "2.0.5",
+    "release_version": "2.0.6",
     "status": "Approved",
     "required_next_module": "M0.5",
-    "required_next_lesson": "M0.5-L2",
+    "required_next_lesson": "M0.5-L3",
     "required_course_built_beyond_prototype": true,
     "optional_human_data_specialization_built": false,
     "operator_builder_standard": "AI-assisted operator-builder proficiency for strategic finance and operations",
     "ai_execution_standard": "AI executes routine local implementation and commands when safe; Jeremy specifies, inspects relevant logic, evaluates risk, and verifies",
-    "teaching_strategy_standard": "Ask for reasoning before supplying the answer; after an explanation supplies it, record help and assess only genuinely new transfer rather than immediate repetition",
+    "teaching_strategy_standard": "Teach concepts and curriculum connection directly, practice in one coherent scenario, and assess a genuinely different transfer; match evidence precision to the real task stage",
     "authoritative_source": "private GitHub repository jeremybernhardt/ai-operations-builder-course-private on main"
   },
   "lessons": [
@@ -81,6 +81,20 @@
         "evidence/LEARNER_CHECKPOINT_M0.5-C1.md"
       ],
       "note": "Jeremy corrected an internally focused course-maintenance exercise, made or approved material rules for a synthetic expense-file readiness build brief, distinguished blocking validation errors from nonblocking anomaly warnings, and approved a temporary median-based warning. In a different variance-report scenario he independently identified materiality and an actual-versus-actual failure; one targeted revision was needed to recenter the outcome and provide an exact known-answer test. Independent mastery and every resume-level capability gate remain unclaimed."
+    },
+    {
+      "lesson_id": "M0.5-L2",
+      "title": "Reviewing an AI Builder Plan, Assumptions, and Scope",
+      "mastery_status": "Completed with limited assistance",
+      "assistance_level": "Direct concept teaching and a complete worked example; learner-owned guided decisions; limited help on real-file integrity verification during a different transfer",
+      "current_checkpoint_id": "M0.5-C2",
+      "learner_attempt_received": true,
+      "verification_evidence": [
+        "student/M0.5-L2_EXPENSE_FILE_READINESS_AI_PLAN.md",
+        "student/M0.5-L2_EXPENSE_FILE_READINESS_REVIEWED_PLAN.md",
+        "evidence/LEARNER_CHECKPOINT_M0.5-C2.md"
+      ],
+      "note": "Jeremy reviewed an AI-drafted expense-checker plan, rejected unapproved duplicate selection and a cleaned-data bypass, deferred unnecessary database/dashboard scope, corrected the warning population, and designed independent review evidence. In a different accounts-payable plan he independently identified assumption, source, permission, scope, and circular-verification failures. He also corrected the lesson delivery to require Teach, Practice, and Demonstrate and correctly rejected artificial numeric specificity in a theoretical transfer. Independent mastery and every resume-level capability gate remain unclaimed."
     }
   ],
   "skills": [
@@ -93,6 +107,7 @@
     {"skill_id":"SK-GIT-IDENTITY-PRIVACY-BASIC-001","name":"Choose and verify a privacy-preserving Git identity and external-action boundary","mastery_status":"Completed with substantial assistance","assistance_level":"Full walkthrough and guided decision support","evidence":["evidence/LEARNER_CHECKPOINT_M0-C3.md"]},
     {"skill_id":"SK-GITHUB-PRIVATE-REPO-BASIC-001","name":"Specify, approve, and verify a private GitHub repository and recoverable remote source","mastery_status":"Completed with substantial assistance","assistance_level":"Full walkthrough with learner-owned specifications and external approvals","evidence":["evidence/LEARNER_CHECKPOINT_M0-C4.md"]},
     {"skill_id":"SK-AI-BUILDER-BRIEF-001","name":"Define a bounded AI-builder outcome, constraints, acceptance criteria, verification plan, and done threshold","mastery_status":"Completed with limited assistance","assistance_level":"Full structured walkthrough for the guided brief; limited targeted help on a different transfer scenario","evidence":["student/M0.5-L1_EXPENSE_FILE_READINESS_BUILD_BRIEF.md","evidence/LEARNER_CHECKPOINT_M0.5-C1.md"]},
+    {"skill_id":"SK-AI-BUILDER-PLAN-REVIEW-001","name":"Review an AI builder plan for requirements, assumptions, scope, and approval evidence","mastery_status":"Completed with limited assistance","assistance_level":"Direct teaching and a complete worked example; learner-owned material decisions; limited help on real-file integrity verification","evidence":["student/M0.5-L2_EXPENSE_FILE_READINESS_REVIEWED_PLAN.md","evidence/LEARNER_CHECKPOINT_M0.5-C2.md"]},
     {"skill_id":"SK-SQL-READ-001","name":"Read and modify basic SQL","mastery_status":"Not started","assistance_level":"None","evidence":[]},
     {"skill_id":"SK-VERIFY-001","name":"Verify a metric independently","mastery_status":"Not started","assistance_level":"None","evidence":[]},
     {"skill_id":"SK-WORK-DASHBOARD-001","name":"Build and modify a decision-oriented work dashboard","mastery_status":"Not started","assistance_level":"None","evidence":[]},
@@ -129,7 +144,10 @@
       "evidence/RELEASE_CHECKS_v2.0.4.md",
       "evidence/RECONSTRUCTION_CHECK_v2.0.4.md",
       "evidence/RELEASE_CHECKS_v2.0.5.md",
-      "evidence/RECONSTRUCTION_CHECK_v2.0.5.md"
+      "evidence/RECONSTRUCTION_CHECK_v2.0.5.md",
+      "evidence/LEARNER_CHECKPOINT_M0.5-C2.md",
+      "evidence/RELEASE_CHECKS_v2.0.6.md",
+      "evidence/RECONSTRUCTION_CHECK_v2.0.6.md"
     ]
   }
 }

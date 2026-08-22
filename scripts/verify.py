@@ -110,7 +110,8 @@ def verify_known_answer() -> None:
 def verify_progress_snapshot() -> None:
     progress = json.loads((ROOT / "PROGRESS.json").read_text(encoding="utf-8"))
     snapshot = course_setup.build_progress_snapshot()
-    lesson = next(item for item in progress["lessons"] if item["lesson_id"] == "M0.5-L1")
+    lesson = next(item for item in progress["lessons"] if item["lesson_id"] == "M0.5-L2")
+    m0_5_l1 = next(item for item in progress["lessons"] if item["lesson_id"] == "M0.5-L1")
     m0_l4 = next(item for item in progress["lessons"] if item["lesson_id"] == "M0-L4")
     m0_l3 = next(item for item in progress["lessons"] if item["lesson_id"] == "M0-L3")
     m0_l2 = next(item for item in progress["lessons"] if item["lesson_id"] == "M0-L2")
@@ -120,10 +121,11 @@ def verify_progress_snapshot() -> None:
     check(snapshot["non_authoritative"] is True, "portal progress is not labeled non-authoritative")
     check(
         lesson["mastery_status"] == "Completed with limited assistance",
-        "canonical learner status does not match the recorded M0.5-C1 evidence",
+        "canonical learner status does not match the recorded M0.5-C2 evidence",
     )
     check(lesson["learner_attempt_received"] is True, "learner attempt evidence is missing")
-    check("limited targeted help" in lesson["assistance_level"], "M0.5-C1 transfer assistance is not recorded honestly")
+    check("limited help" in lesson["assistance_level"], "M0.5-C2 transfer assistance is not recorded honestly")
+    check(m0_5_l1["mastery_status"] == "Completed with limited assistance", "M0.5-C1 evidence was changed")
     check(m0_l4["mastery_status"] == "Completed with substantial assistance", "M0-C4 evidence was changed")
     check(m0_l3["mastery_status"] == "Completed with substantial assistance", "M0-C3 evidence was changed")
     check(m0_l2["mastery_status"] == "Completed with substantial assistance", "M0-C2 evidence was changed")
@@ -139,6 +141,9 @@ def verify_progress_snapshot() -> None:
     check((ROOT / "evidence" / "LEARNER_CHECKPOINT_M0-C4.md").is_file(), "M0-C4 evidence file is missing")
     check((ROOT / "evidence" / "LEARNER_CHECKPOINT_M0.5-C1.md").is_file(), "M0.5-C1 evidence file is missing")
     check((ROOT / "student" / "M0.5-L1_EXPENSE_FILE_READINESS_BUILD_BRIEF.md").is_file(), "M0.5-L1 build brief is missing")
+    check((ROOT / "evidence" / "LEARNER_CHECKPOINT_M0.5-C2.md").is_file(), "M0.5-C2 evidence file is missing")
+    check((ROOT / "student" / "M0.5-L2_EXPENSE_FILE_READINESS_AI_PLAN.md").is_file(), "M0.5-L2 AI plan is missing")
+    check((ROOT / "student" / "M0.5-L2_EXPENSE_FILE_READINESS_REVIEWED_PLAN.md").is_file(), "M0.5-L2 reviewed plan is missing")
 
 
 def verify_student_gate() -> None:
@@ -195,8 +200,8 @@ def verify_v2_architecture() -> None:
     check(state["schema_version"] == "2.0.0", "course state schema was not upgraded")
     check(progress["schema_version"] == "2.0.0", "progress schema was not upgraded")
     check(state["course_architecture_approval"]["status"] == "approved", "v2 architecture approval missing")
-    check(state["release_version"] == "2.0.5", "v2.0.5 release state missing")
-    check(state["current_checkpoint_id"] == "M0.5-C1", "M0.5-C1 checkpoint is not current")
+    check(state["release_version"] == "2.0.6", "v2.0.6 release state missing")
+    check(state["current_checkpoint_id"] == "M0.5-C2", "M0.5-C2 checkpoint is not current")
     check(state["authoritative_source"]["repository_full_name"] == "jeremybernhardt/ai-operations-builder-course-private", "private repository authority missing")
     check(state["authoritative_source"]["visibility"] == "private", "private visibility state missing")
     check("Finance is the primary application context" in contract, "technical-subject boundary missing")
@@ -217,15 +222,20 @@ def verify_v2_architecture() -> None:
     check("M0-C3" in ledger, "M0-C3 evidence ledger entry missing")
     check("M0-C4" in ledger, "M0-C4 evidence ledger entry missing")
     check("M0.5-C1" in ledger, "M0.5-C1 evidence ledger entry missing")
-    check("M0.5-L2" in prompt and "Reviewing an AI Builder Plan, Assumptions, and Scope" in prompt, "next bounded lesson missing")
-    check("Expense File Readiness Checker" in prompt, "work-practical next-lesson context missing")
+    check("M0.5-C2" in ledger, "M0.5-C2 evidence ledger entry missing")
+    check("M0.5-L3" in prompt and "Reviewing an AI-Generated Diff and Verification Evidence" in prompt, "next bounded lesson missing")
+    check("work-practical scenario" in prompt, "work-practical next-lesson context missing")
     check("DEC-C2-009" in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"), "AI-execution decision missing")
     check("DEC-C2-010" in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"), "teaching-strategy decision missing")
     check("DEC-M0-001" in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"), "identity/privacy decision missing")
     check("DEC-M0-002" in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"), "repository-authority decision missing")
     check("DEC-C2-011" in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"), "continuity-versioning decision missing")
     check("DEC-M0.5-001" in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"), "work-practical scenario decision missing")
+    check("DEC-M0.5-002" in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"), "teaching-modes decision missing")
+    check("DEC-M0.5-003" in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"), "evidence-precision decision missing")
     check("do not ask Jeremy to immediately repeat" in contract, "transfer-not-repetition teaching guard missing")
+    check(all(term in contract for term in ["**Teach:**", "**Practice:**", "**Demonstrate:**"]), "visible teaching modes missing")
+    check("Match evidence precision to the task stage" in contract, "task-stage evidence precision missing")
     check(state["git_identity_readiness"]["use_config_only"] is True, "Git identity no-guessing safeguard missing")
     check(state["git_identity_readiness"]["practice_repository_decision"] == "remain_local_only", "practice repository privacy decision missing")
     check("AfterQuery" not in prompt and "work-trial priority check" not in prompt.lower(), "obsolete priority check remains")

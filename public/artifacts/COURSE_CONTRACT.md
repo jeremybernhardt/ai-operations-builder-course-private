@@ -1,7 +1,7 @@
 # AI Operations Builder Course Contract
 
 Contract ID: `COURSE-CONTRACT-001`  
-Version: `2.0.5`
+Version: `2.0.6`
 Effective date: `2026-08-20`
 Learner: Jeremy Bernhardt
 
@@ -80,8 +80,9 @@ Current authorization covers only:
 4. the verified `M0-L2` local branches, merges, and safe recovery checkpoint;
 5. the verified `M0-L3` Git identity, privacy, and GitHub-readiness checkpoint;
 6. the verified `M0-L4` private GitHub course repository and first-push checkpoint;
-7. the verified `M0.5-L1` outcomes, constraints, acceptance, verification, and done-criteria checkpoint; and
-8. preparation and teaching of only `M0.5-L2 — Reviewing an AI Builder Plan, Assumptions, and Scope`, in a fresh task.
+7. the verified `M0.5-L1` outcomes, constraints, acceptance, verification, and done-criteria checkpoint;
+8. the verified `M0.5-L2` plan, assumption, scope, and approval-evidence review checkpoint; and
+9. preparation and teaching of only `M0.5-L3 — Reviewing an AI-Generated Diff and Verification Evidence`, in a fresh task.
 
 Prototype or architecture approval does not authorize construction of later modules. Completing one module authorizes preparation of only the next agreed module. Do not build the remaining course or future standalone product automatically.
 
@@ -161,6 +162,16 @@ Every full lesson contains:
 9. teach-back;
 10. limitation or failure analysis; and
 11. progress and handoff update.
+
+Every lesson must also make three teaching modes visible and keep their purposes distinct:
+
+1. **Teach:** locate the capability in the curriculum, explain the concepts directly, and demonstrate the reasoning with a complete worked example before expecting application.
+2. **Practice:** use one coherent, context-rich workplace scenario with appropriate scaffolding. Questions apply concepts already taught; they are not the primary means of introducing missing instruction.
+3. **Demonstrate:** assess transfer with a genuinely different scenario and less scaffolding, followed by verification, teach-back, and limitation analysis.
+
+Do not substitute a chain of disconnected questions, file scavenger hunt, or unexplained comparison exercise for instruction. Source files and learner artifacts should support the lesson rather than become the teaching method by themselves. State explicitly how the current capability follows from prior work and where it will recur later in the course.
+
+Match evidence precision to the task stage. In a conceptual or theoretical exercise, do not require fabricated numeric detail after Jeremy has already demonstrated the intended judgment; a correct verification design may be sufficient. Exact known-answer values, file-integrity evidence, and deterministic reconciliation become mandatory when the lesson evaluates a real file, calculation, implementation, or materially ambiguous rule. Do not mistake additional ceremony or artificial specificity for stronger mastery evidence.
 
 ### AI-assisted operator-builder standard
 
