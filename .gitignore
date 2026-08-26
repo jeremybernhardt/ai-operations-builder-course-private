@@ -17,3 +17,4 @@ database/*.sqlite-shm
 AI_Operations_Builder_Course_Prototype_v*.zip
 SESSION_HANDOFF_*_v*.md
 NEXT_CHAT_PROMPT_AFTER_*_v*.md
+.codex-*

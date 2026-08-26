@@ -63,7 +63,7 @@ def relative(path: Path, root: Path) -> str:
 
 def is_excluded(path: Path, root: Path) -> bool:
     rel = path.relative_to(root)
-    return any(part in EXCLUDED_PARTS for part in rel.parts) or path.suffix.lower() in {
+    return path.name.startswith(".codex-") or any(part in EXCLUDED_PARTS for part in rel.parts) or path.suffix.lower() in {
         ".log",
         ".pyc",
         ".zip",
@@ -82,6 +82,7 @@ def scan_inventory(root: Path) -> dict[str, Any]:
     bytes_scanned = 0
     invalid_json_paths: list[str] = []
     ignored_excel_locks = 0
+    workbook_files_metadata_only = 0
 
     for path in sorted(root.rglob("*")):
         if not path.is_file() or is_excluded(path, root):
@@ -90,6 +91,15 @@ def scan_inventory(root: Path) -> dict[str, Any]:
             ignored_excel_locks += 1
             continue
         rel = relative(path, root)
+        if path.suffix.lower() == ".xlsx":
+            size = path.stat().st_size
+            digest.update(rel.encode("utf-8"))
+            digest.update(b"\0xlsx-metadata-only\0")
+            digest.update(str(size).encode("ascii"))
+            files_scanned += 1
+            bytes_scanned += size
+            workbook_files_metadata_only += 1
+            continue
         data = path.read_bytes()
         digest.update(rel.encode("utf-8"))
         digest.update(b"\0")
@@ -114,6 +124,7 @@ def scan_inventory(root: Path) -> dict[str, Any]:
         "json_files_scanned": json_files_scanned,
         "repository_digest_sha256": digest.hexdigest(),
         "text_files_scanned": text_files_scanned,
+        "workbook_files_metadata_only": workbook_files_metadata_only,
     }
 
 
@@ -245,7 +256,7 @@ def build_report(root: Path = ROOT) -> dict[str, Any]:
             state.get("last_verified_learner_checkpoint", {}).get("status")
             == "completed_with_limited_assistance",
             expected_mastery in handoff_text,
-            "M0.5-C2" in ledger_text and expected_mastery in ledger_text,
+            current_checkpoint_id in ledger_text and expected_mastery in ledger_text,
             "not independent mastery" in prompt_text,
         ]
     )
@@ -259,7 +270,7 @@ def build_report(root: Path = ROOT) -> dict[str, Any]:
         [
             next_lesson_id in handoff_text,
             "current authorization covers only" in prompt_text.lower(),
-            "M0.5-L4_or_later_without_checkpoint_authorization"
+            "M0.5-L5_or_later_without_checkpoint_authorization"
             in state.get("scope_guard", {}).get("not_authorized", []),
             "do not implement the Expense File Readiness Checker" in next_action,
         ]
@@ -304,7 +315,14 @@ def build_report(root: Path = ROOT) -> dict[str, Any]:
 
     gitignore_text = read_text(root / ".gitignore") or ""
     bundle_text = read_text(root / "scripts/package_bundle.py") or ""
-    lock_excluded = "~$*.xlsx" in gitignore_text and "is_transient_lock_file" in bundle_text
+    lock_excluded = all(
+        [
+            "~$*.xlsx" in gitignore_text,
+            "is_transient_lock_file" in bundle_text,
+            "is_binary_workbook" in bundle_text,
+            "xlsx-metadata-only" in (read_text(root / "scripts/reliability_scan.py") or ""),
+        ]
+    )
     add_check("excel_lock_exclusion", lock_excluded, [".gitignore", "scripts/package_bundle.py"])
 
     maintenance = state.get("reliability_maintenance", {})
@@ -351,6 +369,8 @@ def build_report(root: Path = ROOT) -> dict[str, Any]:
 
     if inventory["ignored_transient_excel_locks"]:
         observations.append({"code": "TRANSIENT_EXCEL_LOCK_IGNORED", "paths": []})
+    if inventory["workbook_files_metadata_only"]:
+        observations.append({"code": "WORKBOOK_CONTENT_SKIPPED", "paths": []})
 
     status = "fail" if failures else ("warning" if warnings else "pass")
     return {

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify that a fresh Codex task can reconstruct the v2.0.6 course state."""
+"""Verify that a fresh Codex task can reconstruct the v2.0.7 course state."""
 
 from __future__ import annotations
 
@@ -54,19 +54,20 @@ def main() -> None:
         ("lesson/M0-L4_PRIVATE_GITHUB_COURSE_REPOSITORY_FIRST_VERIFIED_PUSH.md", "evidence/LEARNER_CHECKPOINT_M0-C4.md"),
         ("lesson/M0.5-L1_DEFINING_OUTCOMES_CONSTRAINTS_DONE_CRITERIA.md", "evidence/LEARNER_CHECKPOINT_M0.5-C1.md"),
         ("lesson/M0.5-L2_REVIEWING_AI_BUILDER_PLAN_ASSUMPTIONS_SCOPE.md", "evidence/LEARNER_CHECKPOINT_M0.5-C2.md"),
+        ("lesson/M0.5-L3_REVIEWING_AI_GENERATED_DIFF_VERIFICATION_EVIDENCE.md", "evidence/LEARNER_CHECKPOINT_M0.5-C3.md"),
     ]
 
     checks = {
         "valid_state_schema": state.get("schema_version") == "2.0.0",
         "valid_progress_schema": progress.get("schema_version") == "2.0.0",
-        "release_is_v2_0_6": state.get("release_version") == "2.0.6" and progress.get("release_version") == "2.0.6",
+        "release_is_v2_0_7": state.get("release_version") == "2.0.7" and progress.get("release_version") == "2.0.7",
         "private_repository_is_authoritative": source.get("type") == "private_git_repository",
         "exact_repository_recoverable": source.get("repository_full_name") == "jeremybernhardt/ai-operations-builder-course-private",
         "private_visibility_recoverable": source.get("visibility") == "private" and repository.get("visibility") == "private",
         "main_branch_recoverable": source.get("default_branch") == "main" and repository.get("default_branch") == "main",
         "baseline_commit_recoverable": source.get("first_verified_push_commit") == "07170d06922211c5e4379fa4c534ea93da08dd0b",
         "backup_is_not_authority": source.get("backup_role") == "verified_backup_not_primary_authority",
-        "m0_5_c2_current": state.get("current_checkpoint_id") == "M0.5-C2",
+        "m0_5_c3_current": state.get("current_checkpoint_id") == "M0.5-C3",
         "m0_sequence_complete_without_mastery_inflation": state.get("preserved_m0_module_status", {}).get("planned_lesson_sequence_complete") is True and state.get("preserved_m0_module_status", {}).get("independent_mastery_claimed") is False,
         "m0_5_sequence_not_overclaimed": state.get("module_status", {}).get("planned_lesson_sequence_complete") is False and state.get("module_status", {}).get("independent_mastery_claimed") is False,
         "prototype_status_honest": lessons.get("P0-L1", {}).get("mastery_status") == "Completed with substantial assistance",
@@ -76,18 +77,20 @@ def main() -> None:
         "m0_l4_status_honest": lessons.get("M0-L4", {}).get("mastery_status") == "Completed with substantial assistance",
         "m0_5_l1_status_honest": lessons.get("M0.5-L1", {}).get("mastery_status") == "Completed with limited assistance",
         "m0_5_l2_status_honest": lessons.get("M0.5-L2", {}).get("mastery_status") == "Completed with limited assistance",
+        "m0_5_l3_status_honest": lessons.get("M0.5-L3", {}).get("mastery_status") == "Completed with limited assistance",
         "all_completed_lesson_evidence_present": all((ROOT / lesson).is_file() and (ROOT / evidence).is_file() for lesson, evidence in lesson_pairs),
         "all_completed_lesson_evidence_named": all(lesson in prompt and evidence in prompt for lesson, evidence in lesson_pairs),
         "completed_history_is_on_demand": "Recovery index" in prompt and "on demand, not startup context" in prompt,
         "guided_build_brief_present": (ROOT / "student/M0.5-L1_EXPENSE_FILE_READINESS_BUILD_BRIEF.md").is_file(),
         "original_and_reviewed_plan_present": all((ROOT / name).is_file() for name in ["student/M0.5-L2_EXPENSE_FILE_READINESS_AI_PLAN.md", "student/M0.5-L2_EXPENSE_FILE_READINESS_REVIEWED_PLAN.md"]),
+        "guided_and_transfer_diff_reviews_present": all((ROOT / name).is_file() for name in ["student/M0.5-L3_ANNOTATED_DIFF_REVIEW.md", "student/M0.5-L3_CASH_SCHEDULE_TRANSFER_PACKET.md", "student/M0.5-L3_CASH_DISBURSEMENT_ACCEPTANCE_FIXTURE.xlsx.inspect.ndjson"]),
         "one_lesson_per_task_recoverable": state.get("lesson_chat_policy") == "one_lesson_per_new_chat",
-        "next_lesson_named": "M0.5-L3" in prompt and "Reviewing an AI-Generated Diff and Verification Evidence" in prompt,
-        "next_scope_bounded": "current authorization covers only `m0.5-l3" in prompt.lower(),
+        "next_lesson_named": "M0.5-L4" in prompt and "Debugging from Evidence and Directing a Bounded Modification" in prompt,
+        "next_scope_bounded": "current authorization covers only `m0.5-l4" in prompt.lower(),
         "authoritative_files_named": all(name in prompt for name in REQUIRED_CANONICAL),
         "repository_startup_instructions": "authoritative private GitHub repository" in prompt and "private visibility" in prompt,
         "zip_not_required": "recovery backup only" in prompt and "not" in prompt,
-        "versioned_exports_named": all(name in handoff + prompt for name in ["SESSION_HANDOFF_M0.5-L2_v2.0.6.md", "NEXT_CHAT_PROMPT_AFTER_M0.5-L2_v2.0.6.md", "AI_Operations_Builder_Course_Prototype_v2.0.6_M0.5-L2.zip"]),
+        "versioned_exports_named": all(name in handoff + prompt for name in ["SESSION_HANDOFF_M0.5-L3_v2.0.7.md", "NEXT_CHAT_PROMPT_AFTER_M0.5-L3_v2.0.7.md", "AI_Operations_Builder_Course_Prototype_v2.0.7_M0.5-L3.zip"]),
         "handoff_has_verification_and_unfinished": "Verification and limitations" in handoff and "What remains unfinished" in handoff,
         "setup_command_recoverable": "npm ci" in readme and "python3 scripts/setup.py" in readme,
         "start_command_recoverable": "npm run course" in readme,
@@ -127,7 +130,7 @@ def main() -> None:
         "job_search_transfer_bounded": "AI-assisted job-search monitor" in contract and "not a second curriculum" in curriculum,
         "transfer_not_repetition_guard": "do not ask Jeremy to immediately repeat" in contract and "genuinely new" in prompt,
         "teach_practice_demonstrate_guard": all(term in contract for term in ["**Teach:**", "**Practice:**", "**Demonstrate:**"]),
-        "task_stage_evidence_guard": "Match evidence precision to the task stage" in contract and "numeric ceremony" in prompt,
+        "task_stage_evidence_guard": "Match evidence precision to the task stage" in contract and "deterministic" in prompt,
         "course_portal_not_dashboard_evidence": "does not count as dashboard-building evidence" in contract,
         "portal_companion_boundary": "Course Portal is non-authoritative" in prompt,
         "work_dashboard_gate_present": "GATE-WORK-DASHBOARD" in ledger and "Work Dashboard and Decision Layer" in curriculum,

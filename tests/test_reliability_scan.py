@@ -70,6 +70,18 @@ class ReliabilityScanTests(unittest.TestCase):
     def test_excel_lock_file_is_excluded_from_packages(self) -> None:
         self.assertTrue(packager.is_transient_lock_file(Path("student/~$example.xlsx")))
         self.assertFalse(packager.is_transient_lock_file(Path("student/example.xlsx")))
+        self.assertTrue(packager.is_binary_workbook(Path("student/example.xlsx")))
+        self.assertFalse(packager.should_include(ROOT / ".codex-m05l3-verify.mjs"))
+        self.assertTrue(scanner.is_excluded(ROOT / ".codex-m05l3-verify.mjs", ROOT))
+
+    def test_workbook_contents_are_not_read_by_reliability_inventory(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            temp_root = Path(directory)
+            workbook = temp_root / "fixture.xlsx"
+            workbook.write_bytes(b"synthetic workbook placeholder")
+            inventory = scanner.scan_inventory(temp_root)
+        self.assertEqual(inventory["workbook_files_metadata_only"], 1)
+        self.assertEqual(inventory["text_files_scanned"], 0)
 
     def test_critical_quality_boundaries_pass_without_source_output(self) -> None:
         report = scanner.build_report(ROOT)
@@ -90,7 +102,7 @@ class ReliabilityScanTests(unittest.TestCase):
             self.copy_course(temp_root)
             state_before = (temp_root / "COURSE_STATE.json").read_bytes()
             progress_before = (temp_root / "PROGRESS.json").read_bytes()
-            recovered = temp_root / "student" / "M0.5-L3_RECOVERED_ANSWER.md"
+            recovered = temp_root / "student" / "M0.5-L4_RECOVERED_ANSWER.md"
             recovered.write_text("unverified learner recovery canary", encoding="utf-8")
             report = scanner.build_report(temp_root)
             self.assertEqual(state_before, (temp_root / "COURSE_STATE.json").read_bytes())

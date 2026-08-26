@@ -1,6 +1,6 @@
 # Capability Evidence Ledger
 
-Ledger version: `2.0.6`
+Ledger version: `2.0.7`
 Learner: Jeremy Bernhardt  
 Current status: no v2 resume-level gate has been earned
 
@@ -104,6 +104,15 @@ The instructor supplied the corrected workplace scenario, stakeholder validation
 - He corrected the lesson method to separate Teach, Practice, and Demonstrate and correctly distinguished conceptual verification design from exact evidence required for a real file or implementation.
 
 The instructor supplied the direct concept lesson, complete worked example, reviewed-artifact organization, and SHA-256 source-integrity explanation. The material guided decisions were Jeremy's, and the different transfer plan review was completed without answer-specific help. Checkpoint status is **Completed with limited assistance**, not demonstrated independently and not a resume-level gate. Evidence: `student/M0.5-L2_EXPENSE_FILE_READINESS_AI_PLAN.md`, `student/M0.5-L2_EXPENSE_FILE_READINESS_REVIEWED_PLAN.md`, and `evidence/LEARNER_CHECKPOINT_M0.5-C2.md`.
+
+`M0.5-C3` supports these additional non-resume-level statements:
+
+- Jeremy audited an AI-proposed budget-variance change against approved behavior, identified a plausible percentage produced with the wrong denominator, supplied an exact boundary case, and decided the change needed revision.
+- In a different cash-disbursement acceptance transfer, he correctly recognized that row and amount controls could pass while a missing approved payment date was improperly inferred, manual review was bypassed, and September cash was overstated.
+- He requested inspection of the narrow date-selection rule and explained the evidence limitation that amount reconciliation does not prove dates are correct.
+- The recovered response was verified against a durable tracked text inspection record without reopening the workbook after repeated task stalls.
+
+The instructor corrected an overbroad practice classification, explained targeted inspection and diagnostic isolation, clarified the transfer prompt phrase “narrow implementation rule,” and supplied exact expected transfer totals during recovery. Jeremy owned the material transfer diagnosis, consequence, inspection request, limitation, and revision decision. Checkpoint status is **Completed with limited assistance**, not demonstrated independently and not a resume-level gate. Evidence: `student/M0.5-L3_ANNOTATED_DIFF_REVIEW.md`, `student/M0.5-L3_CASH_SCHEDULE_TRANSFER_PACKET.md`, and `evidence/LEARNER_CHECKPOINT_M0.5-C3.md`.
 
 ## Claim rule
 

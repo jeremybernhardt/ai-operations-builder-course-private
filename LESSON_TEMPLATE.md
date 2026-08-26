@@ -1,7 +1,7 @@
 # Staged Lesson Template
 
 Template ID: `LESSON-TEMPLATE-001`  
-Version: `2.0.6`
+Version: `2.0.7`
 
 ## Required lesson metadata
 

@@ -1,22 +1,23 @@
 {
   "schema_version": "2.0.0",
-  "generated_at": "2026-08-22T04:19:05.294166+00:00",
+  "generated_at": "2026-08-26T07:52:06.222243+00:00",
   "source": "PROGRESS.json",
-  "source_progress_version": 11,
+  "source_progress_version": 12,
   "non_authoritative": true,
   "label": "Read-only mirror \u2014 canonical progress lives in PROGRESS.json",
   "lesson": {
-    "lesson_id": "M0.5-L2",
-    "title": "Reviewing an AI Builder Plan, Assumptions, and Scope",
+    "lesson_id": "M0.5-L3",
+    "title": "Reviewing an AI-Generated Diff and Verification Evidence",
     "mastery_status": "Completed with limited assistance",
-    "assistance_level": "Direct concept teaching and a complete worked example; learner-owned guided decisions; limited help on real-file integrity verification during a different transfer",
-    "current_checkpoint_id": "M0.5-C2",
+    "assistance_level": "Direct teaching and guided correction on practice; learner-owned transfer with limited clarification and exact known-answer refinement",
+    "current_checkpoint_id": "M0.5-C3",
     "learner_attempt_received": true,
     "verification_evidence": [
-      "student/M0.5-L2_EXPENSE_FILE_READINESS_AI_PLAN.md",
-      "student/M0.5-L2_EXPENSE_FILE_READINESS_REVIEWED_PLAN.md",
-      "evidence/LEARNER_CHECKPOINT_M0.5-C2.md"
+      "student/M0.5-L3_ANNOTATED_DIFF_REVIEW.md",
+      "student/M0.5-L3_CASH_SCHEDULE_TRANSFER_PACKET.md",
+      "student/M0.5-L3_CASH_DISBURSEMENT_ACCEPTANCE_FIXTURE.xlsx.inspect.ndjson",
+      "evidence/LEARNER_CHECKPOINT_M0.5-C3.md"
     ],
-    "note": "Jeremy reviewed an AI-drafted expense-checker plan, rejected unapproved duplicate selection and a cleaned-data bypass, deferred unnecessary database/dashboard scope, corrected the warning population, and designed independent review evidence. In a different accounts-payable plan he independently identified assumption, source, permission, scope, and circular-verification failures. He also corrected the lesson delivery to require Teach, Practice, and Demonstrate and correctly rejected artificial numeric specificity in a theoretical transfer. Independent mastery and every resume-level capability gate remain unclaimed."
+    "note": "Jeremy reviewed a flawed budget-variance change, identified a plausible-but-wrong denominator result, supplied an exact threshold-boundary case, and required revision. In a genuinely different cash-disbursement transfer recovered after a task disconnect, he correctly identified that a missing approved date had been inferred instead of sent to manual review, distorting September cash; he requested inspection of the date-selection rule and explained why row and amount controls were insufficient. Limited assistance clarified targeted inspection and made the exact expected transfer totals explicit. The workbook was not reopened during recovery. Independent mastery and every resume-level capability gate remain unclaimed."
   }
 }

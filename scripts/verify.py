@@ -110,7 +110,8 @@ def verify_known_answer() -> None:
 def verify_progress_snapshot() -> None:
     progress = json.loads((ROOT / "PROGRESS.json").read_text(encoding="utf-8"))
     snapshot = course_setup.build_progress_snapshot()
-    lesson = next(item for item in progress["lessons"] if item["lesson_id"] == "M0.5-L2")
+    lesson = next(item for item in progress["lessons"] if item["lesson_id"] == "M0.5-L3")
+    m0_5_l2 = next(item for item in progress["lessons"] if item["lesson_id"] == "M0.5-L2")
     m0_5_l1 = next(item for item in progress["lessons"] if item["lesson_id"] == "M0.5-L1")
     m0_l4 = next(item for item in progress["lessons"] if item["lesson_id"] == "M0-L4")
     m0_l3 = next(item for item in progress["lessons"] if item["lesson_id"] == "M0-L3")
@@ -121,10 +122,11 @@ def verify_progress_snapshot() -> None:
     check(snapshot["non_authoritative"] is True, "portal progress is not labeled non-authoritative")
     check(
         lesson["mastery_status"] == "Completed with limited assistance",
-        "canonical learner status does not match the recorded M0.5-C2 evidence",
+        "canonical learner status does not match the recorded M0.5-C3 evidence",
     )
     check(lesson["learner_attempt_received"] is True, "learner attempt evidence is missing")
-    check("limited help" in lesson["assistance_level"], "M0.5-C2 transfer assistance is not recorded honestly")
+    check("limited" in lesson["assistance_level"], "M0.5-C3 transfer assistance is not recorded honestly")
+    check(m0_5_l2["mastery_status"] == "Completed with limited assistance", "M0.5-C2 evidence was changed")
     check(m0_5_l1["mastery_status"] == "Completed with limited assistance", "M0.5-C1 evidence was changed")
     check(m0_l4["mastery_status"] == "Completed with substantial assistance", "M0-C4 evidence was changed")
     check(m0_l3["mastery_status"] == "Completed with substantial assistance", "M0-C3 evidence was changed")
@@ -144,6 +146,10 @@ def verify_progress_snapshot() -> None:
     check((ROOT / "evidence" / "LEARNER_CHECKPOINT_M0.5-C2.md").is_file(), "M0.5-C2 evidence file is missing")
     check((ROOT / "student" / "M0.5-L2_EXPENSE_FILE_READINESS_AI_PLAN.md").is_file(), "M0.5-L2 AI plan is missing")
     check((ROOT / "student" / "M0.5-L2_EXPENSE_FILE_READINESS_REVIEWED_PLAN.md").is_file(), "M0.5-L2 reviewed plan is missing")
+    check((ROOT / "evidence" / "LEARNER_CHECKPOINT_M0.5-C3.md").is_file(), "M0.5-C3 evidence file is missing")
+    check((ROOT / "student" / "M0.5-L3_ANNOTATED_DIFF_REVIEW.md").is_file(), "M0.5-L3 guided review is missing")
+    check((ROOT / "student" / "M0.5-L3_CASH_SCHEDULE_TRANSFER_PACKET.md").is_file(), "M0.5-L3 transfer response is missing")
+    check((ROOT / "student" / "M0.5-L3_CASH_DISBURSEMENT_ACCEPTANCE_FIXTURE.xlsx.inspect.ndjson").is_file(), "M0.5-L3 text inspection record is missing")
 
 
 def verify_student_gate() -> None:
@@ -162,7 +168,7 @@ def verify_no_secrets() -> None:
     ]
     hits: list[str] = []
     for path in ROOT.rglob("*"):
-        if not path.is_file() or any(part in excluded for part in path.parts):
+        if not path.is_file() or path.name.startswith(".codex-") or any(part in excluded for part in path.parts):
             continue
         if path.suffix.lower() in {".sqlite", ".png", ".jpg", ".jpeg", ".zip", ".woff", ".woff2"}:
             continue
@@ -200,8 +206,8 @@ def verify_v2_architecture() -> None:
     check(state["schema_version"] == "2.0.0", "course state schema was not upgraded")
     check(progress["schema_version"] == "2.0.0", "progress schema was not upgraded")
     check(state["course_architecture_approval"]["status"] == "approved", "v2 architecture approval missing")
-    check(state["release_version"] == "2.0.6", "v2.0.6 release state missing")
-    check(state["current_checkpoint_id"] == "M0.5-C2", "M0.5-C2 checkpoint is not current")
+    check(state["release_version"] == "2.0.7", "v2.0.7 release state missing")
+    check(state["current_checkpoint_id"] == "M0.5-C3", "M0.5-C3 checkpoint is not current")
     check(state["authoritative_source"]["repository_full_name"] == "jeremybernhardt/ai-operations-builder-course-private", "private repository authority missing")
     check(state["authoritative_source"]["visibility"] == "private", "private visibility state missing")
     check("Finance is the primary application context" in contract, "technical-subject boundary missing")
@@ -223,8 +229,9 @@ def verify_v2_architecture() -> None:
     check("M0-C4" in ledger, "M0-C4 evidence ledger entry missing")
     check("M0.5-C1" in ledger, "M0.5-C1 evidence ledger entry missing")
     check("M0.5-C2" in ledger, "M0.5-C2 evidence ledger entry missing")
-    check("M0.5-L3" in prompt and "Reviewing an AI-Generated Diff and Verification Evidence" in prompt, "next bounded lesson missing")
-    check("work-practical" in prompt and "diff review" in prompt, "work-practical next-lesson context missing")
+    check("M0.5-C3" in ledger, "M0.5-C3 evidence ledger entry missing")
+    check("M0.5-L4" in prompt and "Debugging from Evidence and Directing a Bounded Modification" in prompt, "next bounded lesson missing")
+    check("safe local practice code" in prompt and "bounded correction" in prompt, "work-practical next-lesson context missing")
     check("DEC-C2-009" in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"), "AI-execution decision missing")
     check("DEC-C2-010" in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"), "teaching-strategy decision missing")
     check("DEC-M0-001" in (ROOT / "DECISION_LOG.md").read_text(encoding="utf-8"), "identity/privacy decision missing")

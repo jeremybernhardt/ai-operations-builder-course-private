@@ -24,6 +24,16 @@
 - No Course Portal process was started, no backup bundle was created, and no external action occurred.
 - Learner progress, mastery, capability gates, and M0.5-L3 authorization were not advanced. The existing L3 submission remains unverified pending lesson recovery.
 
+## Selective-context lesson task 1 — M0.5-L3 passed
+
+- Date: 2026-08-26.
+- Jeremy's existing guided review and cash-disbursement transfer answer were recovered and evaluated without asking him to repeat either exercise.
+- The binary workbook was not reopened. The scanner now records workbook metadata only and emits `WORKBOOK_CONTENT_SKIPPED`; backup packaging excludes binary workbooks and preserves the tracked text inspection record.
+- Mandatory startup measured 15,348 source words, 51.87% below the legacy reference and below the 17,000-word ceiling. This is the new approved baseline.
+- Reliability tests: 8 passed. Reconstruction: 85 checks passed. Full tests/build, two rendered tests, lint, artifact validation, JSON structure, and credential/secret scanning passed.
+- `M0.5-C3` advanced only after the recovered answer was verified. It is completed with limited assistance; independent mastery and every resume-level capability gate remain unclaimed.
+- This is the first successful selective-context lesson task. `REL-4` remains deferred until the M0.5 boundary and two successful tasks.
+
 ## Future checkpoints
 
 - `REL-4` is deferred until the M0.5 boundary and two successful selective-context lesson tasks.

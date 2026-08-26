@@ -1,8 +1,8 @@
 # Course Bundle Manifest
 
-Backup bundle: `AI_Operations_Builder_Course_Prototype_v2.0.6_M0.5-L2.zip`
+Backup bundle: `AI_Operations_Builder_Course_Prototype_v2.0.7_M0.5-L3.zip`
 
-The backup name retains `Prototype` for continuity with the verified v1.2.0 folder. The required v2.0.0 course architecture is broader; v2.0.1-v2.0.4 added operator-builder, safe-execution, identity/privacy, teaching, and private-repository authority records. v2.0.5 added the verified work-practical M0.5-L1 builder-specification checkpoint. v2.0.6 adds the verified M0.5-L2 plan-review checkpoint and the course-wide Teach, Practice, and Demonstrate method with task-stage evidence precision. Future lessons remain unbuilt beyond their bounded blueprint.
+The backup name retains `Prototype` for continuity with the verified v1.2.0 folder. The required v2.0.0 course architecture is broader; v2.0.1-v2.0.4 added operator-builder, safe-execution, identity/privacy, teaching, and private-repository authority records. v2.0.5 added M0.5-L1, v2.0.6 added M0.5-L2 plus teaching-method corrections, and v2.0.7 adds the recovered and verified M0.5-L3 change-review checkpoint. Future lessons remain unbuilt beyond their bounded specifications.
 
 ## Learner entry point
 
@@ -16,7 +16,7 @@ The backup name retains `Prototype` for continuity with the verified v1.2.0 fold
 | File | Role |
 |---|---|
 | `AGENTS.md` | Repository startup, authority, environment, privacy, and verification instructions. |
-| `COURSE_CONTRACT.md` | v2.0.6 purpose, constraints, operator-builder and AI-execution standards, technical/finance boundaries, teaching rules, privacy, and authority. |
+| `COURSE_CONTRACT.md` | v2.0.7 purpose, constraints, operator-builder and AI-execution standards, technical/finance boundaries, teaching rules, privacy, and authority. |
 | `CURRICULUM_MAP.md` | Bounded required modules `M0`-`M12`, preserved `P0`, and optional `OH1`. |
 | `COURSE_STATE.json` | Current checkpoint, approvals, blockers, next action, and authorization boundary. |
 | `PROGRESS.json` | Learner mastery and assistance evidence; authoritative over portal progress. |
@@ -27,7 +27,7 @@ The backup name retains `Prototype` for continuity with the verified v1.2.0 fold
 | `DATA_DICTIONARY.md` | Preserved synthetic prototype dataset fields and controls. |
 | `DECISION_LOG.md` | Append-only decisions, including the retarget, operator-builder standard, safe AI execution, identity/privacy choice, and transfer-not-repetition correction. |
 | `SESSION_HANDOFF.md` | Factual briefing for the next conversation. |
-| `NEXT_CHAT_PROMPT.md` | Exact instructions for the fresh task that teaches only `M0.5-L3`. |
+| `NEXT_CHAT_PROMPT.md` | Exact instructions for the fresh task that teaches only `M0.5-L4`. |
 | `COURSE_RELIABILITY_PLAN.md` | Milestone-triggered selective-context, recovery, growth, and rollout procedure. |
 
 ## Module 0 materials
@@ -54,6 +54,12 @@ The backup name retains `Prototype` for continuity with the verified v1.2.0 fold
 | `student/M0.5-L2_EXPENSE_FILE_READINESS_AI_PLAN.md` | Preserved original AI-drafted plan reviewed during M0.5-L2. |
 | `student/M0.5-L2_EXPENSE_FILE_READINESS_REVIEWED_PLAN.md` | Guided reviewed plan with requirements, assumptions, scope, and approval evidence. |
 | `evidence/LEARNER_CHECKPOINT_M0.5-C2.md` | Verified plan-review decisions, transfer result, teaching corrections, assistance, and advancement boundary. |
+| `lesson/M0.5-L3_REVIEWING_AI_GENERATED_DIFF_VERIFICATION_EVIDENCE.md` | Completed third builder-supervision lesson specification and mastery boundary. |
+| `student/M0.5-L3_ANNOTATED_DIFF_REVIEW.md` | Guided budget-variance change and evidence review. |
+| `student/M0.5-L3_CASH_SCHEDULE_TRANSFER_PACKET.md` | Recovered cash-disbursement transfer response and text-evidence verification. |
+| `student/M0.5-L3_CASH_DISBURSEMENT_ACCEPTANCE_FIXTURE.xlsx.inspect.ndjson` | Durable text inspection snapshot used to verify the transfer without reopening the workbook. |
+| `evidence/LEARNER_CHECKPOINT_M0.5-C3.md` | Verified diff-review and implementation-acceptance evidence, assistance, limitations, and advancement boundary. |
+| `lesson/M0.5-L4_DEBUGGING_FROM_EVIDENCE_BOUNDED_MODIFICATION.md` | Prepared next lesson specification; not yet attempted. |
 
 ## Preserved prototype materials
 
@@ -85,11 +91,11 @@ The backup name retains `Prototype` for continuity with the verified v1.2.0 fold
 |---|---|
 | `scripts/setup.py` | Validates CSV, rebuilds SQLite, and generates snapshots/artifact copies. |
 | `scripts/start-course.sh` | Checks prerequisites, installs locked components when absent, prepares data, and starts the local site. |
-| `scripts/verify.py` | Deterministic prototype plus v2.0.6 course-state, M0/M0.5 evidence, repository authority, and capability-gate checks. |
-| `scripts/reconstruction_check.py` | Confirms a fresh task can recover v2.0.6 private-repository authority, boundaries, evidence, and next action. |
+| `scripts/verify.py` | Deterministic prototype plus v2.0.7 course-state, M0/M0.5 evidence, repository authority, and capability-gate checks. |
+| `scripts/reconstruction_check.py` | Confirms a fresh task can recover v2.0.7 private-repository authority, boundaries, evidence, and next action. |
 | `scripts/reliability_scan.py` | Scans full repository continuity while returning only bounded structured metadata. |
-| `scripts/package_bundle.py` | Creates the clean v2.0.6 M0.5-L2 backup ZIP without dependencies, runtime files, Git history, or macOS metadata. |
-| `tests/rendered-html.test.mjs` | Verifies rendered Course Portal, preserved KPI Lab, and v2.0.6 continuity labels. |
+| `scripts/package_bundle.py` | Creates the clean v2.0.7 M0.5-L3 backup ZIP without dependencies, runtime files, Git history, transient Codex/Excel files, or binary workbooks; the tracked text inspection record preserves the completed Excel evidence. |
+| `tests/rendered-html.test.mjs` | Verifies rendered Course Portal, preserved KPI Lab, and v2.0.7 continuity labels. |
 | `tests/test_reliability_scan.py` | Verifies scan-only canary privacy, output bounds, hashing, and Excel lock exclusion. |
 | `package.json` / `package-lock.json` | Reproducible Node application dependencies and commands. |
 | `pyproject.toml` / `.python-version` | Prototype Python compatibility declaration. |
@@ -108,11 +114,13 @@ The backup name retains `Prototype` for continuity with the verified v1.2.0 fold
 | `evidence/RECONSTRUCTION_CHECK_v2.0.5.md` | v2.0.5 continuity results. |
 | `evidence/RELEASE_CHECKS_v2.0.6.md` | v2.0.6 release results. |
 | `evidence/RECONSTRUCTION_CHECK_v2.0.6.md` | v2.0.6 continuity results. |
+| `evidence/RELEASE_CHECKS_v2.0.7.md` | v2.0.7 release results. |
+| `evidence/RECONSTRUCTION_CHECK_v2.0.7.md` | v2.0.7 continuity results. |
 | `evidence/COURSE_RELIABILITY_CHECKPOINTS.md` | Ordered reliability baseline, gates, and milestone results. |
 
 ## Intentionally absent
 
-- Future full lessons, future datasets, solution code, and answer keys
+- Lessons beyond the prepared M0.5-L4 specification, future datasets, solution code, and answer keys
 - The finance flagship implementation or learner-built work dashboard
 - External database, API, automation, runtime AI, or agent implementation
 - Optional `OH1` implementation

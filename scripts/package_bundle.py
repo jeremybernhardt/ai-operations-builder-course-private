@@ -9,9 +9,9 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BUNDLE_NAME = "AI_Operations_Builder_Course_Prototype_v2.0.6_M0.5-L2.zip"
+BUNDLE_NAME = "AI_Operations_Builder_Course_Prototype_v2.0.7_M0.5-L3.zip"
 OUTPUT = ROOT / BUNDLE_NAME
-ARCHIVE_ROOT = "AI_Operations_Builder_Course_Prototype_v2.0.6_M0.5-L2"
+ARCHIVE_ROOT = "AI_Operations_Builder_Course_Prototype_v2.0.7_M0.5-L3"
 EXCLUDED_PARTS = {
     ".git",
     ".sites-runtime",
@@ -29,11 +29,19 @@ def is_transient_lock_file(path: Path) -> bool:
     return path.name.startswith("~$") and path.suffix.lower() == ".xlsx"
 
 
+def is_binary_workbook(path: Path) -> bool:
+    return path.suffix.lower() == ".xlsx"
+
+
 def should_include(path: Path) -> bool:
     relative = path.relative_to(ROOT)
     if path == OUTPUT or relative.parts[0] in EXCLUDED_ROOTS:
         return False
     if is_transient_lock_file(path):
+        return False
+    if is_binary_workbook(path):
+        return False
+    if path.name.startswith(".codex-"):
         return False
     if any(path.name.startswith(prefix) for prefix in EXCLUDED_EXPORT_PREFIXES):
         return False
@@ -80,8 +88,14 @@ def main() -> None:
             f"{ARCHIVE_ROOT}/student/M0.5-L2_EXPENSE_FILE_READINESS_AI_PLAN.md",
             f"{ARCHIVE_ROOT}/student/M0.5-L2_EXPENSE_FILE_READINESS_REVIEWED_PLAN.md",
             f"{ARCHIVE_ROOT}/evidence/LEARNER_CHECKPOINT_M0.5-C2.md",
-            f"{ARCHIVE_ROOT}/evidence/RELEASE_CHECKS_v2.0.6.md",
-            f"{ARCHIVE_ROOT}/evidence/RECONSTRUCTION_CHECK_v2.0.6.md",
+            f"{ARCHIVE_ROOT}/lesson/M0.5-L3_REVIEWING_AI_GENERATED_DIFF_VERIFICATION_EVIDENCE.md",
+            f"{ARCHIVE_ROOT}/student/M0.5-L3_ANNOTATED_DIFF_REVIEW.md",
+            f"{ARCHIVE_ROOT}/student/M0.5-L3_CASH_SCHEDULE_TRANSFER_PACKET.md",
+            f"{ARCHIVE_ROOT}/student/M0.5-L3_CASH_DISBURSEMENT_ACCEPTANCE_FIXTURE.xlsx.inspect.ndjson",
+            f"{ARCHIVE_ROOT}/evidence/LEARNER_CHECKPOINT_M0.5-C3.md",
+            f"{ARCHIVE_ROOT}/lesson/M0.5-L4_DEBUGGING_FROM_EVIDENCE_BOUNDED_MODIFICATION.md",
+            f"{ARCHIVE_ROOT}/evidence/RELEASE_CHECKS_v2.0.7.md",
+            f"{ARCHIVE_ROOT}/evidence/RECONSTRUCTION_CHECK_v2.0.7.md",
             f"{ARCHIVE_ROOT}/evidence/COURSE_RELIABILITY_CHECKPOINTS.md",
             f"{ARCHIVE_ROOT}/AGENTS.md",
             f"{ARCHIVE_ROOT}/database/prototype.sqlite",

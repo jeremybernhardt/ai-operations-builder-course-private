@@ -1,16 +1,16 @@
 {
   "schema_version": "2.0.0",
-  "release_version": "2.0.6",
-  "progress_version": 11,
-  "updated_at": "2026-08-21T21:07:34-07:00",
+  "release_version": "2.0.7",
+  "progress_version": 12,
+  "updated_at": "2026-08-26T00:19:53-07:00",
   "learner": "Jeremy Bernhardt",
   "allowed_mastery_statuses": ["Not started", "Introduced", "Completed with substantial assistance", "Completed with limited assistance", "Demonstrated independently"],
   "course_architecture": {
     "version": "2.0.0",
-    "release_version": "2.0.6",
+    "release_version": "2.0.7",
     "status": "Approved",
     "required_next_module": "M0.5",
-    "required_next_lesson": "M0.5-L3",
+    "required_next_lesson": "M0.5-L4",
     "required_course_built_beyond_prototype": true,
     "optional_human_data_specialization_built": false,
     "operator_builder_standard": "AI-assisted operator-builder proficiency for strategic finance and operations",
@@ -95,6 +95,21 @@
         "evidence/LEARNER_CHECKPOINT_M0.5-C2.md"
       ],
       "note": "Jeremy reviewed an AI-drafted expense-checker plan, rejected unapproved duplicate selection and a cleaned-data bypass, deferred unnecessary database/dashboard scope, corrected the warning population, and designed independent review evidence. In a different accounts-payable plan he independently identified assumption, source, permission, scope, and circular-verification failures. He also corrected the lesson delivery to require Teach, Practice, and Demonstrate and correctly rejected artificial numeric specificity in a theoretical transfer. Independent mastery and every resume-level capability gate remain unclaimed."
+    },
+    {
+      "lesson_id": "M0.5-L3",
+      "title": "Reviewing an AI-Generated Diff and Verification Evidence",
+      "mastery_status": "Completed with limited assistance",
+      "assistance_level": "Direct teaching and guided correction on practice; learner-owned transfer with limited clarification and exact known-answer refinement",
+      "current_checkpoint_id": "M0.5-C3",
+      "learner_attempt_received": true,
+      "verification_evidence": [
+        "student/M0.5-L3_ANNOTATED_DIFF_REVIEW.md",
+        "student/M0.5-L3_CASH_SCHEDULE_TRANSFER_PACKET.md",
+        "student/M0.5-L3_CASH_DISBURSEMENT_ACCEPTANCE_FIXTURE.xlsx.inspect.ndjson",
+        "evidence/LEARNER_CHECKPOINT_M0.5-C3.md"
+      ],
+      "note": "Jeremy reviewed a flawed budget-variance change, identified a plausible-but-wrong denominator result, supplied an exact threshold-boundary case, and required revision. In a genuinely different cash-disbursement transfer recovered after a task disconnect, he correctly identified that a missing approved date had been inferred instead of sent to manual review, distorting September cash; he requested inspection of the date-selection rule and explained why row and amount controls were insufficient. Limited assistance clarified targeted inspection and made the exact expected transfer totals explicit. The workbook was not reopened during recovery. Independent mastery and every resume-level capability gate remain unclaimed."
     }
   ],
   "skills": [
@@ -108,6 +123,7 @@
     {"skill_id":"SK-GITHUB-PRIVATE-REPO-BASIC-001","name":"Specify, approve, and verify a private GitHub repository and recoverable remote source","mastery_status":"Completed with substantial assistance","assistance_level":"Full walkthrough with learner-owned specifications and external approvals","evidence":["evidence/LEARNER_CHECKPOINT_M0-C4.md"]},
     {"skill_id":"SK-AI-BUILDER-BRIEF-001","name":"Define a bounded AI-builder outcome, constraints, acceptance criteria, verification plan, and done threshold","mastery_status":"Completed with limited assistance","assistance_level":"Full structured walkthrough for the guided brief; limited targeted help on a different transfer scenario","evidence":["student/M0.5-L1_EXPENSE_FILE_READINESS_BUILD_BRIEF.md","evidence/LEARNER_CHECKPOINT_M0.5-C1.md"]},
     {"skill_id":"SK-AI-BUILDER-PLAN-REVIEW-001","name":"Review an AI builder plan for requirements, assumptions, scope, and approval evidence","mastery_status":"Completed with limited assistance","assistance_level":"Direct teaching and a complete worked example; learner-owned material decisions; limited help on real-file integrity verification","evidence":["student/M0.5-L2_EXPENSE_FILE_READINESS_REVIEWED_PLAN.md","evidence/LEARNER_CHECKPOINT_M0.5-C2.md"]},
+    {"skill_id":"SK-AI-BUILDER-DIFF-REVIEW-001","name":"Review an AI-generated change and verification evidence for traceability, hidden risk, and implementation acceptance","mastery_status":"Completed with limited assistance","assistance_level":"Direct teaching and guided correction on practice; learner-owned transfer with limited clarification and exact known-answer refinement","evidence":["student/M0.5-L3_ANNOTATED_DIFF_REVIEW.md","student/M0.5-L3_CASH_SCHEDULE_TRANSFER_PACKET.md","evidence/LEARNER_CHECKPOINT_M0.5-C3.md"]},
     {"skill_id":"SK-SQL-READ-001","name":"Read and modify basic SQL","mastery_status":"Not started","assistance_level":"None","evidence":[]},
     {"skill_id":"SK-VERIFY-001","name":"Verify a metric independently","mastery_status":"Not started","assistance_level":"None","evidence":[]},
     {"skill_id":"SK-WORK-DASHBOARD-001","name":"Build and modify a decision-oriented work dashboard","mastery_status":"Not started","assistance_level":"None","evidence":[]},
@@ -147,7 +163,10 @@
       "evidence/RECONSTRUCTION_CHECK_v2.0.5.md",
       "evidence/LEARNER_CHECKPOINT_M0.5-C2.md",
       "evidence/RELEASE_CHECKS_v2.0.6.md",
-      "evidence/RECONSTRUCTION_CHECK_v2.0.6.md"
+      "evidence/RECONSTRUCTION_CHECK_v2.0.6.md",
+      "evidence/LEARNER_CHECKPOINT_M0.5-C3.md",
+      "evidence/RELEASE_CHECKS_v2.0.7.md",
+      "evidence/RECONSTRUCTION_CHECK_v2.0.7.md"
     ]
   }
 }
