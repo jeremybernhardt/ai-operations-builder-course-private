@@ -25,9 +25,15 @@ EXCLUDED_ROOTS = {"examples"}
 EXCLUDED_EXPORT_PREFIXES = {"SESSION_HANDOFF_", "NEXT_CHAT_PROMPT_AFTER_"}
 
 
+def is_transient_lock_file(path: Path) -> bool:
+    return path.name.startswith("~$") and path.suffix.lower() == ".xlsx"
+
+
 def should_include(path: Path) -> bool:
     relative = path.relative_to(ROOT)
     if path == OUTPUT or relative.parts[0] in EXCLUDED_ROOTS:
+        return False
+    if is_transient_lock_file(path):
         return False
     if any(path.name.startswith(prefix) for prefix in EXCLUDED_EXPORT_PREFIXES):
         return False
@@ -60,6 +66,7 @@ def main() -> None:
             f"{ARCHIVE_ROOT}/CAPABILITY_EVIDENCE_LEDGER.md",
             f"{ARCHIVE_ROOT}/SESSION_HANDOFF.md",
             f"{ARCHIVE_ROOT}/NEXT_CHAT_PROMPT.md",
+            f"{ARCHIVE_ROOT}/COURSE_RELIABILITY_PLAN.md",
             f"{ARCHIVE_ROOT}/lesson/M0-L2_LOCAL_BRANCHES_MERGES_SAFE_RECOVERY.md",
             f"{ARCHIVE_ROOT}/evidence/LEARNER_CHECKPOINT_M0-C2.md",
             f"{ARCHIVE_ROOT}/lesson/M0-L3_GIT_IDENTITY_PRIVACY_GITHUB_READINESS.md",
@@ -75,10 +82,13 @@ def main() -> None:
             f"{ARCHIVE_ROOT}/evidence/LEARNER_CHECKPOINT_M0.5-C2.md",
             f"{ARCHIVE_ROOT}/evidence/RELEASE_CHECKS_v2.0.6.md",
             f"{ARCHIVE_ROOT}/evidence/RECONSTRUCTION_CHECK_v2.0.6.md",
+            f"{ARCHIVE_ROOT}/evidence/COURSE_RELIABILITY_CHECKPOINTS.md",
             f"{ARCHIVE_ROOT}/AGENTS.md",
             f"{ARCHIVE_ROOT}/database/prototype.sqlite",
             f"{ARCHIVE_ROOT}/student/first_pass_acceptance.sql",
             f"{ARCHIVE_ROOT}/package-lock.json",
+            f"{ARCHIVE_ROOT}/scripts/reliability_scan.py",
+            f"{ARCHIVE_ROOT}/tests/test_reliability_scan.py",
         }
         missing = required - names
         if missing:

@@ -40,6 +40,8 @@ First, the initial lesson became a chain of questions and file comparisons witho
 
 Second, after Jeremy had already demonstrated the conceptual plan-review capability, the instructor required invented invoice IDs and amounts. Jeremy correctly distinguished conceptual evidence from later real-file verification. `DEC-M0.5-003` requires evidence precision to match the task stage: do not demand arbitrary numeric ceremony for a theoretical example, but require exact deterministic evidence for real files, calculations, or implementations.
 
+On 2026-08-25 Jeremy approved two further course-wide changes without changing his learner checkpoint. `DEC-C2-012` replaces full-history startup with selective authoritative context, a scan-only validator, targeted fallback, interrupted-work recovery, and measured context-growth controls. `DEC-C2-013` makes later instruction accelerated and build-first, reuses genuine prior evidence instead of repeating basics, keeps openings and endings plain, and adds a bounded job-search-monitor transfer at selected future module milestones. The finance/operations flagship remains primary.
+
 ## What Jeremy completed in the guided expense-plan review
 
 Jeremy:
@@ -121,4 +123,4 @@ It remains local-only and was not modified during M0.5-L2.
 
 ## Next-task startup
 
-Open the authoritative private repository in a fresh Codex task and use `NEXT_CHAT_PROMPT.md` or its identical versioned export `NEXT_CHAT_PROMPT_AFTER_M0.5-L2_v2.0.6.md`. Read both completed M0.5 lessons, their artifacts, and checkpoint evidence before preparing only M0.5-L3. Keep `AI_Operations_Builder_Course_Prototype_v2.0.6_M0.5-L2.zip` as a recovery backup. Do not begin implementation or another lesson.
+Open the authoritative private repository in a fresh Codex task and use canonical `NEXT_CHAT_PROMPT.md`; its named versioned export is only the prior recovery baseline. Follow selective startup, run the scan-only validator, read the current lesson and prerequisite, and inspect only the current submission artifacts needed to resume M0.5-L3. Use the recovery index only for a conflict or failed quality check. Keep `AI_Operations_Builder_Course_Prototype_v2.0.6_M0.5-L2.zip` as a recovery backup. Do not begin implementation or another lesson.

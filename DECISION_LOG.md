@@ -284,3 +284,21 @@ Append-only. Later decisions must identify any entry they supersede.
 - Rationale: During the `M0.5-L2` transfer, Jeremy had already identified the plan's material assumptions, scope violations, permission errors, human-review boundary, and the need for a small known-answer comparison. Requiring invented invoice identifiers and amounts added ceremony without testing another capability. Jeremy correctly distinguished that situation from later work with a real file, where exact values and source-integrity checks would be necessary.
 - Extends: `DEC-C2-008`, `DEC-C2-010`, and `DEC-M0.5-002`. It does not relax deterministic verification for implemented artifacts or real calculations.
 - Affected artifacts: `COURSE_CONTRACT.md`, `LESSON_TEMPLATE.md`, `lesson/M0.5-L2_REVIEWING_AI_BUILDER_PLAN_ASSUMPTIONS_SCOPE.md`, `evidence/LEARNER_CHECKPOINT_M0.5-C2.md`, future lesson design, and release continuity.
+
+## DEC-C2-012 — Use selective, auditable context and staged reliability maintenance
+
+- Date: 2026-08-25
+- Status: Current
+- Decision: Replace full-history lesson startup with the authoritative core, current lesson, prerequisite evidence, and explicitly relevant artifacts. Scan the full repository locally through a bounded metadata-only validator; load older content only to resolve a dependency, conflict, recovery problem, or failed quality check. Acknowledge learner answers before long tool work, recover interrupted current-lesson artifacts without advancing progress, bound interactive processes, and exclude transient Excel lock files from Git and packages. Roll out `REL-0` through `REL-3` before resuming M0.5-L3; defer `REL-4` until the M0.5 boundary and two successful selective-context tasks.
+- Controls: Initial startup must remain at or below 17,000 source words and at least 40% below the 31,889-word legacy baseline. More than 5% mandatory-core growth triggers audit; more than 10% unexplained growth blocks release. Full semantic audits remain direct-context work at routing changes, module boundaries, or unresolved conflicts.
+- Rationale: Repeated long task stalls followed learner submissions. Smaller auditable startup reduces context and failure exposure while deterministic reconciliation and targeted fallback preserve course quality.
+- Affected artifacts: startup instructions, continuity prompt, reliability plan/scanner/tests, state, verification, packaging, and checkpoint evidence.
+
+## DEC-C2-013 — Accelerate build-first instruction and add a bounded job-search transfer
+
+- Date: 2026-08-25
+- Status: Current
+- Decision: Use gap-based, build-first teaching, targeting roughly 65-75% building/debugging/modifying/testing, 15-25% verification/explanation, and 10-15% concepts. Ask at most one or two substantive questions before hands-on work unless risk blocks action. Shorten scaffolding when prior evidence truly proves the capability; integrate teach-back into explanation of the actual artifact; keep learner-facing openings and endings brief. Count course-building supervision as evidence for requirements, scope, approval, and AI collaboration, but not automatic proof of technical verification.
+- Transfer project: Keep the finance/operations flagship primary. Reuse selected module skills in a job-search monitor: contract in `M1`, approved retrieval and storage in `M5`, dashboard in `M7`, scheduling/recovery in `M8`, evaluated matching in `M9`, permissioned investigation without applying or contacting in `M10`, and synthetic public portfolio treatment in `M12`. Real resume and listing data remain private.
+- Rationale: Jeremy has demonstrated basic AI collaboration and wants faster progress toward defensible app, dashboard, automation, and agent-building skills without weakening independent verification.
+- Affected artifacts: teaching contract/template, curriculum map, continuity prompt, README, state, and future lesson design.

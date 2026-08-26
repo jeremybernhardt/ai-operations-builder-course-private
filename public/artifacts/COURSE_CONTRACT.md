@@ -149,7 +149,11 @@ Use one fresh chat per lesson. A lesson must close with verified progress, assis
 
 Instruction is rigorous, direct, clear, practical, and beginner-aware. Challenge ambiguity, unsupported assumptions, weak definitions, unnecessary finance theory, coding for its own sake, overengineering, hidden scope, and circular verification. Explain why a choice is weak and offer a better alternative.
 
-Every full lesson contains:
+The default is accelerated, gap-based, and build-first. Start from demonstrated capability, teach only the genuinely new technical or judgment gap, and move to a real artifact quickly. Target roughly 65-75% of learner time building, debugging, modifying, and testing; 15-25% verifying and explaining the actual work; and 10-15% concepts. Ask no more than one or two substantive learner questions before hands-on work unless a consequential ambiguity prevents safe progress.
+
+Prior evidence may shorten or combine scaffolding when it genuinely proves the same capability. Jeremy's course-building supervision is valid diagnostic or supplementary evidence for requirements, scope, approval, and AI collaboration, but it does not by itself prove code, data, or implementation verification. Never infer mastery from working software alone.
+
+A full lesson normally covers:
 
 1. real-world problem and user;
 2. technical learning objectives;
@@ -159,17 +163,19 @@ Every full lesson contains:
 6. guided project implementation;
 7. independent challenge;
 8. deterministic verification and independent reconciliation;
-9. teach-back;
+9. explanation of the actual artifact, change, evidence, and failure points;
 10. limitation or failure analysis; and
 11. progress and handoff update.
 
-Every lesson must also make three teaching modes visible and keep their purposes distinct:
+Every lesson must keep three teaching purposes distinct, while allowing a proved stage to be shortened or combined:
 
-1. **Teach:** locate the capability in the curriculum, explain the concepts directly, and demonstrate the reasoning with a complete worked example before expecting application.
+1. **Teach:** locate the capability, explain the missing gap directly, and demonstrate only as much reasoning as Jeremy needs before application.
 2. **Practice:** use one coherent, context-rich workplace scenario with appropriate scaffolding. Questions apply concepts already taught; they are not the primary means of introducing missing instruction.
-3. **Demonstrate:** assess transfer with a genuinely different scenario and less scaffolding, followed by verification, teach-back, and limitation analysis.
+3. **Demonstrate:** assess a genuinely different transfer with less scaffolding, followed by verification and limitation analysis. Evidence from earlier work may satisfy this purpose only when it is genuinely comparable and explicitly recorded.
 
 Do not substitute a chain of disconnected questions, file scavenger hunt, or unexplained comparison exercise for instruction. Source files and learner artifacts should support the lesson rather than become the teaching method by themselves. State explicitly how the current capability follows from prior work and where it will recur later in the course.
+
+Keep learner-facing openings and endings plain and brief. At opening, state what Jeremy will build or change, why it is useful, the new skill, and what success looks like. At closeout, state what he completed, how it was verified, what he can now explain or modify, and what comes next. Keep technical inventories, versions, command lists, hashes, and maintenance detail in background records unless they affect his decision or approval.
 
 Match evidence precision to the task stage. In a conceptual or theoretical exercise, do not require fabricated numeric detail after Jeremy has already demonstrated the intended judgment; a correct verification design may be sufficient. Exact known-answer values, file-integrity evidence, and deterministic reconciliation become mandatory when the lesson evaluates a real file, calculation, implementation, or materially ambiguous rule. Do not mistake additional ceremony or artificial specificity for stronger mastery evidence.
 
@@ -245,6 +251,10 @@ The system must support ingestion, validation, SQL analysis, Python transformati
 The learner-built work dashboard is a central portfolio and mastery artifact. It is distinct from the Course Portal. It must include decision-oriented views, filters, drill-downs, data freshness or validation status, and an independently completed modification. Its displayed results must reconcile to authoritative SQL or Python outputs.
 
 An early thin dashboard appears in `M4` after SQL and Python foundations. The full work dashboard and `GATE-WORK-DASHBOARD` occur in `M7`.
+
+A bounded **AI-assisted job-search monitor** is the recurring secondary transfer project, not a second curriculum or replacement flagship. It reuses the same module capability after the finance build: criteria and data contract in `M1`; approved sources, retrieval, normalization, deduplication, and database storage in `M5`; a review dashboard in `M7`; scheduled retrieval, logs, recovery, and notifications in `M8`; evaluated AI fit matching and explanations in `M9`; a permissioned investigation agent that never applies or contacts anyone in `M10`; and a public synthetic portfolio version in `M12`. Real resumes and listings remain private.
+
+Across the flagship and transfer, Jeremy must learn the reusable pieces needed for projects beyond file uploads: forms, APIs and JSON, database state, backend logic, web interfaces, authentication and secret handling, scheduled workflows and notifications, model integration, agent tools, and deployment boundaries.
 
 ## 11. Recurring technical tracks
 

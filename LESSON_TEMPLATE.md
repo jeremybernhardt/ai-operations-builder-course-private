@@ -18,14 +18,14 @@ Version: `2.0.6`
 
 ## Learner-facing introduction requirement
 
-Before presenting data, controls, or an assignment, every lesson must explain in plain language:
+Before work begins, use a brief plain-language opening that states:
 
-1. the real-world situation and primary user;
-2. why the topic matters and which decision it supports;
-3. unfamiliar terms needed for the next stage;
-4. what Jeremy will learn and produce;
-5. what prior knowledge is and is not expected; and
-6. the short sequence of the lesson.
+1. what Jeremy will build, debug, or change;
+2. why it is useful;
+3. the genuinely new skill; and
+4. what success looks like.
+
+Introduce unfamiliar terms only when they are needed for the next action. Keep versions, inventories, test commands, and maintenance details in instructor records unless they matter to a learner decision or approval.
 
 No required lesson may exist solely to teach finance. Finance concepts are supplied only to the depth needed for the technical attempt. No required lesson may exist solely to teach coding abstractions; coding is taught to support practical understanding, verification, debugging, and modification.
 
@@ -37,13 +37,15 @@ The introduction is part of the lesson, not optional instructor commentary. A le
 
 ## Visible teaching modes
 
-Every lesson must clearly distinguish these modes:
+Keep these purposes clear, but shorten or combine a stage when prior evidence genuinely proves it:
 
-1. **Teach** — show where the capability fits in the curriculum, explain the concepts directly, and provide a complete worked example with instructor reasoning.
+1. **Teach** — show where the capability fits, explain the missing gap directly, and model only the reasoning needed to begin.
 2. **Practice** — apply the taught concepts to one coherent workplace scenario with enough context and scaffolding to make each decision meaningful.
-3. **Demonstrate** — use a genuinely different scenario with reduced scaffolding to assess transfer, then complete verification, teach-back, and limitation work.
+3. **Demonstrate** — use genuinely different evidence or a scenario with reduced scaffolding to assess transfer, then complete verification and limitation work.
 
 Questions should help Jeremy apply or examine a concept after it has been taught. Do not make a chain of questions, line-picking exercise, or comparison between unexplained files carry the instructional burden. Files, plans, diffs, dashboards, and other artifacts are evidence and practice surfaces; they are not substitutes for the direct teaching section. Explain the connection to prior and later modules at the beginning and reinforce it at closeout.
+
+Default to accelerated, gap-based, build-first delivery: roughly 65-75% building, debugging, modifying, and testing; 15-25% verification and explanation; and 10-15% concepts. Ask at most one or two substantive questions before hands-on work unless unresolved risk or scope makes action unsafe. Use real artifacts early. Excel may be a familiar validation bridge, then move promptly to SQL, Python, databases, dashboards, APIs, and automations.
 
 Calibrate specificity to what the lesson actually verifies. Conceptual transfer may be established by a correct decision, material-risk explanation, and appropriate verification design without forcing Jeremy to invent arbitrary numbers. Require exact inputs, outputs, totals, hashes, or other deterministic evidence when a real file, calculation, implementation, or ambiguous business rule is under test. If Jeremy already demonstrates the conceptual distinction, do not add artificial precision merely to prolong the exercise.
 
@@ -59,19 +61,21 @@ Calibrate specificity to what the lesson actually verifies. Conceptual transfer 
 - Browser-local draft persistence is allowed only for learner convenience. It must be labeled local and non-authoritative, provide a reset control, and never edit canonical progress.
 - Required, optional, and one-time setup time must be estimated separately and recalibrated from observed learner experience.
 
-## Stage sequence
+## Adaptive stage sequence
 
 1. **Business problem** — establish the decision, user, stakes, and raw inputs.
 2. **Technical learning objectives** — state observable capabilities, not vague familiarity or finance-topic coverage.
 3. **Context and short concept lesson** — explain only the business context and technical ideas needed for the next attempt.
-4. **Guided example** — demonstrate a smaller or adjacent case without solving the learner's checkpoint.
+4. **Guided example when needed** — demonstrate a smaller or adjacent case without solving the learner's checkpoint; omit it when comparable evidence proves the capability.
 5. **Guided project implementation** — Jeremy attempts the current project step.
-6. **Independent challenge** — comparable new case, withheld until the guided work is verified.
+6. **Different demonstration** — use a comparable new case or already-recorded genuinely different evidence; do not repeat a proved skill merely to fill a stage.
 7. **Verification** — deterministic checks plus independent reconciliation appropriate to risk.
-8. **Teach-back** — Jeremy explains the rule, implementation, evidence, and failure points.
+8. **Artifact explanation** — integrate teach-back into Jeremy's explanation of the actual rule, implementation, evidence, and failure points.
 9. **Reflection and limitations** — Jeremy identifies at least one limitation or failure mode.
 10. **Lesson closeout** — summarize the completed work, assistance and mastery boundary, evidence, unfinished items, and next lesson before presenting continuity files.
 11. **Progress and handoff** — update canonical state immediately after a passed checkpoint and prepare the next-chat transition.
+
+Stages may be combined, but verification, honest assistance, limitation analysis, and any required unfamiliar transfer may not be silently removed. If Jeremy demonstrates the gap during the build, stop asking similar questions and continue to the next useful capability.
 
 Inject realistic failures progressively: duplicates, missing inputs, incorrect joins, changed columns, stale data, mapping errors, API failures, rerun duplication, AI hallucinations, malicious document instructions, and permission violations as relevant. Do not wait until an advanced module to teach verification and debugging.
 
@@ -122,7 +126,7 @@ After a passed checkpoint:
 4. update the factual checkpoint portion of `SESSION_HANDOFF.md`;
 5. update affected definitions or specifications;
 6. append material decisions to `DECISION_LOG.md`; and
-7. explain the learner's result, mastery boundary, unfinished work, and next lesson in plain language;
+7. briefly explain what Jeremy completed, how it was verified, what he can explain or modify, the honest mastery boundary, and what comes next;
 8. present a clearly labeled **Continue in a New Conversation** section only after that explanation;
 9. update `NEXT_CHAT_PROMPT.md` with exact new-chat instructions;
 10. save a durable checkpoint immediately; and

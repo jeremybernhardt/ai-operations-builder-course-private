@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0.0",
   "release_version": "2.0.6",
-  "state_version": 11,
-  "updated_at": "2026-08-21T21:07:34-07:00",
+  "state_version": 12,
+  "updated_at": "2026-08-25T23:02:02-07:00",
   "authoritative_source": {
     "type": "private_git_repository",
     "repository_full_name": "jeremybernhardt/ai-operations-builder-course-private",
@@ -145,6 +145,12 @@
       "decision_ids": ["DEC-M0.5-002", "DEC-M0.5-003"],
       "approved_at": "2026-08-21",
       "default": "teach_then_practice_then_demonstrate_with_evidence_precision_matched_to_task_stage"
+    },
+    "reliability_and_accelerated_teaching_clarification": {
+      "release_version": "2.0.6",
+      "decision_ids": ["DEC-C2-012", "DEC-C2-013"],
+      "approved_at": "2026-08-25",
+      "default": "selective_auditable_context_with_gap_based_build_first_instruction"
     }
   },
   "git_identity_readiness": {
@@ -182,8 +188,24 @@
     "command_line_tools_path": "/Library/Developer/CommandLineTools",
     "verified_on_learner_mac": true
   },
+  "reliability_maintenance": {
+    "plan_version": "1.0.0",
+    "completed_stages": ["REL-0", "REL-1", "REL-2", "REL-3"],
+    "active_stage": "REL-4",
+    "active_stage_status": "deferred_until_trigger",
+    "selective_context_lesson_tasks_passed": 0,
+    "legacy_startup_words": 31889,
+    "approved_mandatory_startup_words": 16209,
+    "one_time_word_ceiling": 17000,
+    "one_time_minimum_reduction_percent": 40,
+    "growth_audit_percent": 5,
+    "unexplained_growth_stop_percent": 10,
+    "rel4_trigger": "m0_5_boundary_after_two_successful_selective_context_lesson_tasks",
+    "plan": "COURSE_RELIABILITY_PLAN.md",
+    "evidence": "evidence/COURSE_RELIABILITY_CHECKPOINTS.md"
+  },
   "lesson_chat_policy": "one_lesson_per_new_chat",
-  "next_action": "Start a fresh Codex task from the authoritative private repository. Read canonical state and every completed M0.5 lesson, artifact, and evidence pair, then prepare and teach only M0.5-L3 — Reviewing an AI-Generated Diff and Verification Evidence. Use Teach, Practice, and Demonstrate; do not implement the Expense File Readiness Checker or begin a later lesson.",
+  "next_action": "In one bounded Codex task, use selective startup and scan-only continuity checks, recover Jeremy's existing M0.5-L3 submission if present, and complete only M0.5-L3 — Reviewing an AI-Generated Diff and Verification Evidence. Use accelerated gap-based build-first instruction; do not implement the Expense File Readiness Checker or begin a later lesson.",
   "scope_guard": {
     "authorized_now": [
       "bounded_course_blueprint_v2.0.6",

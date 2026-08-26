@@ -57,6 +57,12 @@ Run the deterministic checks, production build, and rendered-output tests:
 npm test
 ```
 
+Run the bounded scan-only continuity and context checks by themselves:
+
+```bash
+npm run test:reliability
+```
+
 Run static checks:
 
 ```bash
@@ -89,7 +95,7 @@ Passing software tests does not imply learner mastery or satisfy a capability ga
 
 ## Required course direction
 
-The main project is the synthetic **AI-Enabled Finance Planning, Reporting, and Decision-Support System**. Jeremy will build an early work-dashboard slice after SQL/Python foundations, a full work dashboard later, a controlled automation, evaluated document/AI tools, and one permissioned agent with approval-gated sandbox actions. Human-Data and AI Operations is an optional later specialization, not the required flagship.
+The main project is the synthetic **AI-Enabled Finance Planning, Reporting, and Decision-Support System**. Jeremy will build an early work-dashboard slice after SQL/Python foundations, a full work dashboard later, a controlled automation, evaluated document/AI tools, and one permissioned agent with approval-gated sandbox actions. A bounded job-search monitor reuses those skills at selected milestones without becoming a second curriculum. Human-Data and AI Operations remains optional.
 
 See `CURRICULUM_MAP.md` for the bounded module sequence and `CAPABILITY_EVIDENCE_LEDGER.md` for the evidence required before any resume-level skill label is defensible.
 

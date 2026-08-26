@@ -9,7 +9,7 @@ AI may draft the initial implementation. Assessment emphasizes business logic an
 
 AI should execute routine local commands and implementation steps when tooling and permissions allow. Jeremy is assessed on specifying the intended result, approving consequential effects, understanding relevant state and risk, inspecting targeted logic, reconciling evidence, and directing or verifying bounded corrections. Manual command execution is reserved for useful operational boundaries, authentication, permissions, recovery, or lack of agent access; it is not a recurring memorization test.
 
-Lessons use visible **Teach**, **Practice**, and **Demonstrate** modes. Concepts and curriculum connections are taught directly before one coherent guided workplace scenario; a genuinely different scenario assesses transfer. Evidence precision matches the task stage: conceptual judgment does not require invented numeric ceremony, while real files, calculations, and implementations require exact deterministic verification.
+Lessons use accelerated, gap-based, build-first **Teach**, **Practice**, and **Demonstrate** purposes. Comparable prior evidence may shorten scaffolding; it never substitutes for missing technical verification. Most learner time goes to building, debugging, modifying, and testing real artifacts. Evidence precision matches the task stage: conceptual judgment does not require invented numeric ceremony, while real files, calculations, and implementations require exact deterministic verification.
 
 Planning range: 50-60 hours through the full work dashboard (`M0`-`M7`) and 25-35 hours for automation, applied AI, agent work, strategic decision support, and portfolio (`M8`-`M12`). Total required remaining work is approximately 75-95 hours. Optional specialization `OH1` adds approximately 6-10 hours.
 
@@ -49,6 +49,10 @@ Delivery rule: one fresh chat per lesson. Each lesson closes with verified progr
 - **Mastery criteria:** Jeremy rejects an unjustified choice, identifies an assumption, verifies a change, and explains responsibility without inflation.
 - **Verification approach:** Brief/plan rubric, diff questions, observed debugging, independent modification, evidence check, and teach-back.
 - **Current lesson position:** `M0.5-L1 — Defining Outcomes, Constraints, and Done Criteria` passed on 2026-08-20 with limited assistance. `M0.5-L2 — Reviewing an AI Builder Plan, Assumptions, and Scope` passed on 2026-08-21 with limited assistance after Jeremy reviewed an expense-checker plan, completed a different accounts-payable transfer, and established two course-wide teaching corrections. Independent mastery is not claimed. The next fresh task may prepare and teach only `M0.5-L3 — Reviewing an AI-Generated Diff and Verification Evidence`; Expense File Readiness Checker implementation and later lessons remain unauthorized.
+
+### Recurring secondary transfer — AI-assisted job-search monitor
+
+This is a bounded reuse of the core skills, not a second curriculum and not current build authorization. Define criteria and a data contract in `M1`; use approved sources/APIs plus normalization, deduplication, and database storage in `M5`; add a review dashboard in `M7`; schedule retrieval with logging, recovery, and notifications in `M8`; evaluate AI fit matching and explanations in `M9`; add a permissioned investigation agent that cannot apply or contact anyone in `M10`; and publish only a synthetic candidate/listing version in `M12`. Real resumes and listings stay private.
 
 ## M1 — Business System, Metric, and Control Design
 

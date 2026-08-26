@@ -28,6 +28,7 @@ The backup name retains `Prototype` for continuity with the verified v1.2.0 fold
 | `DECISION_LOG.md` | Append-only decisions, including the retarget, operator-builder standard, safe AI execution, identity/privacy choice, and transfer-not-repetition correction. |
 | `SESSION_HANDOFF.md` | Factual briefing for the next conversation. |
 | `NEXT_CHAT_PROMPT.md` | Exact instructions for the fresh task that teaches only `M0.5-L3`. |
+| `COURSE_RELIABILITY_PLAN.md` | Milestone-triggered selective-context, recovery, growth, and rollout procedure. |
 
 ## Module 0 materials
 
@@ -86,8 +87,10 @@ The backup name retains `Prototype` for continuity with the verified v1.2.0 fold
 | `scripts/start-course.sh` | Checks prerequisites, installs locked components when absent, prepares data, and starts the local site. |
 | `scripts/verify.py` | Deterministic prototype plus v2.0.6 course-state, M0/M0.5 evidence, repository authority, and capability-gate checks. |
 | `scripts/reconstruction_check.py` | Confirms a fresh task can recover v2.0.6 private-repository authority, boundaries, evidence, and next action. |
+| `scripts/reliability_scan.py` | Scans full repository continuity while returning only bounded structured metadata. |
 | `scripts/package_bundle.py` | Creates the clean v2.0.6 M0.5-L2 backup ZIP without dependencies, runtime files, Git history, or macOS metadata. |
 | `tests/rendered-html.test.mjs` | Verifies rendered Course Portal, preserved KPI Lab, and v2.0.6 continuity labels. |
+| `tests/test_reliability_scan.py` | Verifies scan-only canary privacy, output bounds, hashing, and Excel lock exclusion. |
 | `package.json` / `package-lock.json` | Reproducible Node application dependencies and commands. |
 | `pyproject.toml` / `.python-version` | Prototype Python compatibility declaration. |
 | `.env.example` / `.gitignore` | Secret boundary and transient-file exclusions. |
@@ -105,6 +108,7 @@ The backup name retains `Prototype` for continuity with the verified v1.2.0 fold
 | `evidence/RECONSTRUCTION_CHECK_v2.0.5.md` | v2.0.5 continuity results. |
 | `evidence/RELEASE_CHECKS_v2.0.6.md` | v2.0.6 release results. |
 | `evidence/RECONSTRUCTION_CHECK_v2.0.6.md` | v2.0.6 continuity results. |
+| `evidence/COURSE_RELIABILITY_CHECKPOINTS.md` | Ordered reliability baseline, gates, and milestone results. |
 
 ## Intentionally absent
 
