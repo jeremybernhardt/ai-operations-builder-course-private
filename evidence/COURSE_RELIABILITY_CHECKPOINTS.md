@@ -34,8 +34,17 @@
 - `M0.5-C3` advanced only after the recovered answer was verified. It is completed with limited assistance; independent mastery and every resume-level capability gate remain unclaimed.
 - This is the first successful selective-context lesson task. `REL-4` remains deferred until the M0.5 boundary and two successful tasks.
 
+## Selective-context lesson task 2 — M0.5-L4 passed after recovery
+
+- Date: 2026-08-27.
+- The original L4 task disconnected after Jeremy's correct guided diagnosis. His answer and partial practice files were recovered without repetition, and progress remained unchanged until the full checkpoint passed.
+- Local Codex logs showed repeated server-side response-stream closures and an unsuccessful HTTP fallback. Repository reliability controls cannot prevent that upstream transport failure; they did preserve a safe recovery boundary.
+- Jeremy completed the guided correction and a genuinely different transfer. Both deterministic five-check suites passed after bounded edits.
+- `M0.5-C4` advanced with limited assistance; independent mastery and every resume-level capability gate remain unclaimed.
+- This is the second successful selective-context lesson task. The count condition for `REL-4` is met, but M0.5-L5 remains, so the module-boundary condition is not yet met.
+
 ## Future checkpoints
 
-- `REL-4` is deferred until the M0.5 boundary and two successful selective-context lesson tasks.
+- `REL-4` remains deferred until the M0.5 boundary after M0.5-L5.
 - `REL-5` runs only after a recorded context-growth trigger.
 - `REL-6` is a lightweight closeout health record, not another learner step.

@@ -1,8 +1,8 @@
 {
   "schema_version": "2.0.0",
-  "release_version": "2.0.7",
-  "state_version": 13,
-  "updated_at": "2026-08-26T00:19:53-07:00",
+  "release_version": "2.0.8",
+  "state_version": 14,
+  "updated_at": "2026-08-27T00:11:30-07:00",
   "authoritative_source": {
     "type": "private_git_repository",
     "repository_full_name": "jeremybernhardt/ai-operations-builder-course-private",
@@ -13,18 +13,18 @@
     "git_repository_established": true,
     "first_verified_push_commit": "07170d06922211c5e4379fa4c534ea93da08dd0b",
     "first_verified_push_tree": "5386ba81e934717323a1256237cc380106ef0a78",
-    "backup_bundle": "AI_Operations_Builder_Course_Prototype_v2.0.7_M0.5-L3.zip",
+    "backup_bundle": "AI_Operations_Builder_Course_Prototype_v2.0.8_M0.5-L4.zip",
     "backup_role": "verified_backup_not_primary_authority"
   },
   "current_phase_id": "M0.5",
   "current_module_id": "M0.5",
-  "current_lesson_id": "M0.5-L3",
-  "current_checkpoint_id": "M0.5-C3",
-  "checkpoint_status": "m0_5_l3_passed_m0_5_l4_ready",
+  "current_lesson_id": "M0.5-L4",
+  "current_checkpoint_id": "M0.5-C4",
+  "checkpoint_status": "m0_5_l4_passed_m0_5_l5_ready",
   "module_status": {
     "module_id": "M0.5",
     "planned_lesson_sequence_complete": false,
-    "completed_lesson_ids": ["M0.5-L1", "M0.5-L2", "M0.5-L3"],
+    "completed_lesson_ids": ["M0.5-L1", "M0.5-L2", "M0.5-L3", "M0.5-L4"],
     "latest_lesson_completed_with": "limited_assistance",
     "independent_mastery_claimed": false,
     "resume_level_gate_earned": false
@@ -37,11 +37,11 @@
     "resume_level_gate_earned": false
   },
   "last_verified_build_checkpoint": {
-    "checkpoint_id": "ARCH-RG1-v2.0.7",
+    "checkpoint_id": "ARCH-RG1-v2.0.8",
     "status": "passed",
     "evidence": [
-      "evidence/RELEASE_CHECKS_v2.0.7.md",
-      "evidence/RECONSTRUCTION_CHECK_v2.0.7.md"
+      "evidence/RELEASE_CHECKS_v2.0.8.md",
+      "evidence/RECONSTRUCTION_CHECK_v2.0.8.md"
     ]
   },
   "preserved_architecture_build_checkpoint": {
@@ -61,9 +61,9 @@
     ]
   },
   "last_verified_learner_checkpoint": {
-    "checkpoint_id": "M0.5-C3",
+    "checkpoint_id": "M0.5-C4",
     "status": "completed_with_limited_assistance",
-    "evidence": ["evidence/LEARNER_CHECKPOINT_M0.5-C3.md"],
+    "evidence": ["evidence/LEARNER_CHECKPOINT_M0.5-C4.md"],
     "independent_mastery_claimed": false
   },
   "preserved_m0_l4_learner_checkpoint": {
@@ -193,7 +193,7 @@
     "completed_stages": ["REL-0", "REL-1", "REL-2", "REL-3"],
     "active_stage": "REL-4",
     "active_stage_status": "deferred_until_trigger",
-    "selective_context_lesson_tasks_passed": 1,
+    "selective_context_lesson_tasks_passed": 2,
     "legacy_startup_words": 31889,
     "approved_mandatory_startup_words": 15348,
     "one_time_word_ceiling": 17000,
@@ -205,16 +205,17 @@
     "evidence": "evidence/COURSE_RELIABILITY_CHECKPOINTS.md"
   },
   "lesson_chat_policy": "one_lesson_per_new_chat",
-  "next_action": "In one bounded Codex task, use selective startup and scan-only continuity checks to prepare and teach only M0.5-L4 — Debugging from Evidence and Directing a Bounded Modification. Use accelerated gap-based build-first instruction and safe local practice code; do not implement the Expense File Readiness Checker or begin a later lesson.",
+  "next_action": "In one bounded fresh Codex task, use selective startup and scan-only continuity checks to prepare and teach only M0.5-L5 — Explaining Human and AI Contributions Without Inflation. Use completed M0.5 evidence to create an accurate contribution statement; do not implement the Expense File Readiness Checker or begin M1.",
   "scope_guard": {
     "authorized_now": [
-      "bounded_course_blueprint_v2.0.7",
+      "bounded_course_blueprint_v2.0.8",
       "preserved_prototype_P0-L1_v1.2.0",
       "verified_Module_0_lessons_M0-L1_through_M0-L4",
       "verified_M0.5-L1_builder_specification_checkpoint",
       "verified_M0.5-L2_plan_review_checkpoint",
       "verified_M0.5-L3_diff_and_verification_evidence_checkpoint",
-      "prepare_and_teach_M0.5-L4_debugging_evidence_bounded_modification_only_in_a_fresh_task"
+      "verified_M0.5-L4_debugging_and_bounded_modification_checkpoint",
+      "prepare_and_teach_M0.5-L5_human_ai_contribution_statement_only_in_a_fresh_task"
     ],
     "not_authorized": [
       "remote_practice_repository",
@@ -222,7 +223,7 @@
       "public_portfolio_repository",
       "public_deployment",
       "external_account_or_paid_resource_without_explicit_approval",
-      "M0.5-L5_or_later_without_checkpoint_authorization",
+      "M0.5-L6_or_later_without_checkpoint_authorization",
       "expense_file_readiness_checker_implementation_without_explicit_lesson_authorization",
       "M1_or_later_module_implementation",
       "remaining_course_build",

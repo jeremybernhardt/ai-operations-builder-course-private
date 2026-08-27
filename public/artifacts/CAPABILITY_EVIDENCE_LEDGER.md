@@ -1,6 +1,6 @@
 # Capability Evidence Ledger
 
-Ledger version: `2.0.7`
+Ledger version: `2.0.8`
 Learner: Jeremy Bernhardt  
 Current status: no v2 resume-level gate has been earned
 
@@ -113,6 +113,16 @@ The instructor supplied the direct concept lesson, complete worked example, revi
 - The recovered response was verified against a durable tracked text inspection record without reopening the workbook after repeated task stalls.
 
 The instructor corrected an overbroad practice classification, explained targeted inspection and diagnostic isolation, clarified the transfer prompt phrase “narrow implementation rule,” and supplied exact expected transfer totals during recovery. Jeremy owned the material transfer diagnosis, consequence, inspection request, limitation, and revision decision. Checkpoint status is **Completed with limited assistance**, not demonstrated independently and not a resume-level gate. Evidence: `student/M0.5-L3_ANNOTATED_DIFF_REVIEW.md`, `student/M0.5-L3_CASH_SCHEDULE_TRANSFER_PACKET.md`, and `evidence/LEARNER_CHECKPOINT_M0.5-C3.md`.
+
+`M0.5-C4` supports these additional non-resume-level statements:
+
+- Jeremy used a failed exact-seven-day check to separate an incorrect payment-release result from the exclusive boundary rule that caused it.
+- He directed an inclusive seven-day correction, explicitly excluded changes to other rules and tests, and explained why hold and approval precedence remained unaffected.
+- In a different invoice-routing transfer, he independently diagnosed that the manager-review rule was probably checked before the changed-bank manual-review rule, before seeing the implementation.
+- He limited the transfer modification to rule order, selected the already-passing `$500` changed-bank case as a regression check, and accepted the corrected helper only after the failed case and all regressions passed.
+- He identified that the helper trusts the bank-change indicator and cannot detect unchanged but incorrect bank details.
+
+AI created the synthetic local fixtures, presented the deterministic evidence, executed the learner-authorized edits and checks, and organized the durable record. Jeremy owned both diagnoses, intended behavior, non-goals, targeted explanations, regression choice, readiness decision, and limitation. Checkpoint status is **Completed with limited assistance**, not demonstrated independently and not a resume-level gate. Evidence: `student/M0.5-L4_DEBUGGING_AND_BOUNDED_MODIFICATION_RECORD.md` and `evidence/LEARNER_CHECKPOINT_M0.5-C4.md`.
 
 ## Claim rule
 

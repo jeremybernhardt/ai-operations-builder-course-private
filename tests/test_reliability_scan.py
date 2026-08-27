@@ -102,7 +102,7 @@ class ReliabilityScanTests(unittest.TestCase):
             self.copy_course(temp_root)
             state_before = (temp_root / "COURSE_STATE.json").read_bytes()
             progress_before = (temp_root / "PROGRESS.json").read_bytes()
-            recovered = temp_root / "student" / "M0.5-L4_RECOVERED_ANSWER.md"
+            recovered = temp_root / "student" / "M0.5-L5_RECOVERED_ANSWER.md"
             recovered.write_text("unverified learner recovery canary", encoding="utf-8")
             report = scanner.build_report(temp_root)
             self.assertEqual(state_before, (temp_root / "COURSE_STATE.json").read_bytes())

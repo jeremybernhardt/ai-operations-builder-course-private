@@ -9,9 +9,9 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BUNDLE_NAME = "AI_Operations_Builder_Course_Prototype_v2.0.7_M0.5-L3.zip"
+BUNDLE_NAME = "AI_Operations_Builder_Course_Prototype_v2.0.8_M0.5-L4.zip"
 OUTPUT = ROOT / BUNDLE_NAME
-ARCHIVE_ROOT = "AI_Operations_Builder_Course_Prototype_v2.0.7_M0.5-L3"
+ARCHIVE_ROOT = "AI_Operations_Builder_Course_Prototype_v2.0.8_M0.5-L4"
 EXCLUDED_PARTS = {
     ".git",
     ".sites-runtime",
@@ -94,8 +94,15 @@ def main() -> None:
             f"{ARCHIVE_ROOT}/student/M0.5-L3_CASH_DISBURSEMENT_ACCEPTANCE_FIXTURE.xlsx.inspect.ndjson",
             f"{ARCHIVE_ROOT}/evidence/LEARNER_CHECKPOINT_M0.5-C3.md",
             f"{ARCHIVE_ROOT}/lesson/M0.5-L4_DEBUGGING_FROM_EVIDENCE_BOUNDED_MODIFICATION.md",
-            f"{ARCHIVE_ROOT}/evidence/RELEASE_CHECKS_v2.0.7.md",
-            f"{ARCHIVE_ROOT}/evidence/RECONSTRUCTION_CHECK_v2.0.7.md",
+            f"{ARCHIVE_ROOT}/student/M0.5-L4_DEBUGGING_AND_BOUNDED_MODIFICATION_RECORD.md",
+            f"{ARCHIVE_ROOT}/student/m0_5_l4/payment_release.py",
+            f"{ARCHIVE_ROOT}/student/m0_5_l4/test_payment_release.py",
+            f"{ARCHIVE_ROOT}/student/m0_5_l4/review_routing.py",
+            f"{ARCHIVE_ROOT}/student/m0_5_l4/test_review_routing.py",
+            f"{ARCHIVE_ROOT}/evidence/LEARNER_CHECKPOINT_M0.5-C4.md",
+            f"{ARCHIVE_ROOT}/lesson/M0.5-L5_EXPLAINING_HUMAN_AI_CONTRIBUTIONS_WITHOUT_INFLATION.md",
+            f"{ARCHIVE_ROOT}/evidence/RELEASE_CHECKS_v2.0.8.md",
+            f"{ARCHIVE_ROOT}/evidence/RECONSTRUCTION_CHECK_v2.0.8.md",
             f"{ARCHIVE_ROOT}/evidence/COURSE_RELIABILITY_CHECKPOINTS.md",
             f"{ARCHIVE_ROOT}/AGENTS.md",
             f"{ARCHIVE_ROOT}/database/prototype.sqlite",

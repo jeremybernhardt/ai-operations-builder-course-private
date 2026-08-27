@@ -1,23 +1,25 @@
 {
   "schema_version": "2.0.0",
-  "generated_at": "2026-08-26T07:52:06.222243+00:00",
+  "generated_at": "2026-08-27T07:22:26.209255+00:00",
   "source": "PROGRESS.json",
-  "source_progress_version": 12,
+  "source_progress_version": 13,
   "non_authoritative": true,
   "label": "Read-only mirror \u2014 canonical progress lives in PROGRESS.json",
   "lesson": {
-    "lesson_id": "M0.5-L3",
-    "title": "Reviewing an AI-Generated Diff and Verification Evidence",
+    "lesson_id": "M0.5-L4",
+    "title": "Debugging from Evidence and Directing a Bounded Modification",
     "mastery_status": "Completed with limited assistance",
-    "assistance_level": "Direct teaching and guided correction on practice; learner-owned transfer with limited clarification and exact known-answer refinement",
-    "current_checkpoint_id": "M0.5-C3",
+    "assistance_level": "Guided practice prompts and AI-executed edits; learner-owned diagnoses, boundaries, inspection explanations, regression choice, transfer decision, and limitation",
+    "current_checkpoint_id": "M0.5-C4",
     "learner_attempt_received": true,
     "verification_evidence": [
-      "student/M0.5-L3_ANNOTATED_DIFF_REVIEW.md",
-      "student/M0.5-L3_CASH_SCHEDULE_TRANSFER_PACKET.md",
-      "student/M0.5-L3_CASH_DISBURSEMENT_ACCEPTANCE_FIXTURE.xlsx.inspect.ndjson",
-      "evidence/LEARNER_CHECKPOINT_M0.5-C3.md"
+      "student/M0.5-L4_DEBUGGING_AND_BOUNDED_MODIFICATION_RECORD.md",
+      "student/m0_5_l4/payment_release.py",
+      "student/m0_5_l4/test_payment_release.py",
+      "student/m0_5_l4/review_routing.py",
+      "student/m0_5_l4/test_review_routing.py",
+      "evidence/LEARNER_CHECKPOINT_M0.5-C4.md"
     ],
-    "note": "Jeremy reviewed a flawed budget-variance change, identified a plausible-but-wrong denominator result, supplied an exact threshold-boundary case, and required revision. In a genuinely different cash-disbursement transfer recovered after a task disconnect, he correctly identified that a missing approved date had been inferred instead of sent to manual review, distorting September cash; he requested inspection of the date-selection rule and explained why row and amount controls were insufficient. Limited assistance clarified targeted inspection and made the exact expected transfer totals explicit. The workbook was not reopened during recovery. Independent mastery and every resume-level capability gate remain unclaimed."
+    "note": "Jeremy diagnosed an exclusive seven-day boundary from a failed known-answer case, constrained the change to an inclusive comparison, and explained why earlier hold and approval rules remained unaffected. In a different invoice-routing transfer, he independently diagnosed a precedence defect before seeing the implementation, authorized only a rule reorder, selected a regression check, and marked the corrected helper ready after all tests passed. He identified that the helper cannot detect unchanged but incorrect bank details. AI supplied fixtures, edits, execution, and evidence organization. Independent mastery and every resume-level capability gate remain unclaimed."
   }
 }

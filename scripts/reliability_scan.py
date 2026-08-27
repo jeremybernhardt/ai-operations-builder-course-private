@@ -270,7 +270,7 @@ def build_report(root: Path = ROOT) -> dict[str, Any]:
         [
             next_lesson_id in handoff_text,
             "current authorization covers only" in prompt_text.lower(),
-            "M0.5-L5_or_later_without_checkpoint_authorization"
+            "M0.5-L6_or_later_without_checkpoint_authorization"
             in state.get("scope_guard", {}).get("not_authorized", []),
             "do not implement the Expense File Readiness Checker" in next_action,
         ]

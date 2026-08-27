@@ -48,7 +48,7 @@ Delivery rule: one fresh chat per lesson. Each lesson closes with verified progr
 - **Dependencies:** Private course repository and safe practice code.
 - **Mastery criteria:** Jeremy rejects an unjustified choice, identifies an assumption, verifies a change, and explains responsibility without inflation.
 - **Verification approach:** Brief/plan rubric, diff questions, observed debugging, independent modification, evidence check, and teach-back.
-- **Current lesson position:** `M0.5-L1` and `M0.5-L2` passed with limited assistance. `M0.5-L3 — Reviewing an AI-Generated Diff and Verification Evidence` passed on 2026-08-26 with limited assistance after Jeremy completed a guided budget-variance review and a different cash-disbursement implementation-acceptance transfer recovered after a task disconnect. Independent mastery is not claimed. The next fresh task may prepare and teach only `M0.5-L4 — Debugging from Evidence and Directing a Bounded Modification`; Expense File Readiness Checker implementation and later lessons remain unauthorized.
+- **Current lesson position:** `M0.5-L1` through `M0.5-L4` passed with limited assistance. In L4, Jeremy diagnosed and bounded an inclusive-date correction, then independently diagnosed a different rule-precedence defect, selected regression evidence, and identified a remaining input-validation limitation. Independent mastery is not claimed. The next fresh task may prepare and teach only `M0.5-L5 — Explaining Human and AI Contributions Without Inflation`; Expense File Readiness Checker implementation and `M1` remain unauthorized.
 
 ### Recurring secondary transfer — AI-assisted job-search monitor
 

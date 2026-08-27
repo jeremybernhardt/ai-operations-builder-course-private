@@ -1,9 +1,9 @@
 # Session Handoff
 
-Handoff version: `M0.5-L3 / v2.0.7`
-Session closeout date: `2026-08-26`
+Handoff version: `M0.5-L4 / v2.0.8`
+Session closeout date: `2026-08-27`
 Authoritative location: private repository `jeremybernhardt/ai-operations-builder-course-private`, branch `main`
-Versioned export name: `SESSION_HANDOFF_M0.5-L3_v2.0.7.md`
+Versioned export name: `SESSION_HANDOFF_M0.5-L4_v2.0.8.md`
 
 ## Purpose
 
@@ -11,14 +11,15 @@ This is the factual briefing for the next fresh task. `NEXT_CHAT_PROMPT.md` cont
 
 ## Current position
 
-- Completed lesson: `M0.5-L3 — Reviewing an AI-Generated Diff and Verification Evidence`.
-- Current checkpoint: `M0.5-C3`, **Completed with limited assistance**.
+- Completed lesson: `M0.5-L4 — Debugging from Evidence and Directing a Bounded Modification`.
+- Current checkpoint: `M0.5-C4`, **Completed with limited assistance**.
 - Independent mastery: not claimed.
-- Guided artifact: `student/M0.5-L3_ANNOTATED_DIFF_REVIEW.md`.
-- Transfer artifact: `student/M0.5-L3_CASH_SCHEDULE_TRANSFER_PACKET.md`.
-- Evidence: `evidence/LEARNER_CHECKPOINT_M0.5-C3.md`.
+- Learner record: `student/M0.5-L4_DEBUGGING_AND_BOUNDED_MODIFICATION_RECORD.md`.
+- Guided implementation: `student/m0_5_l4/payment_release.py` and `student/m0_5_l4/test_payment_release.py`.
+- Transfer implementation: `student/m0_5_l4/review_routing.py` and `student/m0_5_l4/test_review_routing.py`.
+- Evidence: `evidence/LEARNER_CHECKPOINT_M0.5-C4.md`.
 - Every v2 resume-level capability gate: `Not started`.
-- Next authorized work: only `M0.5-L4 — Debugging from Evidence and Directing a Bounded Modification`, prepared and taught in a fresh task.
+- Next authorized work: only `M0.5-L5 — Explaining Human and AI Contributions Without Inflation`, prepared and taught in a fresh task.
 - Active blocker: none.
 
 ## Authoritative source
@@ -29,34 +30,41 @@ This is the factual briefing for the next fresh task. `NEXT_CHAT_PROMPT.md` cont
 - Local working folder: `/Users/Jeremy/Documents/Codex/AI_Operations_Builder_Course`.
 - Origin: `https://github.com/jeremybernhardt/ai-operations-builder-course-private.git`.
 - Independently verified first-push baseline: commit `07170d06922211c5e4379fa4c534ea93da08dd0b`, tree `5386ba81e934717323a1256237cc380106ef0a78`, 118 intended files, and no disposable-practice history.
-- The v2.0.7 M0.5-L3 ZIP is a recovery backup, not a competing authority.
+- The v2.0.8 M0.5-L4 ZIP is a recovery backup, not a competing authority.
 
 Existing authentication is capability, not approval for a push or another consequential external action. No public repository, deployment, collaborator change, visibility change, account, or paid resource is authorized.
 
 ## What Jeremy completed
 
-In the guided budget-variance review, Jeremy identified a plausible percentage produced with the wrong denominator, supplied an exact `$250,000` budget and `$275,000` actual boundary case, required revision, and recognized missing boundary and completeness evidence.
+In the guided payment-release practice, the exact-seven-day known-answer case failed while four neighboring and precedence checks passed. Jeremy identified the exclusive date boundary as the suspected rule, required day seven to be included, and limited the change to that timing rule while preserving every other rule and test.
 
-In a genuinely different cash-disbursement transfer, Jeremy correctly concluded that row count and approved amount could reconcile while the build remained wrong. He identified that `INV-203` lacked an approved scheduled date but was assigned one instead of being sent to manual review, which overstated September cash. He requested inspection of the narrow date-selection rule and explained that amount controls do not prove date correctness.
+After AI changed `< 7` to `<= 7`, Jeremy explained that hold and missing approval remain unaffected because they return before the timing comparison. The formerly failing case and all five checks passed.
 
-The prior task disconnected after this response. The answer was recovered verbatim from Codex task history and checked against the tracked text inspection record. Jeremy was not asked to repeat it, and the workbook was not reopened.
+In a genuinely different invoice-routing transfer, Jeremy saw that a `$12,000` changed-bank invoice returned `MANAGER_REVIEW` instead of `MANUAL_REVIEW`, while four other cases passed. Before seeing the implementation, he diagnosed that manager review was probably checked before manual review, authorized changing only the order, and selected the `$500` changed-bank case as a regression check.
+
+Targeted inspection confirmed his diagnosis. AI moved the changed-bank rule before the amount rule without changing approval precedence. The failed case, selected regression, and all five transfer checks passed. Jeremy marked the helper ready and identified that it trusts the bank-change indicator and cannot detect unchanged but incorrect bank details.
 
 ## Verification and limitations
 
-- The saved inspection record confirms four source and output rows totaling `$31,850`.
-- It confirms `INV-203` has no approved scheduled date but was assigned `2026-09-30`, included in September, and left out of manual review.
-- Exact expected results are September `$19,950`, October `$3,100`, one manual-review row, and `INV-203` unscheduled.
-- Jeremy's decision, diagnosis, targeted inspection request, and limitation were correct before the exact totals were supplied.
-- The budget practice preserved the proposed change, Jeremy's reasoning, the guided correction, and the targeted inspection explanation.
-- Recovery used the durable tracked text inspection snapshot rather than a fresh parse of the binary workbook, following Jeremy's explicit instruction after repeated stalls.
-- No executable Expense File Readiness Checker or finance flagship code was created.
+- The guided seven-day case failed before correction and passed afterward.
+- All five guided checks passed after the one-comparison change.
+- The transfer high-amount/changed-bank case failed before correction and passed afterward.
+- Jeremy's selected `$500` changed-bank regression passed before and after correction.
+- All five transfer checks passed after the bounded reorder.
+- No unrelated rule or test was changed in either fixture.
+- The fixtures are synthetic and do not validate source truth, including whether unchanged bank details are correct.
+- No Expense File Readiness Checker or finance flagship code was created.
+
+## Interruption recovery and task health
+
+The original M0.5-L4 task suffered a Codex response-transport failure after Jeremy submitted the correct guided diagnosis. Logs showed repeated server-side response-stream closures followed by an unsuccessful HTTP fallback. The answer and partial files were preserved, canonical state was not advanced prematurely, and the lesson resumed without asking Jeremy to repeat anything.
+
+This is the second completed selective-context lesson task. The two-task count required for `REL-4` is now met, but the stage also requires the M0.5 module boundary. Because M0.5-L5 remains, `REL-4` stays deferred until that checkpoint closes.
 
 ## Assistance and mastery boundary
 
-- Direct teaching: diff/change-summary limits, traceability, deterministic evidence, targeted inspection, and regression concepts.
-- Practice: Jeremy owned the denominator risk, exact boundary case, revision decision, and missing-evidence limitation; the instructor corrected an overbroad classification and explained diagnostic isolation and targeted inspection.
-- Transfer: Jeremy owned the material diagnosis, consequence, narrow rule, evidence limitation, and revision decision.
-- Limited help: the phrase “narrow implementation rule” was clarified, and exact expected transfer totals were supplied during recovery.
+- Practice: direct prompts, AI-created fixture, AI-executed edit and checks; Jeremy owned diagnosis, intended behavior, non-goals, and relevant-rule explanation.
+- Transfer: AI-created fixture and execution; Jeremy independently owned the diagnosis before inspection, bounded modification, regression selection, readiness decision, and limitation.
 - Final checkpoint: **Completed with limited assistance**.
 - Independent mastery and resume-level capability: not claimed.
 
@@ -66,7 +74,7 @@ The prior task disconnected after this response. The answer was recovered verbat
 - `M0-C1`: completed with limited assistance; no independent mastery.
 - `M0-C2`, `M0-C3`, and `M0-C4`: completed with substantial assistance; no independent mastery.
 - Module 0 planned sequence: complete with substantial assistance; no independent Module 0 proficiency.
-- `M0.5-C1`, `M0.5-C2`, and `M0.5-C3`: completed with limited assistance; no independent mastery.
+- `M0.5-C1` through `M0.5-C4`: completed with limited assistance; no independent mastery.
 - Every v2 capability gate remains `Not started`.
 - The Course Portal is a generated read-only companion and never counts as learner-built work-dashboard evidence.
 - The disposable practice repository remains local-only and remote-free.
@@ -76,8 +84,8 @@ The prior task disconnected after this response. The answer was recovered verbat
 
 ## What remains unfinished
 
-- `M0.5-L4` debugging from evidence and bounded-modification work.
-- Later contribution-statement work and completion of Module 0.5.
+- `M0.5-L5` contribution-statement work and completion of Module 0.5.
+- `REL-4` evaluation at the M0.5 boundary.
 - Independent builder-supervision mastery and every resume-level capability gate.
 - The Expense File Readiness Checker; its implementation remains unauthorized.
 - The required finance flagship and `M1`-`M12` implementations.
@@ -94,8 +102,8 @@ Path: `/Users/Jeremy/Desktop/ai-ops-git-practice-m0l1`.
 - `.env` ignored, untracked, and absent from history; and
 - no remote configured.
 
-It remains local-only and was not modified during M0.5-L3.
+It remains local-only and was not modified during M0.5-L4.
 
 ## Next-task startup
 
-Open the authoritative private repository in a fresh Codex task and use canonical `NEXT_CHAT_PROMPT.md`. Follow selective startup, run the scan-only validator, read the M0.5-L4 specification and M0.5-C3 prerequisite, and use accelerated build-first delivery. Keep `AI_Operations_Builder_Course_Prototype_v2.0.7_M0.5-L3.zip` as a recovery backup. Do not begin another lesson.
+Open the authoritative private repository in a fresh Codex task and use canonical `NEXT_CHAT_PROMPT.md`. Follow selective startup, run the scan-only validator, read the M0.5-L5 specification and M0.5-C4 prerequisite, and keep the contribution exercise grounded in completed evidence. Keep `AI_Operations_Builder_Course_Prototype_v2.0.8_M0.5-L4.zip` as a recovery backup. Do not begin M1.

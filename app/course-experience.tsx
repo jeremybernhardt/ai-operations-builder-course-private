@@ -65,9 +65,9 @@ const VERIFIED_DECISIONS: DecisionState = {
 const STORAGE_KEY = "ai-operations-course:p0-c1-review:v1.2.0";
 
 const objectives = [
-  "Trace changed behavior to approved requirements and classify conflicts.",
-  "Pair deterministic output evidence with targeted inspection of material rules.",
-  "Make an implementation-acceptance decision without trusting plausible output alone.",
+  "Use failed known-answer evidence to isolate a responsible business rule.",
+  "Direct and inspect one bounded correction without accepting unrelated changes.",
+  "Verify the corrected case, unaffected behavior, and one remaining limitation.",
 ];
 
 const artifacts = [
@@ -102,16 +102,16 @@ function Portal({ progressSnapshot, openCloseout }: { progressSnapshot: Progress
     <div className="view-stack" data-area="course-portal">
       <section className="dashboard-hero">
         <div className="hero-copy">
-          <p className="eyebrow">Course Portal · Repository v2.0.7</p>
+          <p className="eyebrow">Course Portal · Repository v2.0.8</p>
           <h1>Your course, one <em>verified</em> step at a time.</h1>
           <p className="hero-deck">
-            The change-and-evidence review is complete. Continue by debugging from failed evidence and directing one bounded correction in a fresh task.
+            The debugging and bounded-modification checkpoint is complete. Continue by documenting human and AI contributions accurately in a fresh task.
           </p>
           <div className="hero-actions">
             <button className="primary-action" type="button" onClick={openCloseout}>
               Open preserved KPI Lab <span aria-hidden="true">→</span>
             </button>
-            <span className="time-note">One lesson per task · Next: M0.5-L4</span>
+            <span className="time-note">One lesson per task · Next: M0.5-L5</span>
           </div>
         </div>
 
@@ -121,9 +121,9 @@ function Portal({ progressSnapshot, openCloseout }: { progressSnapshot: Progress
             <span className="status-chip is-approved">Approved</span>
           </div>
           <p className="brief-number">M0.5</p>
-          <h2>Change review verified</h2>
-          <p>M0.5-C3 passed with limited assistance. Jeremy identified hidden logic defects in a guided review and a different cash-disbursement transfer; independent mastery and resume-level capability are not claimed.</p>
-          <div className="brief-footer"><span>Next action</span><strong>M0.5-L4 in a fresh task</strong></div>
+          <h2>Bounded debugging verified</h2>
+          <p>M0.5-C4 passed with limited assistance. Jeremy diagnosed two defects, constrained both corrections, selected regression evidence, and identified a remaining input-validation limitation; independent mastery and resume-level capability are not claimed.</p>
+          <div className="brief-footer"><span>Next action</span><strong>M0.5-L5 in a fresh task</strong></div>
         </aside>
       </section>
 
@@ -136,7 +136,7 @@ function Portal({ progressSnapshot, openCloseout }: { progressSnapshot: Progress
           <p className="source-label">{progressSnapshot.label}</p>
           <div className="progress-summary">
             <div className="progress-orbit"><span>M0.5</span></div>
-            <div><p className="progress-title">Diff-and-evidence checkpoint verified</p><p>{progressSnapshot.lesson.note}</p></div>
+            <div><p className="progress-title">Debugging checkpoint verified</p><p>{progressSnapshot.lesson.note}</p></div>
           </div>
           <div className="timeline" aria-label="Course progress">
             <div className="timeline-item is-complete"><span>✓</span><div><strong>Minimum Mac setup</strong><small>Node.js and Python verified</small></div></div>
@@ -149,7 +149,8 @@ function Portal({ progressSnapshot, openCloseout }: { progressSnapshot: Progress
             <div className="timeline-item is-complete"><span>✓</span><div><strong>M0.5-L1 define the build</strong><small>Completed with limited assistance</small></div></div>
             <div className="timeline-item is-complete"><span>✓</span><div><strong>M0.5-L2 review the builder plan</strong><small>Completed with limited assistance</small></div></div>
             <div className="timeline-item is-complete"><span>✓</span><div><strong>M0.5-L3 review a proposed diff</strong><small>Completed with limited assistance</small></div></div>
-            <div className="timeline-item is-current"><span>●</span><div><strong>M0.5-L4 debug and direct a bounded change</strong><small>Next lesson in a fresh task</small></div></div>
+            <div className="timeline-item is-complete"><span>✓</span><div><strong>M0.5-L4 debug and direct a bounded change</strong><small>Completed with limited assistance</small></div></div>
+            <div className="timeline-item is-current"><span>●</span><div><strong>M0.5-L5 explain human and AI contributions</strong><small>Next lesson in a fresh task</small></div></div>
           </div>
           <details className="roadmap-details">
             <summary>View the complete course roadmap</summary>
@@ -162,7 +163,7 @@ function Portal({ progressSnapshot, openCloseout }: { progressSnapshot: Progress
         </article>
 
         <article className="panel objectives-panel">
-          <div className="section-heading"><div><p className="section-kicker">Learning objectives</p><h2>What M0.5-L3 developed</h2></div></div>
+          <div className="section-heading"><div><p className="section-kicker">Learning objectives</p><h2>What M0.5-L4 developed</h2></div></div>
           <ol className="objective-list">
             {objectives.map((objective, index) => <li key={objective}><span>{String(index + 1).padStart(2, "0")}</span><p>{objective}</p></li>)}
           </ol>
@@ -180,7 +181,7 @@ function Portal({ progressSnapshot, openCloseout }: { progressSnapshot: Progress
           <div className="verification-list">
             <div><span className="check-mark">✓</span><p><strong>Environment ready</strong><br />Git, Node.js, npm, and Python were verified on Jeremy&apos;s Mac.</p></div>
             <div><span className="check-mark">✓</span><p><strong>Repository and privacy verified</strong><br />Private GitHub main is authoritative; the disposable practice history remains unchanged and local-only.</p></div>
-            <div><span className="check-mark">✓</span><p><strong>AI-generated change and evidence reviewed</strong><br />M0.5-C3 completed with limited assistance; independent mastery and every resume-level gate remain unearned.</p></div>
+            <div><span className="check-mark">✓</span><p><strong>Evidence-led debugging and bounded modification verified</strong><br />M0.5-C4 completed with limited assistance; independent mastery and every resume-level gate remain unearned.</p></div>
           </div>
         </article>
 
@@ -401,7 +402,7 @@ function Lab({ dataPreview, qualitySummary, initialStep }: { dataPreview: DataRo
             <div className="completion-grid">
               <article className="completion-card is-complete"><span>Completed</span><h2>What you finished</h2><p>You defined first-pass acceptance, handled duplicates, missing outcomes, and rework, and connected the metric to an operational investigation.</p></article>
               <article className="completion-card"><span>Mastery boundary</span><h2>What the evidence supports</h2><p>Completed with substantial assistance. Independent mastery, SQL, a comparable challenge, teach-back, and limitation work are not claimed.</p></article>
-              <article className="completion-card"><span>Next current lesson</span><h2>M0.5-L4: Debugging from evidence and directing a bounded modification</h2><p>The fresh task will diagnose one safe local defect, direct a narrow correction, and verify the fix without implementing the expense checker.</p></article>
+              <article className="completion-card"><span>Next current lesson</span><h2>M0.5-L5: Explaining human and AI contributions without inflation</h2><p>The fresh task will trace contribution claims to completed evidence without overstating unaided implementation or understating Jeremy&apos;s decisions and verification.</p></article>
             </div>
 
             <div className="continuity-panel">
@@ -415,7 +416,7 @@ function Lab({ dataPreview, qualitySummary, initialStep }: { dataPreview: DataRo
             </div>
 
             <div className="github-future"><span>GitHub continuity is active</span><p>New tasks read canonical files from the private repository, so repeated full-folder attachments are no longer necessary. Private browser clicks and local notes remain outside the repository, and no backend was added.</p></div>
-            <div className="screen-actions"><button className="secondary-action" type="button" onClick={() => setStep("review")}>Back to result</button><span>Preserved prototype view · Course repository v2.0.7.</span></div>
+            <div className="screen-actions"><button className="secondary-action" type="button" onClick={() => setStep("review")}>Back to result</button><span>Preserved prototype view · Course repository v2.0.8.</span></div>
           </section>
         )}
       </div>
@@ -435,7 +436,7 @@ export default function CourseExperience({ dataPreview, progressSnapshot, qualit
       <header className="app-header">
         <button className="brand" type="button" onClick={() => setArea("portal")} aria-label="Open Course Portal"><span className="brand-mark">AO</span><span><strong>AI Operations Builder</strong><small>Private course workspace</small></span></button>
         <nav aria-label="Application areas"><AreaButton active={area === "portal"} label="Course Portal" onClick={() => setArea("portal")} /><AreaButton active={area === "lab"} label="KPI Lab" onClick={() => openLab("intro")} /></nav>
-        <div className="learner-chip" aria-label="Learner Jeremy Bernhardt"><span>JB</span><div><strong>Jeremy Bernhardt</strong><small>Course v2.0.7 · M0.5-L4 next</small></div></div>
+        <div className="learner-chip" aria-label="Learner Jeremy Bernhardt"><span>JB</span><div><strong>Jeremy Bernhardt</strong><small>Course v2.0.8 · M0.5-L5 next</small></div></div>
       </header>
       {area === "portal" ? <Portal progressSnapshot={progressSnapshot} openCloseout={() => openLab("intro")} /> : <Lab key={labStartStep} dataPreview={dataPreview} qualitySummary={qualitySummary} initialStep={labStartStep} />}
       <footer className="app-footer"><span>Local/private prototype · Synthetic data only</span><span>Canonical state lives in the course files, not this interface.</span></footer>
