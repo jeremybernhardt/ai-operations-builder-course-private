@@ -37,6 +37,8 @@ test("renders the required course areas and current checkpoint", async () => {
   assert.match(html, /Course artifacts/);
   assert.match(html, /Capability evidence/);
   assert.match(html, /One lesson per task/);
+  assert.match(html, /Next: M1-L1/);
+  assert.match(html, /Deferred; checkpoint not passed/);
   assert.doesNotMatch(html, /Working glossary/);
   assert.doesNotMatch(html, /accepted_first_pass_count/);
   assert.doesNotMatch(html, /0\.583333/);
@@ -60,7 +62,9 @@ test("renders the required course areas and current checkpoint", async () => {
   assert.match(clientCode, /NEXT_CHAT_PROMPT\.md/);
   assert.match(clientCode, /GitHub continuity is active/);
   assert.match(clientCode, /Private GitHub repository/);
-  assert.match(clientCode, /M0\.5-L5: Explaining human and AI contributions without inflation/);
+  assert.match(clientCode, /M1-L1: First working finance app/);
+  assert.match(clientCode, /M0\.5-L5 is deferred without a passed checkpoint/);
+  assert.match(clientCode, /Verify this checkout against private main/);
   assert.match(clientCode, /Optional specialization/);
   assert.doesNotMatch(clientCode, /AfterQuery/);
   assert.doesNotMatch(clientCode, /Copy draft for chat/);

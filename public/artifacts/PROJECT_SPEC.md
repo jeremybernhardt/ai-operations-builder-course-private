@@ -2,13 +2,15 @@
 
 Project ID: `PROJ-HDOFCC-001`  
 Prototype slice: `P0-L1`  
-Status: Preserved completed prototype inside repository release `v2.0.8` and the approved `v2.0.0` course architecture
+Status: Preserved completed prototype inside the local `v2.0.9` delivery revision and approved `v2.0.0` course architecture
 
 ## Relationship to the required course
 
 This specification governs only the preserved `P0-L1` teaching-format prototype. It is not the required flagship and does not count as work-dashboard, SQL, Python, automation, or agent proficiency. Human-data operations is now an optional later transfer specialization. The required flagship is the synthetic AI-Enabled Finance Planning, Reporting, and Decision-Support System defined in `COURSE_CONTRACT.md` and `CURRICULUM_MAP.md`. Release v2.0.1 added the course-wide AI-assisted operator-builder proficiency standard; v2.0.2 recorded the verified M0-L2 checkpoint and safe AI-execution default; v2.0.3 recorded the M0-L3 identity/privacy checkpoint and transfer-not-repetition correction; v2.0.4 recorded private-repository authority and M0-L4; v2.0.5 recorded M0.5-L1; v2.0.6 recorded M0.5-L2 and teaching-method corrections; v2.0.7 recorded the recovered and verified M0.5-L3 change-review checkpoint; and v2.0.8 records the verified M0.5-L4 debugging and bounded-modification checkpoint. These changes do not alter this prototype's decisions, implementation, or evidence.
 
 ## Scenario
+
+The v2.0.9 delivery revision moves the first small finance app to M1 and defers standalone contribution-writing. It changes no P0 data, rules, learner evidence, or implementation. The first-app scope is in `lesson/M1-L1_FIRST_WORKING_FINANCE_APP.md`, not this preserved prototype specification.
 
 Finance experts submit synthetic financial-reasoning tasks for an AI-training project. Reviewers record an initial decision of accepted, revise, or rejected. Some tasks are reworked, some records are incomplete, and one logical review is duplicated. An operations lead needs a defensible first-pass quality signal before deciding whether to investigate a task type, guideline version, or data-quality problem.
 

@@ -1,6 +1,6 @@
 # AI Operations Builder Course — Bounded Curriculum Map
 
-Blueprint version: `2.0.6`
+Blueprint version: `2.0.9`
 Scope: module-level blueprint only. Future lesson prose, completed exercises, production datasets, solution code, answer keys, and full future portal pages remain unbuilt.
 
 Primary learning objective: AI-assisted operator-builder proficiency through practical AI, SQL, Python/pandas, data pipelines, work dashboards, automation, document tools, and agents. Finance is the required project's application context, not a separate academic curriculum. Software-engineering depth is limited to what Jeremy needs to define, trace, verify, debug, and modify AI-assisted tools.
@@ -12,6 +12,8 @@ AI should execute routine local commands and implementation steps when tooling a
 Lessons use accelerated, gap-based, build-first **Teach**, **Practice**, and **Demonstrate** purposes. Comparable prior evidence may shorten scaffolding; it never substitutes for missing technical verification. Most learner time goes to building, debugging, modifying, and testing real artifacts. Evidence precision matches the task stage: conceptual judgment does not require invented numeric ceremony, while real files, calculations, and implementations require exact deterministic verification.
 
 Planning range: 50-60 hours through the full work dashboard (`M0`-`M7`) and 25-35 hours for automation, applied AI, agent work, strategic decision support, and portfolio (`M8`-`M12`). Total required remaining work is approximately 75-95 hours. Optional specialization `OH1` adds approximately 6-10 hours.
+
+Practical-delivery revision (`DEC-C2-014`, 2026-10-03): produce a small working finance app in `M1`, then learn the relevant SQL, Python, data, and interface concepts through improving and verifying it. These module IDs retain their capability outcomes; they are not separate lecture courses that must all finish before an app exists. Later milestones expand one coherent project into a connected pipeline, dashboard, automation, AI feature, and permissioned agent. AI provides routine scaffolding and execution; Jeremy learns specifications, relevant implementation, changes, diagnosis, and quality decisions. Existing hour estimates are provisional and will be recalibrated from the first actual app lesson rather than promised as a new completion deadline.
 
 Delivery rule: one fresh chat per lesson. Each lesson closes with verified progress, honest assistance/mastery, a next-lesson explanation, and continuity files. Before the private course repository is verified, the packet includes the full bundle, factual handoff, and exact next-chat prompt. Afterward, chats read canonical files from the repository and ZIP exports become periodic backups.
 
@@ -44,33 +46,34 @@ Delivery rule: one fresh chat per lesson. Each lesson closes with verified progr
 - **Prerequisites:** `M0` verified.
 - **Estimated time:** 4 hours.
 - **Project contribution:** Establishes the operating method used throughout the flagship.
-- **Expected deliverables:** Build brief, reviewed plan, annotated diff, verification request, debugging log, bounded modification, and contribution statement.
+- **Expected deliverables:** Verified build brief, reviewed plan, annotated diff, verification request, debugging log, and bounded modification. Contribution statements move to brief project closeouts and `M12`; the standalone L5 checkpoint is deferred.
 - **Dependencies:** Private course repository and safe practice code.
 - **Mastery criteria:** Jeremy rejects an unjustified choice, identifies an assumption, verifies a change, and explains responsibility without inflation.
 - **Verification approach:** Brief/plan rubric, diff questions, observed debugging, independent modification, evidence check, and teach-back.
-- **Current lesson position:** `M0.5-L1` through `M0.5-L4` passed with limited assistance. In L4, Jeremy diagnosed and bounded an inclusive-date correction, then independently diagnosed a different rule-precedence defect, selected regression evidence, and identified a remaining input-validation limitation. Independent mastery is not claimed. The next fresh task may prepare and teach only `M0.5-L5 — Explaining Human and AI Contributions Without Inflation`; Expense File Readiness Checker implementation and `M1` remain unauthorized.
+- **Current lesson position:** `M0.5-L1` through `M0.5-L4` passed with limited assistance. In L4, Jeremy diagnosed and bounded an inclusive-date correction, then independently diagnosed a different rule-precedence defect, selected regression evidence, and identified a remaining input-validation limitation. Independent mastery is not claimed. `M0.5-L5` is deferred without a passed checkpoint. `DEC-C2-014` allows progression using C1-C4 evidence; only `M1-L1 — First Working Finance App` is authorized next, in a fresh task. The original five-lesson sequence remains incomplete and the Expense File Readiness Checker remains unimplemented.
 
 ### Recurring secondary transfer — AI-assisted job-search monitor
 
 This is a bounded reuse of the core skills, not a second curriculum and not current build authorization. Define criteria and a data contract in `M1`; use approved sources/APIs plus normalization, deduplication, and database storage in `M5`; add a review dashboard in `M7`; schedule retrieval with logging, recovery, and notifications in `M8`; evaluate AI fit matching and explanations in `M9`; add a permissioned investigation agent that cannot apply or contact anyone in `M10`; and publish only a synthetic candidate/listing version in `M12`. Real resumes and listings stay private.
 
-## M1 — Business System, Metric, and Control Design
+## M1 — First Working App and Business System Design
 
-- **Intended outcomes:** Translate a finance-oriented business decision into users, inputs, outputs, data grain, metrics, mappings, controls, acceptance criteria, and failure conditions without turning the lesson into finance theory.
-- **Prerequisites:** `M0.5` verified.
+- **Intended outcomes:** Build and use an initial local finance app with AI assistance; explain its input-to-calculation-to-view path; translate its decision into users, inputs, outputs, data grain, metrics, controls, and failure conditions as each feature needs them.
+- **Prerequisites:** Verified `M0.5-C1` through `M0.5-C4`; `DEC-C2-014` explicitly defers L5 instead of requiring its completion.
 - **Estimated time:** 4 hours.
-- **Project contribution:** Defines the synthetic finance planning/reporting system and freezes its first technical requirements.
-- **Expected deliverables:** Product brief, decision inventory, process/data-flow map, initial schema, metric dictionary, control map, and definition-freeze entry.
+- **Project contribution:** Creates the first small working piece of the synthetic finance planning/reporting system and freezes only the rules needed for that piece before expansion.
+- **Expected deliverables:** Local app using synthetic expense actuals and budgets, an account comparison view, one useful interaction, small source/expected-result controls, one learner-directed modification, and a concise record of behavior, data flow, and limitations. Broader specifications are assembled by AI as requirements emerge.
 - **Dependencies:** Synthetic company assumptions and bounded stakeholder questions.
-- **Mastery criteria:** Requirements are implementable; metrics have explicit grain, denominator, time/version rules, and controls; every output supports a decision.
-- **Verification approach:** Manual examples, ambiguity challenge, edge-case critique, control review, and teach-back.
+- **Mastery criteria:** Jeremy can explain the small app's purpose and data flow, define and verify its important calculation, direct a meaningful bounded change, and evaluate a realistic failure. Working AI scaffolding alone earns no SQL, Python, or dashboard gate.
+- **Verification approach:** Manual known-answer comparison against actual app results, targeted calculation inspection, interaction checks, bounded modification with regression evidence, and invalid or ambiguous input behavior.
+- **Next bounded lesson:** `M1-L1 — First Working Finance App`; no later M1 lesson or future module implementation is authorized automatically.
 
 ## M2 — Practical SQL I
 
 - **Intended outcomes:** Inspect schemas; directly practice and use `SELECT`, `WHERE`, `ORDER BY`, grouping, aggregates, joins, `CASE`, dates, nulls, basic CTEs/subqueries, and validation queries; understand duplicate amplification and finance metric logic. AI may draft queries, but Jeremy must define the intended result, inspect relevant clauses, reconcile outputs, and make or direct bounded changes.
 - **Prerequisites:** `M1` definitions frozen; spreadsheet data intuition.
 - **Estimated time:** 7 hours.
-- **Project contribution:** Implements initial verified analyses against synthetic actuals, budget, forecast, headcount, and mapping tables.
+- **Project contribution:** Replaces or strengthens the first app's analytical data path with verified SQL, then extends it to synthetic actuals, budget, forecast, headcount, and mappings as needed.
 - **Expected deliverables:** Schema notes, SQL query pack, fixtures, reconciliations, error diagnoses, and query explanations.
 - **Dependencies:** Synthetic relational dataset and local SQL environment.
 - **Mastery criteria:** Pass `GATE-SQL-BASIC`: inspect an unfamiliar schema, write and explain core queries, reconcile results, debug an error, and independently modify a query.
@@ -81,7 +84,7 @@ This is a bounded reuse of the core skills, not a second curriculum and not curr
 - **Intended outcomes:** Trace and reuse practical scripts using variables, types, functions, conditionals, loops, files, errors, and pandas; read CSV/Excel, clean/filter/sort/group/merge, handle missing values and dates, calculate metrics, diagnose failures, and modify relevant functions or rules. Substantial unaided blank-page programming is not required.
 - **Prerequisites:** `M2` basic data/query concepts and Python environment from `M0`.
 - **Estimated time:** 7 hours.
-- **Project contribution:** Adds reproducible data preparation and validation around the SQL layer.
+- **Project contribution:** Adds reproducible data preparation and validation around the app and SQL layer; teach Python through tracing, changing, and repairing those actual functions.
 - **Expected deliverables:** Reusable script, cleaned outputs, validation report, tests, error diagnosis, chart or summary, and bounded modification.
 - **Dependencies:** Synthetic files and reproducible local environment.
 - **Mastery criteria:** Pass `GATE-PYTHON-PANDAS-BASIC`: trace the script, modify a function, handle files/dataframes, debug a failure, reconcile outputs, and explain limitations.
@@ -92,7 +95,7 @@ This is a bounded reuse of the core skills, not a second curriculum and not curr
 - **Intended outcomes:** Connect one small workflow from source file through validation, database, SQL metric, and learner-built interactive work dashboard; distinguish the work dashboard from the Course Portal.
 - **Prerequisites:** `M2` and `M3` basic gates passed.
 - **Estimated time:** 5 hours.
-- **Project contribution:** Produces an early thin vertical slice of the flagship rather than delaying all visible work until later modules.
+- **Project contribution:** Verifies and strengthens the initial app into a complete file-to-database-to-SQL-to-dashboard path. The first visible app already exists from M1; this milestone adds verified integration after the SQL and Python gates.
 - **Expected deliverables:** Small ingestion script, database table, validated SQL result, first work-dashboard page, data-quality indicator, and architecture walkthrough.
 - **Dependencies:** Local synthetic finance file, verified stack choice, no public deployment.
 - **Mastery criteria:** Jeremy explains source-to-view lineage, reconciles the displayed value, and independently changes one metric or view.

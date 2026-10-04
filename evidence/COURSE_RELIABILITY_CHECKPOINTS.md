@@ -45,6 +45,17 @@
 
 ## Future checkpoints
 
-- `REL-4` remains deferred until the M0.5 boundary after M0.5-L5.
+- `REL-4` was evaluated at the revised progression boundary below; further generator decoupling remains deferred pending evidence of benefit.
 - `REL-5` runs only after a recorded context-growth trigger.
 - `REL-6` is a lightweight closeout health record, not another learner step.
+
+## REL-4 evaluation and REL-6 closeout — Practical delivery revision
+
+- Date: 2026-10-03.
+- `DEC-C2-014` defers standalone L5 and allows M1-L1 on verified C1-C4, triggering the progression-boundary evaluation without claiming L5 completion. The two-task count remains 2; this revision is not a third passed lesson.
+- A direct-context routing audit reviewed canonical instructions, curriculum/template, the bounded next lesson, generator/state use, and relevant validation implementation. Older completed history remained scan-only/on demand; no workbook was reopened.
+- Generator evaluation: progress already derives the last verified lesson from canonical state; portal routing text still requires explicit updates. Reconstruction and rendered tests now cover the early-app route, deferral without passed evidence, and pending local publication. Further decoupling is deferred: benefit and context cost have not been measured sufficiently to justify another maintenance implementation before building.
+- All 11 reliability tests, 93 reconstruction checks, deterministic release/secret checks, production build, 2 rendered tests, lint, and artifact validation passed.
+- Final commit-candidate startup: 16,094 words, 49.53% below the 31,889-word legacy baseline and 4.86% above the approved 15,348-word baseline. It remains below the 17,000-word ceiling and 5% audit threshold; the approved baseline is retained.
+- No course server was started. All commands completed without a course-owned stall. The initial read-only remote check encountered sandbox DNS failure; its approved read-only retry confirmed exact private-main tracking. No external write, commit, or push occurred.
+- Learner achievement, assistance, checkpoint documents, student artifacts, and capability gates are unchanged. The current task created no app and passed no learner checkpoint.

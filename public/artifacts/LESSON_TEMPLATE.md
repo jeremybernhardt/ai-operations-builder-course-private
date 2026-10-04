@@ -1,7 +1,7 @@
 # Staged Lesson Template
 
 Template ID: `LESSON-TEMPLATE-001`  
-Version: `2.0.7`
+Version: `2.0.9`
 
 ## Required lesson metadata
 
@@ -47,6 +47,8 @@ Questions should help Jeremy apply or examine a concept after it has been taught
 
 Default to accelerated, gap-based, build-first delivery: roughly 65-75% building, debugging, modifying, and testing; 15-25% verification and explanation; and 10-15% concepts. Ask at most one or two substantive questions before hands-on work unless unresolved risk or scope makes action unsafe. Use real artifacts early. Excel may be a familiar validation bridge, then move promptly to SQL, Python, databases, dashboards, APIs, and automations.
 
+Apply `DEC-C2-014`: begin with a useful working-project milestone and teach through it. Explain what the next concept does, why this feature needs it, and how it affects the result; demonstrate it in the running project before asking Jeremy to change or diagnose it. The percentages above must not remove context or explanation needed for understanding. AI can scaffold the first bounded local app before technical proficiency gates pass. Jeremy then inspects relevant logic, checks results independently, directs a meaningful change, and tests a failure. Keep course administration and routine documentation with AI; contribution disclosure is a short project-closeout record, not a prerequisite writing lesson.
+
 Calibrate specificity to what the lesson actually verifies. Conceptual transfer may be established by a correct decision, material-risk explanation, and appropriate verification design without forcing Jeremy to invent arbitrary numbers. Require exact inputs, outputs, totals, hashes, or other deterministic evidence when a real file, calculation, implementation, or ambiguous business rule is under test. If Jeremy already demonstrates the conceptual distinction, do not add artificial precision merely to prolong the exercise.
 
 ## Site and chat roles
@@ -88,6 +90,7 @@ Give SQL somewhat more direct practice because of its usefulness in finance and 
 - Reveal one stage at a time and stop at explicit checkpoints.
 - Prefer coherent work blocks over unnecessary command-by-command interruption once the effect and safety boundary are understood.
 - Never reveal a final definition, completed query/script, expected test output, answer key, or independent-challenge solution before a genuine attempt.
+- An AI-generated initial implementation is permitted after the bounded project's behavior is established; label it assisted scaffolding. It must not solve the later learner modification or unfamiliar diagnosis. Software readiness and learner achievement remain separate.
 - Instructor-only fixtures may exist for deterministic grading but must not be linked or displayed in student-facing material.
 - Never simulate Jeremy's answer or mark an unattempted stage complete.
 - Evaluate each submission against the frozen definition and evidence before advancing.

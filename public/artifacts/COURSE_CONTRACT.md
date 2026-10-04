@@ -1,8 +1,8 @@
 # AI Operations Builder Course Contract
 
 Contract ID: `COURSE-CONTRACT-001`  
-Version: `2.0.8`
-Effective date: `2026-08-26`
+Version: `2.0.9`
+Effective date: `2026-10-03`
 Learner: Jeremy Bernhardt
 
 ## 1. Purpose and target capability
@@ -84,7 +84,10 @@ Current authorization covers only:
 8. the verified `M0.5-L2` plan, assumption, scope, and approval-evidence review checkpoint;
 9. the verified `M0.5-L3` diff, verification-evidence, and implementation-acceptance review checkpoint;
 10. the verified `M0.5-L4` debugging and bounded-modification checkpoint; and
-11. preparation and teaching of only `M0.5-L5 — Explaining Human and AI Contributions Without Inflation`, in a fresh task.
+11. the practical-delivery revision recorded in `DEC-C2-014`; and
+12. preparation and teaching of only `M1-L1 — First Working Finance App`, in a fresh task.
+
+Jeremy's 2026-10-03 direction prioritizes useful working projects as quickly as consistent quality permits. `M0.5-L5` is deferred as a standalone checkpoint, not passed; contribution accuracy is handled briefly at project closeouts and revisited in `M12`. The verified `M0.5-C1` through `M0.5-C4` evidence permits progression to the bounded first app under this explicit prerequisite exception. The original five-lesson sequence is not recorded as complete.
 
 Prototype or architecture approval does not authorize construction of later modules. Completing one module authorizes preparation of only the next agreed module. Do not build the remaining course or future standalone product automatically.
 
@@ -134,7 +137,7 @@ A reversal requires a dated decision-log entry identifying the superseded decisi
 
 ## 7. Sequence, pacing, and chat boundaries
 
-The required sequence is `M0`, `M0.5`, and `M1` through `M12`, preceded by the completed pre-course prototype `P0`. Optional specialization `OH1` is not required for graduation. `CURRICULUM_MAP.md` is authoritative for module-level details.
+The required sequence is `M0`, the verified `M0.5` foundations with the `DEC-C2-014` prerequisite exception, and `M1` through `M12`, preceded by the completed pre-course prototype `P0`. Optional specialization `OH1` is not required for graduation. `CURRICULUM_MAP.md` is authoritative for module-level details. `M1` now produces a small AI-assisted working app early; SQL and Python foundations then develop through inspecting, changing, and verifying that app. Capability gates remain required for proficiency claims and later stages that depend on verified capability, but do not prevent AI from scaffolding the first bounded local app.
 
 Planning target:
 
@@ -151,7 +154,9 @@ Use one fresh chat per lesson. A lesson must close with verified progress, assis
 
 Instruction is rigorous, direct, clear, practical, and beginner-aware. Challenge ambiguity, unsupported assumptions, weak definitions, unnecessary finance theory, coding for its own sake, overengineering, hidden scope, and circular verification. Explain why a choice is weak and offer a better alternative.
 
-The default is accelerated, gap-based, and build-first. Start from demonstrated capability, teach only the genuinely new technical or judgment gap, and move to a real artifact quickly. Target roughly 65-75% of learner time building, debugging, modifying, and testing; 15-25% verifying and explaining the actual work; and 10-15% concepts. Ask no more than one or two substantive learner questions before hands-on work unless a consequential ambiguity prevents safe progress.
+The default is accelerated, gap-based, and build-first. Start from demonstrated capability, teach only the genuinely new technical or judgment gap, and move to a real artifact quickly. Target roughly 65-75% of learner time building, debugging, modifying, and testing; 15-25% verifying and explaining the actual work; and 10-15% concepts. These are pacing guides, not limits on explanation: supply enough context for Jeremy to understand the next action, why it matters, and how it connects to his goal of consistently building useful apps with AI. Ask no more than one or two substantive learner questions before hands-on work unless a consequential ambiguity prevents safe progress.
+
+Use working-project milestones as the teaching spine. Each technical lesson should produce or improve something Jeremy can run or inspect: a feature, data path, analysis, failure repair, or meaningful quality control. Introduce concepts such as tables, SQL, Python, frontend/backend responsibilities, APIs, storage, and schedules when the current feature needs them. Explain the concept, demonstrate it in the actual project, then let Jeremy direct a change and evaluate the result. Keep routine documentation and course administration with AI. Do not substitute a long lecture, unexplained exercise, or repeated specification worksheet for learning how the tool works. A polished interface is useful early feedback; readiness still requires independent expected results, relevant implementation inspection, a bounded learner-owned change, and a failure case.
 
 Prior evidence may shorten or combine scaffolding when it genuinely proves the same capability. Jeremy's course-building supervision is valid diagnostic or supplementary evidence for requirements, scope, approval, and AI collaboration, but it does not by itself prove code, data, or implementation verification. Never infer mastery from working software alone.
 
@@ -200,7 +205,7 @@ Give SQL somewhat more direct practice because it is especially useful in financ
 
 For this course, **independent modification** means Jeremy independently identifies the problem or required change, determines the intended result, directs or makes the bounded modification, and verifies it. AI assistance is permitted but must be disclosed. It does not require producing all code unaided.
 
-Reveal one stage at a time. Do not reveal final definitions, completed SQL or Python, answer keys, expected test outputs, or independent-challenge solutions before a genuine attempt. Do not simulate Jeremy's responses or mark unattempted work complete.
+Reveal one stage at a time. Do not reveal final definitions, completed SQL or Python, answer keys, expected test outputs, or independent-challenge solutions before a genuine attempt. Under `DEC-C2-014`, AI may generate and explain an initial working implementation after the small build's intended behavior and acceptance boundary are established. This scaffold is assisted software, not a learner answer or mastery evidence. Preserve the unrevealed answer for Jeremy's subsequent diagnosis, meaningful modification, or unfamiliar case. Do not simulate Jeremy's responses or mark unattempted work complete.
 
 Ask for learner reasoning before supplying the substantive answer. If the instructor supplies an explanation after Jeremy is unsure or incorrect, record the assistance honestly and do not ask Jeremy to immediately repeat or paraphrase that same explanation. Any later understanding check must use a genuinely new decision, scenario, diagnosis, or application and should occur only when it adds material evidence. Teach-back is evidence of transfer, not an echo test.
 
@@ -252,7 +257,7 @@ The system must support ingestion, validation, SQL analysis, Python transformati
 
 The learner-built work dashboard is a central portfolio and mastery artifact. It is distinct from the Course Portal. It must include decision-oriented views, filters, drill-downs, data freshness or validation status, and an independently completed modification. Its displayed results must reconcile to authoritative SQL or Python outputs.
 
-An early thin dashboard appears in `M4` after SQL and Python foundations. The full work dashboard and `GATE-WORK-DASHBOARD` occur in `M7`.
+A small local finance app appears in `M1` with AI-generated scaffolding and explicit learner-achievement limits. `M2` and `M3` teach SQL and Python through its data and behavior. `M4` verifies and strengthens the complete source-to-dashboard path after those foundations; it is no longer the first opportunity to see a working app. The full work dashboard and `GATE-WORK-DASHBOARD` occur in `M7`.
 
 A bounded **AI-assisted job-search monitor** is the recurring secondary transfer project, not a second curriculum or replacement flagship. It reuses the same module capability after the finance build: criteria and data contract in `M1`; approved sources, retrieval, normalization, deduplication, and database storage in `M5`; a review dashboard in `M7`; scheduled retrieval, logs, recovery, and notifications in `M8`; evaluated AI fit matching and explanations in `M9`; a permissioned investigation agent that never applies or contacts anyone in `M10`; and a public synthetic portfolio version in `M12`. Real resumes and listings remain private.
 

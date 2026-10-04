@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify that a fresh Codex task can reconstruct the v2.0.8 course state."""
+"""Verify reconstruction of the v2.0.9 local delivery revision and preserved evidence."""
 
 from __future__ import annotations
 
@@ -61,7 +61,7 @@ def main() -> None:
     checks = {
         "valid_state_schema": state.get("schema_version") == "2.0.0",
         "valid_progress_schema": progress.get("schema_version") == "2.0.0",
-        "release_is_v2_0_8": state.get("release_version") == "2.0.8" and progress.get("release_version") == "2.0.8",
+        "release_is_v2_0_9": state.get("release_version") == "2.0.9" and progress.get("release_version") == "2.0.9",
         "private_repository_is_authoritative": source.get("type") == "private_git_repository",
         "exact_repository_recoverable": source.get("repository_full_name") == "jeremybernhardt/ai-operations-builder-course-private",
         "private_visibility_recoverable": source.get("visibility") == "private" and repository.get("visibility") == "private",
@@ -88,8 +88,13 @@ def main() -> None:
         "guided_and_transfer_diff_reviews_present": all((ROOT / name).is_file() for name in ["student/M0.5-L3_ANNOTATED_DIFF_REVIEW.md", "student/M0.5-L3_CASH_SCHEDULE_TRANSFER_PACKET.md", "student/M0.5-L3_CASH_DISBURSEMENT_ACCEPTANCE_FIXTURE.xlsx.inspect.ndjson"]),
         "debugging_and_transfer_artifacts_present": all((ROOT / name).is_file() for name in ["student/M0.5-L4_DEBUGGING_AND_BOUNDED_MODIFICATION_RECORD.md", "student/m0_5_l4/payment_release.py", "student/m0_5_l4/test_payment_release.py", "student/m0_5_l4/review_routing.py", "student/m0_5_l4/test_review_routing.py"]),
         "one_lesson_per_task_recoverable": state.get("lesson_chat_policy") == "one_lesson_per_new_chat",
-        "next_lesson_named": "M0.5-L5" in prompt and "Explaining Human and AI Contributions Without Inflation" in prompt,
-        "next_scope_bounded": "current authorization covers only `m0.5-l5" in prompt.lower(),
+        "next_lesson_named": "M1-L1" in prompt and "First Working Finance App" in prompt,
+        "next_scope_bounded": "current authorization covers only `m1-l1" in prompt.lower(),
+        "first_app_spec_present": (ROOT / "lesson/M1-L1_FIRST_WORKING_FINANCE_APP.md").is_file(),
+        "next_route_explicit": progress.get("course_architecture", {}).get("required_next_lesson") == "M1-L1" and state.get("delivery_revision", {}).get("next_lesson_id") == "M1-L1",
+        "l5_deferred_without_pass": "M0.5-L5" in state.get("delivery_revision", {}).get("deferred_lesson_ids", []) and "M0.5-L5" not in lessons,
+        "prerequisite_exception_recoverable": "DEC-C2-014" in decisions and "prerequisite exception" in prompt and "prerequisite exception" in ledger,
+        "publication_requires_live_verification": state.get("delivery_revision", {}).get("publication_check") == "verify_private_main_and_live_git_tracking" and "Verify that private main" in prompt,
         "authoritative_files_named": all(name in prompt for name in REQUIRED_CANONICAL),
         "repository_startup_instructions": "authoritative private GitHub repository" in prompt and "private visibility" in prompt,
         "zip_not_required": "recovery backup only" in prompt and "not" in prompt,
@@ -127,6 +132,7 @@ def main() -> None:
         "evidence_precision_decision_recorded": "DEC-M0.5-003" in decisions,
         "selective_context_decision_recorded": "DEC-C2-012" in decisions,
         "accelerated_teaching_decision_recorded": "DEC-C2-013" in decisions,
+        "early_app_delivery_decision_recorded": "DEC-C2-014" in decisions and "small local finance app appears in `M1`" in contract,
         "selective_context_guard": all(term in prompt for term in ["Selective startup", "scan-only", "Recovery index"]),
         "context_baseline_bounded": state.get("reliability_maintenance", {}).get("approved_mandatory_startup_words", 99999) <= 17000,
         "build_first_guard": "accelerated, gap-based, and build-first" in contract,

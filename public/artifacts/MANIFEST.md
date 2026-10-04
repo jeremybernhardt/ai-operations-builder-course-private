@@ -1,6 +1,8 @@
 # Course Bundle Manifest
 
-Backup bundle: `AI_Operations_Builder_Course_Prototype_v2.0.8_M0.5-L4.zip`
+Verified remote recovery bundle: `AI_Operations_Builder_Course_Prototype_v2.0.8_M0.5-L4.zip`
+
+Local revision recovery bundle: `AI_Operations_Builder_Course_Prototype_v2.0.9_Delivery_Revision.zip` (no new remote release implied).
 
 The backup name retains `Prototype` for continuity with the verified v1.2.0 folder. The required v2.0.0 course architecture is broader; v2.0.1-v2.0.4 added operator-builder, safe-execution, identity/privacy, teaching, and private-repository authority records. v2.0.5 added M0.5-L1, v2.0.6 added M0.5-L2 plus teaching-method corrections, v2.0.7 added the recovered and verified M0.5-L3 change-review checkpoint, and v2.0.8 adds the verified M0.5-L4 debugging checkpoint. Future lessons remain unbuilt beyond their bounded specifications.
 
@@ -16,7 +18,7 @@ The backup name retains `Prototype` for continuity with the verified v1.2.0 fold
 | File | Role |
 |---|---|
 | `AGENTS.md` | Repository startup, authority, environment, privacy, and verification instructions. |
-| `COURSE_CONTRACT.md` | v2.0.8 purpose, constraints, operator-builder and AI-execution standards, technical/finance boundaries, teaching rules, privacy, and authority. |
+| `COURSE_CONTRACT.md` | v2.0.9 purpose, early-app delivery, operator-builder standards, teaching rules, privacy, and authority. |
 | `CURRICULUM_MAP.md` | Bounded required modules `M0`-`M12`, preserved `P0`, and optional `OH1`. |
 | `COURSE_STATE.json` | Current checkpoint, approvals, blockers, next action, and authorization boundary. |
 | `PROGRESS.json` | Learner mastery and assistance evidence; authoritative over portal progress. |
@@ -27,7 +29,7 @@ The backup name retains `Prototype` for continuity with the verified v1.2.0 fold
 | `DATA_DICTIONARY.md` | Preserved synthetic prototype dataset fields and controls. |
 | `DECISION_LOG.md` | Append-only decisions, including the retarget, operator-builder standard, safe AI execution, identity/privacy choice, and transfer-not-repetition correction. |
 | `SESSION_HANDOFF.md` | Factual briefing for the next conversation. |
-| `NEXT_CHAT_PROMPT.md` | Exact instructions for the fresh task that teaches only `M0.5-L5`. |
+| `NEXT_CHAT_PROMPT.md` | Exact instructions for the fresh task that teaches only `M1-L1`. |
 | `COURSE_RELIABILITY_PLAN.md` | Milestone-triggered selective-context, recovery, growth, and rollout procedure. |
 
 ## Module 0 materials
@@ -63,7 +65,9 @@ The backup name retains `Prototype` for continuity with the verified v1.2.0 fold
 | `student/M0.5-L4_DEBUGGING_AND_BOUNDED_MODIFICATION_RECORD.md` | Guided and transfer diagnosis, bounded changes, verification, decision, and limitation record. |
 | `student/m0_5_l4/` | Synthetic payment-release and invoice-routing helpers with deterministic checks. |
 | `evidence/LEARNER_CHECKPOINT_M0.5-C4.md` | Verified debugging, bounded-modification, transfer, assistance, and recovery evidence. |
-| `lesson/M0.5-L5_EXPLAINING_HUMAN_AI_CONTRIBUTIONS_WITHOUT_INFLATION.md` | Prepared next lesson specification; not yet attempted. |
+| `lesson/M0.5-L5_EXPLAINING_HUMAN_AI_CONTRIBUTIONS_WITHOUT_INFLATION.md` | Deferred standalone specification; checkpoint not passed. |
+| `lesson/M1-L1_FIRST_WORKING_FINANCE_APP.md` | Prepared bounded first-app lesson; checkpoint not attempted. |
+| `evidence/COURSE_DIRECTION_CHANGE_2026-10-03.md` | Practical-delivery revision, prerequisite exception, preserved achievement, and context audit. |
 
 ## Preserved prototype materials
 
@@ -95,11 +99,11 @@ The backup name retains `Prototype` for continuity with the verified v1.2.0 fold
 |---|---|
 | `scripts/setup.py` | Validates CSV, rebuilds SQLite, and generates snapshots/artifact copies. |
 | `scripts/start-course.sh` | Checks prerequisites, installs locked components when absent, prepares data, and starts the local site. |
-| `scripts/verify.py` | Deterministic prototype plus v2.0.8 course-state, M0/M0.5 evidence, repository authority, and capability-gate checks. |
-| `scripts/reconstruction_check.py` | Confirms a fresh task can recover v2.0.8 private-repository authority, boundaries, evidence, and next action. |
+| `scripts/verify.py` | Deterministic prototype plus v2.0.9 routing, preserved achievement, repository authority, and capability-gate checks. |
+| `scripts/reconstruction_check.py` | Confirms a fresh task can recover v2.0.9 local delivery revision and v2.0.8 remote recovery boundary. |
 | `scripts/reliability_scan.py` | Scans full repository continuity while returning only bounded structured metadata. |
-| `scripts/package_bundle.py` | Creates the clean v2.0.8 M0.5-L4 backup ZIP without dependencies, runtime files, Git history, transient Codex/Excel files, or binary workbooks; the tracked text inspection record preserves the completed Excel evidence. |
-| `tests/rendered-html.test.mjs` | Verifies rendered Course Portal, preserved KPI Lab, and v2.0.8 continuity labels. |
+| `scripts/package_bundle.py` | Creates the clean v2.0.9 delivery-revision backup ZIP without secrets, dependencies, runtime files, Git history, transient Codex/Excel files, or binary workbooks. |
+| `tests/rendered-html.test.mjs` | Verifies rendered Course Portal, preserved KPI Lab, and first-app routing without false lesson completion. |
 | `tests/test_reliability_scan.py` | Verifies scan-only canary privacy, output bounds, hashing, and Excel lock exclusion. |
 | `package.json` / `package-lock.json` | Reproducible Node application dependencies and commands. |
 | `pyproject.toml` / `.python-version` | Prototype Python compatibility declaration. |
@@ -122,11 +126,13 @@ The backup name retains `Prototype` for continuity with the verified v1.2.0 fold
 | `evidence/RECONSTRUCTION_CHECK_v2.0.7.md` | v2.0.7 continuity results. |
 | `evidence/RELEASE_CHECKS_v2.0.8.md` | v2.0.8 release results. |
 | `evidence/RECONSTRUCTION_CHECK_v2.0.8.md` | v2.0.8 continuity results. |
+| `evidence/RELEASE_CHECKS_v2.0.9.md` | v2.0.9 delivery-revision checks. |
+| `evidence/RECONSTRUCTION_CHECK_v2.0.9.md` | v2.0.9 fresh-task continuity and achievement-preservation results. |
 | `evidence/COURSE_RELIABILITY_CHECKPOINTS.md` | Ordered reliability baseline, gates, and milestone results. |
 
 ## Intentionally absent
 
-- Lessons beyond the prepared M0.5-L5 specification, future datasets, solution code, and answer keys
+- Lessons beyond the bounded M1-L1 specification, future datasets, solution code, and answer keys
 - The finance flagship implementation or learner-built work dashboard
 - External database, API, automation, runtime AI, or agent implementation
 - Optional `OH1` implementation

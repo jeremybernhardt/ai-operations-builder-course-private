@@ -9,9 +9,9 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BUNDLE_NAME = "AI_Operations_Builder_Course_Prototype_v2.0.8_M0.5-L4.zip"
+BUNDLE_NAME = "AI_Operations_Builder_Course_Prototype_v2.0.9_Delivery_Revision.zip"
 OUTPUT = ROOT / BUNDLE_NAME
-ARCHIVE_ROOT = "AI_Operations_Builder_Course_Prototype_v2.0.8_M0.5-L4"
+ARCHIVE_ROOT = "AI_Operations_Builder_Course_Prototype_v2.0.9_Delivery_Revision"
 EXCLUDED_PARTS = {
     ".git",
     ".sites-runtime",
@@ -36,6 +36,8 @@ def is_binary_workbook(path: Path) -> bool:
 def should_include(path: Path) -> bool:
     relative = path.relative_to(ROOT)
     if path == OUTPUT or relative.parts[0] in EXCLUDED_ROOTS:
+        return False
+    if path.name == ".env" or (path.name.startswith(".env.") and path.name != ".env.example"):
         return False
     if is_transient_lock_file(path):
         return False
@@ -101,6 +103,10 @@ def main() -> None:
             f"{ARCHIVE_ROOT}/student/m0_5_l4/test_review_routing.py",
             f"{ARCHIVE_ROOT}/evidence/LEARNER_CHECKPOINT_M0.5-C4.md",
             f"{ARCHIVE_ROOT}/lesson/M0.5-L5_EXPLAINING_HUMAN_AI_CONTRIBUTIONS_WITHOUT_INFLATION.md",
+            f"{ARCHIVE_ROOT}/lesson/M1-L1_FIRST_WORKING_FINANCE_APP.md",
+            f"{ARCHIVE_ROOT}/evidence/COURSE_DIRECTION_CHANGE_2026-10-03.md",
+            f"{ARCHIVE_ROOT}/evidence/RELEASE_CHECKS_v2.0.9.md",
+            f"{ARCHIVE_ROOT}/evidence/RECONSTRUCTION_CHECK_v2.0.9.md",
             f"{ARCHIVE_ROOT}/evidence/RELEASE_CHECKS_v2.0.8.md",
             f"{ARCHIVE_ROOT}/evidence/RECONSTRUCTION_CHECK_v2.0.8.md",
             f"{ARCHIVE_ROOT}/evidence/COURSE_RELIABILITY_CHECKPOINTS.md",

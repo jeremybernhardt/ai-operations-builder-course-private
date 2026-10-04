@@ -1,52 +1,55 @@
-# Exact Next-Task Prompt — Prepare and Teach M0.5-L5 / v2.0.8
+# Exact Next-Task Prompt — M1-L1 / v2.0.9 Delivery Revision
 
 Canonical filename: `NEXT_CHAT_PROMPT.md`
-Current versioned recovery backup: `NEXT_CHAT_PROMPT_AFTER_M0.5-L4_v2.0.8.md`
+Remote recovery packet: `NEXT_CHAT_PROMPT_AFTER_M0.5-L4_v2.0.8.md`
+Delivery revision: `DEC-C2-014`; verify publication through live Git tracking
 
 ## Then send this prompt
 
-Continue Jeremy Bernhardt's AI Operations Builder Course from the authoritative private GitHub repository `jeremybernhardt/ai-operations-builder-course-private`, branch `main`. This is one bounded Codex task for the current lesson. Repository files are authoritative; chat memory, the Course Portal, browser-local state, and the v2.0.8 ZIP are not. The ZIP is a recovery backup only.
+Continue Jeremy Bernhardt's AI Operations Builder Course from the authoritative private GitHub repository `jeremybernhardt/ai-operations-builder-course-private`, branch `main`, using `/Users/Jeremy/Documents/Codex/AI_Operations_Builder_Course`. This is one bounded fresh task for `M1-L1 — First Working Finance App`. Verify that private main and this checkout contain the v2.0.9 delivery revision. If publication is still pending, preserve the local canonical edits and report that boundary; do not replace them with older remote instructions. Chat memory, portal state and browser-local notes are non-authoritative; the ZIP is a recovery backup only.
 
 ### Selective startup
 
-1. Verify the exact repository, private visibility, current `main`, and local tracking.
-2. Read `AGENTS.md`, then the mandatory core named there: `COURSE_CONTRACT.md`, `COURSE_STATE.json`, `PROGRESS.json`, `CAPABILITY_EVIDENCE_LEDGER.md`, `DECISION_LOG.md`, `SESSION_HANDOFF.md`, and `NEXT_CHAT_PROMPT.md`.
-3. Run `python3 scripts/reliability_scan.py`. Use only its bounded scan-only counts, paths, IDs, hashes, statuses, and failure codes; do not return or load scanned source text.
-4. Read `lesson/M0.5-L5_EXPLAINING_HUMAN_AI_CONTRIBUTIONS_WITHOUT_INFLATION.md` and its prerequisite `evidence/LEARNER_CHECKPOINT_M0.5-C4.md`.
-5. Check for current-lesson artifacts before creating anything. Acknowledge Jeremy's latest answer first, recover interrupted work without asking him to repeat it, and inspect only the artifacts needed for the current decision.
+1. Verify the exact repository, private visibility, branch and tracking; distinguish pending local edits from committed history.
+2. Read `AGENTS.md` and its mandatory core: `COURSE_CONTRACT.md`, `COURSE_STATE.json`, `PROGRESS.json`, `CAPABILITY_EVIDENCE_LEDGER.md`, `DECISION_LOG.md`, `SESSION_HANDOFF.md`, and `NEXT_CHAT_PROMPT.md`.
+3. Run `python3 scripts/reliability_scan.py`. Use its bounded scan-only counts, paths, IDs, hashes, statuses and failure codes; do not load scanned source text.
+4. Read only `lesson/M1-L1_FIRST_WORKING_FINANCE_APP.md` and prerequisite `evidence/LEARNER_CHECKPOINT_M0.5-C4.md`, plus artifacts required for a current submission or decision.
+5. Check existing current-lesson artifacts before creating any. Acknowledge a learner answer first, recover interruptions without repetition, and never infer checkpoint completion from files.
 
-If mandatory files disagree on current lesson, prerequisite, assistance, mastery, scope, decisions, limitations, or next action, stop advancement and read the smallest relevant on-demand set. Expand only if targeted reading cannot reconcile the conflict. Record direct-context versus scan-only/on-demand paths.
+Reconcile critical disagreements by the smallest relevant on-demand set, then module history only if needed. Record direct-context and scan-only/on-demand paths. Read `COURSE_RELIABILITY_PLAN.md` only for a due stage, threshold, or routing conflict.
 
 ### Recovery index — on demand, not startup context
 
-- Architecture/reference: `CURRICULUM_MAP.md`, `PROJECT_SPEC.md`, `LESSON_TEMPLATE.md`, `METRIC_DICTIONARY.md`, `DATA_DICTIONARY.md`, and `COURSE_RELIABILITY_PLAN.md`.
-- Module 0: `lesson/M0-L1_LOCAL_GIT_FOUNDATIONS.md`, `evidence/LEARNER_CHECKPOINT_M0-C1.md`, `lesson/M0-L2_LOCAL_BRANCHES_MERGES_SAFE_RECOVERY.md`, `evidence/LEARNER_CHECKPOINT_M0-C2.md`, `lesson/M0-L3_GIT_IDENTITY_PRIVACY_GITHUB_READINESS.md`, `evidence/LEARNER_CHECKPOINT_M0-C3.md`, `lesson/M0-L4_PRIVATE_GITHUB_COURSE_REPOSITORY_FIRST_VERIFIED_PUSH.md`, and `evidence/LEARNER_CHECKPOINT_M0-C4.md`.
-- Module 0.5 completed history: `lesson/M0.5-L1_DEFINING_OUTCOMES_CONSTRAINTS_DONE_CRITERIA.md`, `evidence/LEARNER_CHECKPOINT_M0.5-C1.md`, `lesson/M0.5-L2_REVIEWING_AI_BUILDER_PLAN_ASSUMPTIONS_SCOPE.md`, `evidence/LEARNER_CHECKPOINT_M0.5-C2.md`, `lesson/M0.5-L3_REVIEWING_AI_GENERATED_DIFF_VERIFICATION_EVIDENCE.md`, `evidence/LEARNER_CHECKPOINT_M0.5-C3.md`, `lesson/M0.5-L4_DEBUGGING_FROM_EVIDENCE_BOUNDED_MODIFICATION.md`, `student/M0.5-L4_DEBUGGING_AND_BOUNDED_MODIFICATION_RECORD.md`, and `evidence/LEARNER_CHECKPOINT_M0.5-C4.md`.
+Architecture: `CURRICULUM_MAP.md`, `PROJECT_SPEC.md`, `LESSON_TEMPLATE.md`, `METRIC_DICTIONARY.md`, `DATA_DICTIONARY.md`, `COURSE_RELIABILITY_PLAN.md`.
 
-### Facts and boundaries to preserve
+Completed Module 0:
+- `lesson/M0-L1_LOCAL_GIT_FOUNDATIONS.md`, `evidence/LEARNER_CHECKPOINT_M0-C1.md`.
+- `lesson/M0-L2_LOCAL_BRANCHES_MERGES_SAFE_RECOVERY.md`, `evidence/LEARNER_CHECKPOINT_M0-C2.md`.
+- `lesson/M0-L3_GIT_IDENTITY_PRIVACY_GITHUB_READINESS.md`, `evidence/LEARNER_CHECKPOINT_M0-C3.md`.
+- `lesson/M0-L4_PRIVATE_GITHUB_COURSE_REPOSITORY_FIRST_VERIFIED_PUSH.md`, `evidence/LEARNER_CHECKPOINT_M0-C4.md`.
 
-- Private GitHub `main` is authoritative. The verified first-push baseline remains commit `07170d06922211c5e4379fa4c534ea93da08dd0b`, tree `5386ba81e934717323a1256237cc380106ef0a78`, with 118 intended files and no practice history.
-- `M0.5-C1` through `M0.5-C4` are completed with limited assistance, not independent mastery. Every resume-level capability gate remains `Not started`.
-- M0.5-L4 was recovered after a response-transport failure. Jeremy's guided diagnosis was correct and must not be repeated. The completed practice and transfer evidence is durable.
-- Apply `DEC-M0.5-001`, `DEC-M0.5-002`, `DEC-M0.5-003`, `DEC-C2-009`, `DEC-C2-010`, `DEC-C2-012`, and `DEC-C2-013`. AI executes safe routine local steps; Jeremy owns intended behavior, material risk, targeted inspection, reconciliation, final verification, and the accuracy of his contribution claim.
-- The Course Portal is non-authoritative and is not work-dashboard evidence. The disposable practice repository remains local-only and remote-free. Verified tools must not be reinstalled.
-- Existing authentication is capability, not continuing permission for an external action.
-- Current authorization covers only `M0.5-L5 — Explaining Human and AI Contributions Without Inflation`.
+Completed builder-supervision history:
+- `lesson/M0.5-L1_DEFINING_OUTCOMES_CONSTRAINTS_DONE_CRITERIA.md`, `evidence/LEARNER_CHECKPOINT_M0.5-C1.md`.
+- `lesson/M0.5-L2_REVIEWING_AI_BUILDER_PLAN_ASSUMPTIONS_SCOPE.md`, `evidence/LEARNER_CHECKPOINT_M0.5-C2.md`.
+- `lesson/M0.5-L3_REVIEWING_AI_GENERATED_DIFF_VERIFICATION_EVIDENCE.md`, `evidence/LEARNER_CHECKPOINT_M0.5-C3.md`.
+- `lesson/M0.5-L4_DEBUGGING_FROM_EVIDENCE_BOUNDED_MODIFICATION.md`, `student/M0.5-L4_DEBUGGING_AND_BOUNDED_MODIFICATION_RECORD.md`, `evidence/LEARNER_CHECKPOINT_M0.5-C4.md`.
 
-### Teach M0.5-L5
+Deferred specification: `lesson/M0.5-L5_EXPLAINING_HUMAN_AI_CONTRIBUTIONS_WITHOUT_INFLATION.md`. Revision evidence: `evidence/COURSE_DIRECTION_CHANGE_2026-10-03.md`.
 
-Keep the learner-facing opening brief: why an accurate human/AI contribution statement matters, the evidence that will be used, and what success looks like.
+### Facts and scope
 
-Use accelerated, gap-based, build-first delivery. Teach the five-part contribution model briefly: outcome ownership, human decisions, AI execution, verification evidence, and limitations/assistance. Use one adjacent worked example, then move into Jeremy's actual completed M0.5 evidence.
+C1-C4 are completed with limited assistance, not independent mastery. Every resume-level gate is `Not started`. L5 is deferred, not passed; the original five-lesson sequence is incomplete. `DEC-C2-014` records the prerequisite exception permitting progression using verified C1-C4.
 
-Jeremy must identify what he personally specified, decided, diagnosed, constrained, inspected, verified, and approved versus what AI generated, edited, or executed. AI may organize his judgments into a concise statement, but Jeremy must approve the factual boundary. The statement must label the work as a synthetic, AI-assisted course project and preserve every unearned technical gate.
+Current authorization covers only `M1-L1 — First Working Finance App`. Build the small local synthetic expense actual-versus-budget app defined in its specification. It is the first piece of the existing finance flagship. Do not implement the Expense File Readiness Checker or later lessons. Course Portal is non-authoritative and provides no learner work-dashboard evidence. Keep the disposable practice repository local-only and unchanged.
 
-After practice, use a genuinely different synthetic project description containing both an inflated claim and an understated human contribution. Jeremy corrects it with reduced scaffolding. Do not ask him to repeat an explanation that was just supplied.
+### Teaching and building
 
-Do not implement or extend the Expense File Readiness Checker, begin the finance flagship or `M1`, modify the disposable practice repository, draft or publish a real public resume or portfolio, create an account, buy a service, deploy, publish, change visibility/collaborators, or create a public/portfolio repository.
+Jeremy wants practical working apps quickly while learning enough to be consistent and high quality. Teach concepts in context: explain what the next part does, why it matters, and how it connects to the result; demonstrate it in the actual app, then let him direct a meaningful change and evaluate it. Do not replace teaching with unexplained tasks or expand a short concept into a long lecture.
 
-Before changing canonical state, explain the local effect and run relevant deterministic checks. Before any commit or private GitHub push, show the exact proposed changes, destination, metadata, exclusions, and recovery boundary and obtain Jeremy's explicit informed approval.
+Start with a brief useful-output explanation and at most one or two substantive decisions before hands-on work. Establish the small calculation/data boundary, then AI may scaffold the working app and execute routine local steps. Disclose what AI generated. Do not wait for full SQL/Python foundations before the initial app; do not treat the scaffold as proficiency evidence.
 
-At closeout, briefly state what Jeremy completed, how the contribution claim traces to evidence, the honest assistance/mastery boundary, and what comes next. Update affected canonical files including `CAPABILITY_EVIDENCE_LEDGER.md`. Because M0.5-L5 closes the module boundary and two selective-context lesson tasks have passed, read `COURSE_RELIABILITY_PLAN.md` and evaluate `REL-4` before authorizing M1 preparation. Run relevant JSON, reliability, reconstruction, release, build, test, lint, artifact, and secret checks; inspect proposed commit metadata; and ask for approval before committing or pushing.
+Verify actual displayed results against independent expected values; inspect the relevant calculation/filter when plausible outputs could hide errors. Assess a learner-directed change, unchanged behavior, a genuinely different failure, and a limitation. Keep later challenge answers unrevealed. Record substantive assistance and known limitations honestly; contribution disclosure is a brief factual closeout record.
 
-Create lesson-versioned exports `SESSION_HANDOFF_M0.5-L5_<release>.md`, `NEXT_CHAT_PROMPT_AFTER_M0.5-L5_<release>.md`, and a versioned backup ZIP. Present a **Continue in a New Conversation** packet, then end before M1 begins.
+Verify existing tools and reuse appropriate installed components. Stop course-owned processes at closeout. Existing authentication is not authorization for external actions. Do not create a public/portfolio repository, deploy, publish, create accounts, or incur costs. Commit or private push requires explicit informed approval after concrete changes, destination, metadata, exclusions, and recovery are reviewable.
+
+After a passed learner checkpoint, explain the local state effect, update canonical evidence and continuity, and run relevant deterministic checks. Save the bounded next-lesson packet and end before teaching it.

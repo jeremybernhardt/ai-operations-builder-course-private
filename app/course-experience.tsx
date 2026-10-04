@@ -102,16 +102,16 @@ function Portal({ progressSnapshot, openCloseout }: { progressSnapshot: Progress
     <div className="view-stack" data-area="course-portal">
       <section className="dashboard-hero">
         <div className="hero-copy">
-          <p className="eyebrow">Course Portal · Repository v2.0.8</p>
+          <p className="eyebrow">Course Portal · Repository v2.0.9</p>
           <h1>Your course, one <em>verified</em> step at a time.</h1>
           <p className="hero-deck">
-            The debugging and bounded-modification checkpoint is complete. Continue by documenting human and AI contributions accurately in a fresh task.
+            The debugging checkpoint is complete. Build the first small finance app in a fresh task, with teaching and verification tied to the working project.
           </p>
           <div className="hero-actions">
             <button className="primary-action" type="button" onClick={openCloseout}>
               Open preserved KPI Lab <span aria-hidden="true">→</span>
             </button>
-            <span className="time-note">One lesson per task · Next: M0.5-L5</span>
+            <span className="time-note">One lesson per task · Next: M1-L1</span>
           </div>
         </div>
 
@@ -123,7 +123,7 @@ function Portal({ progressSnapshot, openCloseout }: { progressSnapshot: Progress
           <p className="brief-number">M0.5</p>
           <h2>Bounded debugging verified</h2>
           <p>M0.5-C4 passed with limited assistance. Jeremy diagnosed two defects, constrained both corrections, selected regression evidence, and identified a remaining input-validation limitation; independent mastery and resume-level capability are not claimed.</p>
-          <div className="brief-footer"><span>Next action</span><strong>M0.5-L5 in a fresh task</strong></div>
+          <div className="brief-footer"><span>Next action</span><strong>M1-L1 in a fresh task</strong></div>
         </aside>
       </section>
 
@@ -150,12 +150,13 @@ function Portal({ progressSnapshot, openCloseout }: { progressSnapshot: Progress
             <div className="timeline-item is-complete"><span>✓</span><div><strong>M0.5-L2 review the builder plan</strong><small>Completed with limited assistance</small></div></div>
             <div className="timeline-item is-complete"><span>✓</span><div><strong>M0.5-L3 review a proposed diff</strong><small>Completed with limited assistance</small></div></div>
             <div className="timeline-item is-complete"><span>✓</span><div><strong>M0.5-L4 debug and direct a bounded change</strong><small>Completed with limited assistance</small></div></div>
-            <div className="timeline-item is-current"><span>●</span><div><strong>M0.5-L5 explain human and AI contributions</strong><small>Next lesson in a fresh task</small></div></div>
+            <div className="timeline-item"><span>○</span><div><strong>M0.5-L5 contribution statement</strong><small>Deferred; checkpoint not passed</small></div></div>
+            <div className="timeline-item is-current"><span>●</span><div><strong>M1-L1 first working finance app</strong><small>Next lesson in a fresh task</small></div></div>
           </div>
           <details className="roadmap-details">
             <summary>View the complete course roadmap</summary>
             <div className="roadmap-groups">
-              <div><span>Required core · approximately 50–60 hours</span><strong>M0–M7</strong><p>Git, supervising AI, SQL, Python, connected data, an early work-dashboard slice, analysis tools, and the full learner-built work dashboard.</p></div>
+              <div><span>Required core · estimates provisional</span><strong>M0–M7</strong><p>First working app in M1, then SQL, Python, connected data, verified integration, analysis tools, and the full work dashboard through the project.</p></div>
               <div><span>Required extension · approximately 25–35 hours</span><strong>M8–M12</strong><p>Workflow automation, document AI, a permissioned action-taking agent, strategic decision support, and portfolio defense.</p></div>
               <div><span>Optional specialization · approximately 6–10 hours</span><strong>OH1</strong><p>Transfer the completed skills to Human-Data and AI Operations after the required foundations.</p></div>
             </div>
@@ -402,7 +403,7 @@ function Lab({ dataPreview, qualitySummary, initialStep }: { dataPreview: DataRo
             <div className="completion-grid">
               <article className="completion-card is-complete"><span>Completed</span><h2>What you finished</h2><p>You defined first-pass acceptance, handled duplicates, missing outcomes, and rework, and connected the metric to an operational investigation.</p></article>
               <article className="completion-card"><span>Mastery boundary</span><h2>What the evidence supports</h2><p>Completed with substantial assistance. Independent mastery, SQL, a comparable challenge, teach-back, and limitation work are not claimed.</p></article>
-              <article className="completion-card"><span>Next current lesson</span><h2>M0.5-L5: Explaining human and AI contributions without inflation</h2><p>The fresh task will trace contribution claims to completed evidence without overstating unaided implementation or understating Jeremy&apos;s decisions and verification.</p></article>
+              <article className="completion-card"><span>Next current lesson</span><h2>M1-L1: First working finance app</h2><p>Build a small local synthetic expense actual-versus-budget app, understand its data flow, direct a meaningful change, and verify its results. M0.5-L5 is deferred without a passed checkpoint.</p></article>
             </div>
 
             <div className="continuity-panel">
@@ -415,8 +416,8 @@ function Lab({ dataPreview, qualitySummary, initialStep }: { dataPreview: DataRo
               <div className="continuity-steps"><strong>What you do</strong><p>Open the private repository in a new task → paste the designated prompt → send. Keep the versioned ZIP only as a backup.</p></div>
             </div>
 
-            <div className="github-future"><span>GitHub continuity is active</span><p>New tasks read canonical files from the private repository, so repeated full-folder attachments are no longer necessary. Private browser clicks and local notes remain outside the repository, and no backend was added.</p></div>
-            <div className="screen-actions"><button className="secondary-action" type="button" onClick={() => setStep("review")}>Back to result</button><span>Preserved prototype view · Course repository v2.0.8.</span></div>
+            <div className="github-future"><span>GitHub continuity is active</span><p>Verify this checkout against private main before starting the next task. Preserve pending course edits if publication is incomplete; the canonical next-task prompt explains the recovery boundary.</p></div>
+            <div className="screen-actions"><button className="secondary-action" type="button" onClick={() => setStep("review")}>Back to result</button><span>Preserved prototype view · Course repository v2.0.9.</span></div>
           </section>
         )}
       </div>
@@ -436,7 +437,7 @@ export default function CourseExperience({ dataPreview, progressSnapshot, qualit
       <header className="app-header">
         <button className="brand" type="button" onClick={() => setArea("portal")} aria-label="Open Course Portal"><span className="brand-mark">AO</span><span><strong>AI Operations Builder</strong><small>Private course workspace</small></span></button>
         <nav aria-label="Application areas"><AreaButton active={area === "portal"} label="Course Portal" onClick={() => setArea("portal")} /><AreaButton active={area === "lab"} label="KPI Lab" onClick={() => openLab("intro")} /></nav>
-        <div className="learner-chip" aria-label="Learner Jeremy Bernhardt"><span>JB</span><div><strong>Jeremy Bernhardt</strong><small>Course v2.0.8 · M0.5-L5 next</small></div></div>
+        <div className="learner-chip" aria-label="Learner Jeremy Bernhardt"><span>JB</span><div><strong>Jeremy Bernhardt</strong><small>Course v2.0.9 · M1-L1 next</small></div></div>
       </header>
       {area === "portal" ? <Portal progressSnapshot={progressSnapshot} openCloseout={() => openLab("intro")} /> : <Lab key={labStartStep} dataPreview={dataPreview} qualitySummary={qualitySummary} initialStep={labStartStep} />}
       <footer className="app-footer"><span>Local/private prototype · Synthetic data only</span><span>Canonical state lives in the course files, not this interface.</span></footer>

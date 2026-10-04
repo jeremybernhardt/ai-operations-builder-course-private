@@ -83,6 +83,11 @@ class ReliabilityScanTests(unittest.TestCase):
         self.assertEqual(inventory["workbook_files_metadata_only"], 1)
         self.assertEqual(inventory["text_files_scanned"], 0)
 
+    def test_local_environment_files_are_excluded_from_packages(self) -> None:
+        self.assertFalse(packager.should_include(ROOT / ".env"))
+        self.assertFalse(packager.should_include(ROOT / ".env.local"))
+        self.assertTrue(packager.should_include(ROOT / ".env.example"))
+
     def test_critical_quality_boundaries_pass_without_source_output(self) -> None:
         report = scanner.build_report(ROOT)
         by_id = {check["id"]: check["status"] for check in report["checks"]}
@@ -119,6 +124,31 @@ class ReliabilityScanTests(unittest.TestCase):
             state_path.write_text(json.dumps(state), encoding="utf-8")
             report = scanner.build_report(temp_root)
         failures = {failure["code"] for failure in report["failures"]}
+        self.assertIn("CRITICAL_COURSE_FACTS", failures)
+
+    def test_deferred_lesson_does_not_become_completed_evidence(self) -> None:
+        state = json.loads((ROOT / "COURSE_STATE.json").read_text(encoding="utf-8"))
+        progress = json.loads((ROOT / "PROGRESS.json").read_text(encoding="utf-8"))
+        self.assertEqual(state["current_checkpoint_id"], "M0.5-C4")
+        self.assertFalse(state["module_status"]["planned_lesson_sequence_complete"])
+        self.assertIn("M0.5-L5", state["delivery_revision"]["deferred_lesson_ids"])
+        self.assertEqual(progress["course_architecture"]["required_next_lesson"], "M1-L1")
+        recorded = {lesson["lesson_id"] for lesson in progress["lessons"]}
+        self.assertNotIn("M0.5-L5", recorded)
+        self.assertNotIn("M1-L1", recorded)
+        self.assertTrue(all(gate["status"] == "Not started" for gate in progress["capability_gates"]))
+
+    def test_stale_next_lesson_route_is_detected(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            temp_root = Path(directory) / "course"
+            self.copy_course(temp_root)
+            progress_path = temp_root / "PROGRESS.json"
+            progress = json.loads(progress_path.read_text(encoding="utf-8"))
+            progress["course_architecture"]["required_next_lesson"] = "M1-L99"
+            progress_path.write_text(json.dumps(progress), encoding="utf-8")
+            report = scanner.build_report(temp_root)
+        failures = {failure["code"] for failure in report["failures"]}
+        self.assertIn("NEXT_LESSON_SPEC_UNIQUE", failures)
         self.assertIn("CRITICAL_COURSE_FACTS", failures)
 
 

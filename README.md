@@ -1,4 +1,6 @@
-# AI Operations Builder Course Repository v2.0.8
+# AI Operations Builder Course Repository v2.0.9
+
+The 2026-10-03 delivery revision is prepared for private main. Verify publication through live local/remote commits and working state; preserve any pending canonical edits until the approved push is verified.
 
 Learner entry point: open `START_HERE.html`. This README is the technical setup, verification, continuity, and recovery reference.
 
@@ -8,7 +10,8 @@ This private repository contains:
 - the preserved v1.2.0 prototype **From Raw Project Data to a Verified Operating Metric**;
 - canonical course state, progress, decisions, capability gates, handoff, and next-chat instructions; and
 - the verified Module 0 sequence, completed M0.5-L1 through M0.5-L4 builder-supervision checkpoints, and repository-level `AGENTS.md`; and
-- no lesson beyond the next prepared M0.5-L5 specification, production portal, public deployment, public repository, or standalone course product.
+- a bounded next-lesson specification for `M1-L1 — First Working Finance App`, with standalone M0.5-L5 deferred by `DEC-C2-014`; and
+- no later lesson implementations, production portal, public deployment, public repository, or standalone course product.
 
 The required course teaches AI-assisted SQL, Python/pandas, data pipelines, work dashboards, automation, document tools, and permissioned agents using finance as the primary application context. It targets AI-assisted operator-builder proficiency, not unaided software development. It is not a broad finance curriculum or a software-engineering curriculum. The Course Portal facilitates lessons and never counts as evidence that Jeremy can build work dashboards.
 
@@ -92,17 +95,18 @@ Passing software tests does not imply learner mastery or satisfy a capability ga
 - `M0.5-L4 — Debugging from Evidence and Directing a Bounded Modification` is completed with limited assistance. Jeremy diagnosed and constrained an inclusive seven-day correction, then independently diagnosed and bounded a different rule-precedence repair.
 - Every resume-level capability gate remains `Not started`.
 - The planned Module 0 lesson sequence is complete with substantial assistance; independent mastery and resume-level proficiency are not claimed.
-- The next authorized work is only `M0.5-L5 — Explaining Human and AI Contributions Without Inflation`, in a fresh task. Expense-checker implementation and `M1` remain postponed.
+- `M0.5-L5` is deferred without a passed checkpoint; the original five-lesson sequence is not complete. `DEC-C2-014` permits progression on verified C1-C4 evidence.
+- The next authorized work is only `M1-L1 — First Working Finance App`, in a fresh task. Expense-checker implementation and later lessons remain postponed.
 
 ## Required course direction
 
-The main project is the synthetic **AI-Enabled Finance Planning, Reporting, and Decision-Support System**. Jeremy will build an early work-dashboard slice after SQL/Python foundations, a full work dashboard later, a controlled automation, evaluated document/AI tools, and one permissioned agent with approval-gated sandbox actions. A bounded job-search monitor reuses those skills at selected milestones without becoming a second curriculum. Human-Data and AI Operations remains optional.
+The main project is the synthetic **AI-Enabled Finance Planning, Reporting, and Decision-Support System**. Jeremy now builds a small local app in M1, then learns SQL/Python by inspecting, changing, and verifying its data and behavior. M4 strengthens the integrated data path; later milestones add a full dashboard, controlled automation, evaluated AI tools, and a permissioned agent. Concepts are taught in context with enough explanation to understand the next action. A bounded job-search monitor reuses those skills at selected milestones without becoming a second curriculum. Human-Data and AI Operations remains optional.
 
 See `CURRICULUM_MAP.md` for the bounded module sequence and `CAPABILITY_EVIDENCE_LEDGER.md` for the evidence required before any resume-level skill label is defensible.
 
 ## Continuing in a new task
 
-The authoritative source is private repository `jeremybernhardt/ai-operations-builder-course-private` on `main`. In a fresh task, provide the repository location and ask the instructor to read the canonical files and exact `NEXT_CHAT_PROMPT.md` there. Repeated complete-ZIP attachment is no longer required.
+The authoritative remote source is private repository `jeremybernhardt/ai-operations-builder-course-private` on `main`. Verify that main and this checkout contain v2.0.9; if its approved publication is incomplete, preserve the pending local canonical edits and report the boundary. Read `NEXT_CHAT_PROMPT.md`. Repeated complete-ZIP attachment is no longer required.
 
 For Jeremy's saved lesson archive, the M0.5-L4 closeout exports are:
 

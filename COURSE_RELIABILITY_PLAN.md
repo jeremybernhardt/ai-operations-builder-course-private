@@ -10,7 +10,7 @@ This procedure keeps lesson tasks small without weakening course continuity or v
 | `REL-1` | Before the next lesson resumes | Add answer acknowledgement, bounded-process recovery, interrupted-work recovery, and Excel lock-file exclusions. | Preserve artifacts and leave progress unchanged if recovery is uncertain. |
 | `REL-2` | Before the next lesson resumes | Replace full-history startup with mandatory core, current lesson, prerequisite evidence, and explicitly relevant artifacts. | Expand to the relevant module history if a critical fact conflicts or cannot be reconciled. |
 | `REL-3` | Before the next lesson resumes | Pass scan-only, canary, context-size, recovery, quality, JSON, reconstruction, test, lint, artifact, and secret gates. | Do not resume teaching if a critical gate fails. Revert only the failing reliability change, not learner work. |
-| `REL-4` | M0.5 boundary, after two successful selective-context lesson tasks | Evaluate generator/state decoupling using representative reconstruction tests. | Defer if benefits are unproven or context grows. |
+| `REL-4` | M0.5 progression boundary, after two successful selective-context lesson tasks, including an explicit prerequisite exception | Evaluate generator/state decoupling using representative reconstruction tests. | Defer implementation if benefits are unproven or context grows. |
 | `REL-5` | Only after a context-growth trigger | Compact mandatory core without deleting authoritative history. | Require a tested maintenance change and a new approved baseline. |
 | `REL-6` | Every lesson closeout | Record task health, stopped processes, context mode, fallbacks, and any interruption recovery. | Escalate repeated failures; do not create a parallel curriculum workflow. |
 

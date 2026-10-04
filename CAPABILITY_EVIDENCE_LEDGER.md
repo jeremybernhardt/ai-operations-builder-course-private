@@ -1,6 +1,6 @@
 # Capability Evidence Ledger
 
-Ledger version: `2.0.8`
+Ledger version: `2.0.9`
 Learner: Jeremy Bernhardt  
 Current status: no v2 resume-level gate has been earned
 
@@ -125,5 +125,7 @@ The instructor corrected an overbroad practice classification, explained targete
 AI created the synthetic local fixtures, presented the deterministic evidence, executed the learner-authorized edits and checks, and organized the durable record. Jeremy owned both diagnoses, intended behavior, non-goals, targeted explanations, regression choice, readiness decision, and limitation. Checkpoint status is **Completed with limited assistance**, not demonstrated independently and not a resume-level gate. Evidence: `student/M0.5-L4_DEBUGGING_AND_BOUNDED_MODIFICATION_RECORD.md` and `evidence/LEARNER_CHECKPOINT_M0.5-C4.md`.
 
 ## Claim rule
+
+`DEC-C2-014` (2026-10-03) changes delivery and scheduling, not learner achievement. M0.5-L5 is deferred without a passed contribution checkpoint; the original five-lesson sequence is incomplete. Verified C1-C4 evidence permits M1-L1 under the recorded prerequisite exception. The first app may use substantial AI scaffolding before SQL/Python/dashboard gates pass. Its existence will not establish those capabilities. All existing mastery, assistance, and gate statuses above remain unchanged; contribution disclosure is recorded briefly at actual project closeouts.
 
 Resume wording is created only after the corresponding gate passes. It must distinguish a verified synthetic course project from professional experience and describe AI assistance accurately.
